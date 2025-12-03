@@ -7,6 +7,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -25,6 +27,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Freeshop",
       "Damage",
@@ -40,6 +44,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Gold In Battle",
       "Stone In Battle",
@@ -54,6 +60,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Freeshop",
       "Speed Game"
@@ -67,6 +75,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Freeshop",
       "Spee Game"
@@ -80,6 +90,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop",
@@ -97,6 +109,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -113,6 +127,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "No Ads",
@@ -129,6 +145,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Gold+ Exp Stone Drop",
       "Speed Game"
@@ -142,6 +160,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop",
@@ -157,6 +177,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -174,6 +196,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -191,6 +215,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -208,6 +234,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -225,6 +253,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -242,6 +272,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -259,6 +291,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -276,6 +310,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -293,6 +329,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -310,6 +348,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -327,6 +367,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -344,6 +386,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -361,6 +405,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -378,6 +424,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -395,6 +443,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -412,6 +462,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -429,6 +481,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -446,6 +500,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -463,6 +519,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -480,6 +538,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -497,6 +557,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -514,6 +576,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -531,6 +595,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -548,6 +614,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -565,6 +633,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -582,6 +652,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -599,6 +671,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -616,6 +690,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -633,6 +709,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -650,6 +728,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -667,6 +747,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -684,6 +766,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -701,6 +785,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -718,6 +804,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -735,6 +823,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -752,6 +842,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -769,6 +861,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -786,6 +880,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -803,6 +899,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -820,6 +918,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -837,6 +937,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -854,6 +956,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -871,6 +975,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -888,6 +994,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -905,6 +1013,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -922,6 +1032,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -939,6 +1051,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -956,6 +1070,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -973,6 +1089,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -990,6 +1108,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -1007,6 +1127,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -1024,6 +1146,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -1041,6 +1165,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -1058,6 +1184,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -1075,6 +1203,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -1092,6 +1222,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -1109,6 +1241,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -1126,6 +1260,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -1143,6 +1279,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop(Account)",
@@ -1160,6 +1298,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop",
@@ -1177,6 +1317,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop Diamond",
@@ -1194,6 +1336,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Antiban",
       "Freeshop",
@@ -1210,6 +1354,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Unlock Monthly Card",
       "Unlock No Ads",
@@ -1224,6 +1370,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Attack Speed ",
       "Damage",,
@@ -1239,6 +1387,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Freeshop",
       "Speed Game"
@@ -1252,6 +1402,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Freeshop",
       "Speed Game"
@@ -1265,6 +1417,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Freeshop",
       "Speed Game"
@@ -1278,6 +1432,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Dumps Enemy",
       "Speed Game"
@@ -1291,6 +1447,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Freeshop",
       "Speed Game"
@@ -1304,6 +1462,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Freeshop",
       "Speed Game"
@@ -1317,6 +1477,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Freeshop",
       "Speed Game"
@@ -1330,6 +1492,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Freeshop",
       "Gold + Exp Drop",
@@ -1346,6 +1510,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Freeshop",
       "Speed Game"
@@ -1359,6 +1525,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "No Skill CD",
       "Free Upgrade",
@@ -1379,6 +1547,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Drop Resources",
       "No Skill CD",
@@ -1395,6 +1565,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Freeshop",
       "Speed Game"
@@ -1408,6 +1580,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
     "features": [
       "Freeshop",
       "Speed Game"
