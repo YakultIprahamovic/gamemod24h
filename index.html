@@ -21,6 +21,13 @@
 <h1 class="hero-title">YAKULT IPRAMOVIC ✦</h1>
 
 <p class="hero-subtitle">Script & Mod Game VIP • Made by xGh0stZ</p>
+<p class="hero-stats">
+    🔥 Hiện có <span id="totalScripts">0</span> script VIP đang cập nhật mỗi ngày!
+</p>
+
+<a href="https://t.me/YakultIpramovic" class="btn-hero btn-tele">
+    📢 Tham gia Telegram Channel
+</a>
 
 <a href="#games" class="btn-hero">Xem danh sách game</a>
 </header>
@@ -72,4 +79,8 @@ gameList.appendChild(el);
 
 </body>
 </html>
+
+<script>
+    document.getElementById("totalScripts").innerText = gamesData.length;
+</script>
 
