@@ -246,3 +246,11 @@ body {
 .btn-copy:hover {
     filter: brightness(1.15);
 }
+
+.logo-img {
+    height: 45px;
+    width: auto;
+    margin-right: 10px;
+    filter: drop-shadow(0 0 6px #00ffbf);
+    border-radius: 6px;
+}
