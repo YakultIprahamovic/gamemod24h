@@ -1,68 +1,170 @@
-/* GAME CARD – FINAL FIX */
+body {
+    background: #060b10;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+}
+
+/* ==================== HERO ===================== */
+.hero-section {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.hero-avatar {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #ff0044aa;
+    animation: floatAnime 3s ease-in-out infinite;
+}
+
+.hero-title {
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 15px;
+    color: #00f7ff;
+    text-shadow: 0 0 10px #00f7ff, 0 0 20px #0099aa;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-top: 5px;
+    color: #ffffffb7;
+}
+
+.btn-hero {
+    margin-top: 25px;
+    padding: 14px 28px;
+    display: inline-block;
+    background: linear-gradient(90deg, #00eaff, #0077ff);
+    color: black;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 0 18px #00c8ff;
+}
+
+@keyframes floatAnime {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+    100% { transform: translateY(0); }
+}
+
+/* ==================== GAME GRID ===================== */
+#games {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+}
+
+/* CARD FIX HEIGHT */
 .game-card {
     background: #0b1118;
     border-radius: 12px;
     padding: 12px;
+    box-shadow: 0 0 12px #000;
     text-align: center;
-    box-shadow: 0 0 10px #000;
-    transition: 0.2s ease;
 
-    /* QUAN TRỌNG NHẤT */
+    /* FIX QUAN TRỌNG */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     height: 100%;
 }
 
-.game-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 25px #00b3ffa0;
-}
-
-/* ẢNH GAME – giữ cùng kích thước */
 .game-img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
     border-radius: 10px;
 }
 
-/* Tên game — đồng độ cao để không phá layout */
-.game-name, .game-title {
-    min-height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-/* Badge VIP */
-.badge-row {
-    min-height: 28px;
+.game-name {
+    font-size: 17px;
+    margin: 10px 0;
+    min-height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Nút Show Details — luôn dính đáy */
-.show-details-wrapper {
-    margin-top: auto;
-    width: 100%;
-}
-
-.btn-details, .show-btn {
-    width: 100%;
+/* ==================== BUTTON SHOW ===================== */
+.btn-details {
     padding: 8px;
+    width: 100%;
     background: #101820;
     border-radius: 8px;
     border: 1px solid #00eaff;
     color: #00eaff;
-    font-weight: bold;
     cursor: pointer;
     transition: 0.25s ease;
+
+    /* FIX: giữ nút cuối card */
+    margin-top: auto;
 }
 
-.btn-details:hover, .show-btn:hover {
+.btn-details:hover {
     background: #00eaff;
-    color: #000;
+    color: black;
+}
+
+/* ==================== DETAILS ===================== */
+.details-box {
+    background: #091017;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: none;
+    text-align: left;
+    font-size: 14px;
+}
+
+.price-box {
+    background: #08131c;
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 8px;
+    color: #00eaff;
+    font-weight: bold;
+}
+
+.btn-buy,
+.btn-update {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-buy {
+    background: #00eaff;
+    color: black;
+}
+
+.btn-update {
+    background: #ff0044;
+    color: white;
+}
+
+/* ==================== RESPONSIVE ===================== */
+@media (max-width: 1200px) {
+    .game-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 900px) {
+    .game-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 600px) {
+    .game-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 420px) {
+    .game-grid { grid-template-columns: repeat(1, 1fr); }
 }
