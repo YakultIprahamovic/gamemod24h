@@ -9,7 +9,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop(Account)", "Damage", "Attack Speed", "Diamond", "Totem Count", "Speed Game"]
+    features: ["Antiban", "Freeshop(Account)", "Damage", "Attack Speed", "Diamond", "Totem Count", "Speed Game"],
+    sale: true, 
   },
   {
     id: 102,
@@ -21,7 +22,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Damage", "Multi Reward", "Speed Game"]
+    features: ["Freeshop", "Damage", "Multi Reward", "Speed Game"],
+    sale: true, 
   },
   {
     id: 103,
@@ -33,7 +35,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Gold In Battle", "Stone In Battle", "Speed Game"]
+    features: ["Gold In Battle", "Stone In Battle", "Speed Game"],
+    sale: true, 
   },
   {
     id: 104,
@@ -45,7 +48,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 105,
@@ -57,7 +61,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Spee Game"]
+    features: ["Freeshop", "Spee Game"],
+    sale: true, 
   },
   {
     id: 106,
@@ -69,7 +74,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Gold + Exp Drop", "Attack Speed", "Damage", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Gold + Exp Drop", "Attack Speed", "Damage", "Speed Game"],
+    sale: true, 
   },
   {
     id: 107,
@@ -81,7 +87,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop(Account)", "Ruby", "Key Dungeon", "Speed Game"]
+    features: ["Antiban", "Freeshop(Account)", "Ruby", "Key Dungeon", "Speed Game"],
+    sale: true, 
   },
   {
     id: 108,
@@ -93,7 +100,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "No Ads", "Gold + Stone + Exp Drop", "Currency", "Speed Game"]
+    features: ["Antiban", "No Ads", "Gold + Stone + Exp Drop", "Currency", "Speed Game"],
+    sale: true, 
   },
   {
     id: 109,
@@ -105,7 +113,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Gold+ Exp + Stone Drop", "Speed Game"]
+    features: ["Gold+ Exp + Stone Drop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 110,
@@ -117,7 +126,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Unlock All Content", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Unlock All Content", "Speed Game"],
+    sale: true, 
   },
   {
     id: 111,
@@ -129,7 +139,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 112,
@@ -141,7 +152,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Damage", "Auto Win", "Speed Game"]
+    features: ["Freeshop", "Damage", "Auto Win", "Speed Game"],
+    sale: true, 
   },
   {
     id: 113,
@@ -153,7 +165,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 114,
@@ -165,7 +178,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Damage", "Gold Drop", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Damage", "Gold Drop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 115,
@@ -177,7 +191,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 116,
@@ -189,7 +204,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Max Level", "No Skill CD", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Max Level", "No Skill CD", "Speed Game"],
+    sale: true, 
   },
   {
     id: 117,
@@ -201,7 +217,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 118,
@@ -213,7 +230,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 119,
@@ -225,7 +243,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 120,
@@ -237,7 +256,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Low Cost Summon", "Attack Speed", "Damage", "God Mode", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Low Cost Summon", "Attack Speed", "Damage", "God Mode", "Speed Game"],
+    sale: true, 
   },
   {
     id: 121,
@@ -249,7 +269,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 122,
@@ -261,7 +282,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop Costume", "Unlimited Reward", "Speed Game"]
+    features: ["Antiban", "Freeshop Costume", "Unlimited Reward", "Speed Game"],
+    sale: true, 
   },
   {
     id: 123,
@@ -273,7 +295,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Currency", "Damage", "Attack Speed", "God Mode", "Diamond", "Speed Game"]
+    features: ["Antiban", "Currency", "Damage", "Attack Speed", "God Mode", "Diamond", "Speed Game"],
+    sale: true, 
   },
   {
     id: 124,
@@ -285,7 +308,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Unlock All Content", "Damage", "Speed Game"]
+    features: ["Freeshop", "Unlock All Content", "Damage", "Speed Game"],
+    sale: true, 
   },
   {
     id: 125,
@@ -297,7 +321,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Custom Reward", "Attack Speed", "Damage", "God Mode", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Custom Reward", "Attack Speed", "Damage", "God Mode", "Speed Game"],
+    sale: true, 
   },
   {
     id: 126,
@@ -309,7 +334,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Damage", "Multi Reward", "Speed Game"]
+    features: ["Freeshop", "Damage", "Multi Reward", "Speed Game"],
+    sale: true, 
   },
   {
     id: 127,
@@ -321,7 +347,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop Currency", "Custom Reward", "Speed Game"]
+    features: ["Antiban", "Freeshop Currency", "Custom Reward", "Speed Game"],
+    sale: true, 
   },
   {
     id: 128,
@@ -333,7 +360,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop Currency", "Damage", "Custom Reward", "Speed Game"]
+    features: ["Antiban", "Freeshop Currency", "Damage", "Custom Reward", "Speed Game"],
+    sale: true, 
   },
   {
     id: 129,
@@ -345,7 +373,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Damage", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Damage", "Speed Game"],
+    sale: true, 
   },
   {
     id: 130,
@@ -357,7 +386,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Gold + Exp + Lucky Coin Drop", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Gold + Exp + Lucky Coin Drop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 131,
@@ -369,7 +399,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 132,
@@ -381,7 +412,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop Currency", "Damage", "Custom Reward", "Speed Game"]
+    features: ["Antiban", "Freeshop Currency", "Damage", "Custom Reward", "Speed Game"],
+    sale: true, 
   },
   {
     id: 133,
@@ -393,7 +425,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Damage", "Gold + Exp Drop", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Damage", "Gold + Exp Drop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 134,
@@ -405,7 +438,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Gold+ Exp + Stone Drop", "Speed Game"]
+    features: ["Gold+ Exp + Stone Drop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 135,
@@ -417,7 +451,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Damage", "Coin In Battle", "Dump Enemy", "Speed Game"]
+    features: ["Freeshop", "Damage", "Coin In Battle", "Dump Enemy", "Speed Game"],
+    sale: true, 
   },
   {
     id: 136,
@@ -429,7 +464,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Unlock Content", "Complete All Mission", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Unlock Content", "Complete All Mission", "Speed Game"],
+    sale: true, 
   },
   {
     id: 137,
@@ -441,7 +477,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Damage"]
+    features: ["Damage"],
+    sale: true, 
   },
   {
     id: 138,
@@ -453,7 +490,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Damage", "Unlimited Currency", "Attack Speed", "Unlock All Costume", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Damage", "Unlimited Currency", "Attack Speed", "Unlock All Costume", "Speed Game"],
+    sale: true, 
   },
   {
     id: 139,
@@ -465,7 +503,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Unlock All Slime", "Key Dungeon", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Unlock All Slime", "Key Dungeon", "Speed Game"],
+    sale: true, 
   },
   {
     id: 140,
@@ -477,7 +516,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Gold + Exp Drop", "Speed Game"]
+    features: ["Freeshop", "Gold + Exp Drop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 141,
@@ -489,7 +529,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Damage", "Gold Drop", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Damage", "Gold Drop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 142,
@@ -501,7 +542,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop(Account)", "Gem", "Exp Drop", "Multi Drop", "Speed Game"]
+    features: ["Antiban", "Freeshop(Account)", "Gem", "Exp Drop", "Multi Drop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 143,
@@ -513,7 +555,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Unlimited Currency", "Unlock SSS Equipment", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Unlimited Currency", "Unlock SSS Equipment", "Speed Game"],
+    sale: true, 
   },
   {
     id: 144,
@@ -525,7 +568,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Max Level", "No Skill CD", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Max Level", "No Skill CD", "Speed Game"],
+    sale: true, 
   },
   {
     id: 145,
@@ -537,7 +581,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Damage", "Auto Win", "Dump Enemy", "No Skill CD"]
+    features: ["Damage", "Auto Win", "Dump Enemy", "No Skill CD"],
+    sale: true, 
   },
   {
     id: 146,
@@ -549,7 +594,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Diamond", "Gold + Exp + Cube Drop", "Attack Speed", "God Mode", "Speed Game"]
+    features: ["Antiban", "Diamond", "Gold + Exp + Cube Drop", "Attack Speed", "God Mode", "Speed Game"],
+    sale: true, 
   },
   {
     id: 147,
@@ -561,7 +607,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Free Shop"]
+    features: ["Free Shop"],
+    sale: true, 
   },
   {
     id: 148,
@@ -573,7 +620,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Complete All Mission", "Custom Currency", "Damage", "God Mode", "Speed Game"]
+    features: ["Antiban", "Complete All Mission", "Custom Currency", "Damage", "God Mode", "Speed Game"],
+    sale: true, 
   },
   {
     id: 149,
@@ -585,7 +633,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Gold + Exp Drop", "Speed Game"]
+    features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Gold + Exp Drop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 150,
@@ -597,7 +646,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop Costume", "Unlimited Reward", "Speed Game"]
+    features: ["Antiban", "Freeshop Costume", "Unlimited Reward", "Speed Game"],
+    sale: true, 
   },
   {
     id: 151,
@@ -609,7 +659,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 152,
@@ -621,7 +672,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Active Buff", "Speed Game"]
+    features: ["Freeshop", "Active Buff", "Speed Game"],
+    sale: true, 
   },
   {
     id: 153,
@@ -633,7 +685,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop(Account)", "Ruby", "Key Dungeon", "Speed Game"]
+    features: ["Antiban", "Freeshop(Account)", "Ruby", "Key Dungeon", "Speed Game"],
+    sale: true, 
   },
   {
     id: 154,
@@ -645,7 +698,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 155,
@@ -657,7 +711,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 156,
@@ -669,7 +724,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "No Ads", "Gold + Stone + Exp Drop", "Currency", "Speed Game"]
+    features: ["Antiban", "No Ads", "Gold + Stone + Exp Drop", "Currency", "Speed Game"],
+    sale: true, 
   },
   {
     id: 157,
@@ -681,7 +737,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Currency", "Speed Game"]
+    features: ["Currency", "Speed Game"],
+    sale: true, 
   },
   {
     id: 158,
@@ -693,7 +750,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Damage", "Speed Game"]
+    features: ["Freeshop", "Damage", "Speed Game"],
+    sale: true, 
   },
   {
     id: 159,
@@ -705,7 +763,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Damage", "Speed Game"]
+    features: ["Damage", "Speed Game"],
+    sale: true, 
   },
   {
     id: 160,
@@ -717,7 +776,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Gold + Exp Drop", "Speed Game"]
+    features: ["Freeshop", "Gold + Exp Drop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 161,
@@ -729,7 +789,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 162,
@@ -741,7 +802,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 163,
@@ -753,7 +815,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 164,
@@ -765,7 +828,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 165,
@@ -777,7 +841,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 166,
@@ -789,7 +854,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Antiban", "Freeshop(Account)", "Damage", "Attack Speed", "Diamond", "Speed Game"]
+    features: ["Antiban", "Freeshop(Account)", "Damage", "Attack Speed", "Diamond", "Speed Game"],
+    sale: true, 
   },
   {
     id: 167,
@@ -801,7 +867,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Speed Game"]
+    features: ["Freeshop", "Speed Game"],
+    sale: true, 
   },
   {
     id: 168,
@@ -813,7 +880,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["MP - MC (Account)"]
+    features: ["MP - MC (Account)"],
+    sale: true, 
   },
   {
     id: 169,
@@ -825,7 +893,8 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop(Account)", "Speed Game"]
+    features: ["Freeshop(Account)", "Speed Game"],
+    sale: true, 
   },
   {
     "id": 170,
@@ -844,7 +913,8 @@ const gamesData = [
       "Unlock All Card",
       "Unlimited Currency",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 171,
@@ -863,7 +933,8 @@ const gamesData = [
       "Damage",
       "Currency",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 172,
@@ -881,7 +952,8 @@ const gamesData = [
       "Gold + Exp Drop",
       "No Skill CD",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 173,
@@ -897,7 +969,8 @@ const gamesData = [
       "Unlock Monthly Card",
       "Unlock No Ads",
       "Speed x10"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 174,
@@ -914,7 +987,8 @@ const gamesData = [
       "Damage",,
       "Currency",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 175,
@@ -929,7 +1003,8 @@ const gamesData = [
     "features": [
       "Freeshop",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 176,
@@ -944,7 +1019,8 @@ const gamesData = [
     "features": [
       "Freeshop",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 177,
@@ -959,7 +1035,8 @@ const gamesData = [
     "features": [
       "Freeshop",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 178,
@@ -974,7 +1051,8 @@ const gamesData = [
     "features": [
       "Dumps Enemy",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 179,
@@ -989,7 +1067,8 @@ const gamesData = [
     "features": [
       "Freeshop",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 180,
@@ -1004,7 +1083,8 @@ const gamesData = [
     "features": [
       "Freeshop",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 181,
@@ -1019,7 +1099,8 @@ const gamesData = [
     "features": [
       "Freeshop",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 182,
@@ -1037,7 +1118,8 @@ const gamesData = [
       "Damage",
       "Move Speed",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 183,
@@ -1052,7 +1134,8 @@ const gamesData = [
     "features": [
       "Freeshop",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 184,
@@ -1074,7 +1157,8 @@ const gamesData = [
       "Unit Level 1000",
       "Gold + Exp Drop",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 185,
@@ -1092,7 +1176,8 @@ const gamesData = [
       "Complete All Quest",
       "Free Costume",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 186,
@@ -1107,7 +1192,8 @@ const gamesData = [
     "features": [
       "Freeshop",
       "Speed Game"
-    ]
+    ],
+    sale: true, 
   },
   {
     "id": 187,
