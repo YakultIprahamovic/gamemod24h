@@ -1,201 +1,75 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yakult Ipramovic Scripts</title>
+    <title>Game Mod 24H</title>
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/img/logo.png">
+<link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
+<!-- Load CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-    <!-- ================= ADMIN LOGIN POPUP ================= -->
-    <div id="adminLoginBox" 
-        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
-        background:rgba(0,0,0,0.85); backdrop-filter:blur(5px);
-        display:flex; justify-content:center; align-items:center; z-index:999999;">
+<!-- 🟦 HERO -->
+<header class="hero-section">
+<img src="assets/img/logo.png" class="hero-avatar" alt="Yakult Ipramovic">
 
-        <div style="background:#111b25; padding:25px; border-radius:12px; width:320px;
-                    box-shadow:0 0 25px #00eaff;">
-            <h3 style="text-align:center; color:#00eaff;">🔐 ADMIN LOGIN</h3>
+<h1 class="hero-title">YAKULT IPRAMOVIC ✦</h1>
 
-            <input id="adminPass" type="password" placeholder="Nhập mật khẩu Admin"
-                style="width:100%; padding:12px; border-radius:8px; border:none;
-                       background:#0f1a24; color:white; margin-top:15px;">
+<p class="hero-subtitle">Script & Mod Game VIP • Made by xGh0stZ</p>
 
-            <button onclick="verifyAdmin()"
-                style="width:100%; margin-top:15px; padding:12px;
-                background:#00eaff; color:black; font-weight:bold; border-radius:8px;">
-                Đăng nhập
-            </button>
-        </div>
-    </div>
+<a href="#games" class="btn-hero">Xem danh sách game</a>
+</header>
 
-    <!-- ================= ADMIN BUTTON ================= -->
-    <button onclick="openAdminLogin()"
-        style="position:fixed; bottom:20px; right:20px; padding:12px 20px;
-               background:#00eaff; border:none; border-radius:10px;
-               font-weight:bold; cursor:pointer; z-index:999;">
-        Admin
-    </button>
+<!-- 🟩 GAME LIST -->
+<section id="games">
+<h2 style="text-align:center; color:#00eaff; text-shadow:0 0 10px #00eaff;">Danh sách game</h2>
+<div class="game-grid" id="gameList"></div>
+</section>
 
-    <!-- ================= HERO ================= -->
-    <header class="hero-section">
-        <img src="assets/img/logo.png" class="hero-avatar" alt="Yakult Ipramovic">
+<!-- Load game data -->
+<script src="assets/data/games.js"></script>
 
-        <h1 class="hero-title">YAKULT IPRAMOVIC ✦</h1>
+<!-- Render Game UI -->
+<script>
+const gameList = document.getElementById("gameList");
 
-        <p class="hero-subtitle">Script & Mod Game VIP • Made by xGh0stZ</p>
+gamesData.forEach(game => {
+const el = document.createElement("div");
+el.className = "game-card";
 
-        <a href="#games" class="btn-hero">Xem danh sách game</a>
-    </header>
+el.innerHTML = `
+               <img src="${game.image}" class="game-img">
+               <div class="game-name">${game.name}</div>
 
-    <!-- ================= GAME LIST ================= -->
-    <section id="games">
-        <h2 style="text-align:center; color:#00eaff; text-shadow:0 0 10px #00eaff;">
-            Danh sách game
-        </h2>
+               <button class="btn-details">Show Details</button>
 
-        <div class="game-grid" id="gameList"></div>
-    </section>
+               <div class="details-box">
+                   <b>Mô tả:</b> ${game.description}<br><br>
+                   <b>Features:</b>
+                   <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
 
-    <!-- DATA -->
-    <script src="assets/data/games.js"></script>
+                   <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
+                   <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
 
-    <!-- ================= GAME RENDER + ADMIN ================= -->
-    <script>
+                   <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
+                   <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
+               </div>
+           `;
 
-        /* ========= GAME RENDER ========= */
-        function renderGames() {
-            const gameList = document.getElementById("gameList");
-            gameList.innerHTML = "";
+el.querySelector(".btn-details").onclick = () => {
+const box = el.querySelector(".details-box");
+box.style.display = box.style.display === "block" ? "none" : "block";
+};
 
-            gamesData.forEach((game, index) => {
-                const el = document.createElement("div");
-                el.className = "game-card";
-
-                el.innerHTML = `
-                    <img src="${game.image}" class="game-img">
-                    <div class="game-name">${game.name}</div>
-
-                    <!-- ADMIN ONLY -->
-                    <button class="edit-btn" data-index="${index}" style="
-                        display:none; background:#ffaa00; color:#000;
-                        padding:8px; width:100%; border-radius:8px; font-weight:bold;">
-                        Edit Game
-                    </button>
-
-                    <button class="btn-details">Show Details</button>
-
-                    <div class="details-box">
-                        <b>Mô tả:</b> ${game.description}<br><br>
-
-                        <b>Features:</b>
-                        <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
-
-                        <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
-                        <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
-
-                        <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
-                        <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
-                    </div>
-                `;
-
-                // Toggle details
-                el.querySelector(".btn-details").onclick = () => {
-                    const box = el.querySelector(".details-box");
-                    box.style.display = box.style.display === "block" ? "none" : "block";
-                };
-
-                // Edit button
-                el.querySelector(".edit-btn").onclick = () => editGame(index);
-
-                gameList.appendChild(el);
-            });
-
-            applyAdminMode();
-        }
-
-        renderGames();
-
-
-        /* ========= ADMIN LOGIN SYSTEM ========= */
-
-        // HASH PASSWORD = SHA256("yakultvip")
-        const ADMIN_HASH = "8a0c746a98c1e8f1c14b7e44d7fe34f6f79c8765bf6e7f6e53b6ddcbbecf8f28";
-
-        function openAdminLogin() {
-            document.getElementById("adminLoginBox").style.display = "flex";
-        }
-
-        async function sha256(message) {
-            const msgBuffer = new TextEncoder().encode(message);
-            const hashBuffer = await crypto.subtle.digest("SHA-256", msgBuffer);
-            return Array.from(new Uint8Array(hashBuffer))
-                .map(b => b.toString(16).padStart(2, "0")).join("");
-        }
-
-        async function verifyAdmin() {
-            const input = document.getElementById("adminPass").value;
-            const hash = await sha256(input);
-
-            if (hash === ADMIN_HASH) {
-                localStorage.setItem("yakult_admin", "true");
-                document.getElementById("adminLoginBox").style.display = "none";
-                applyAdminMode();
-                alert("Đăng nhập admin thành công!");
-            } else {
-                alert("Sai mật khẩu!");
-            }
-        }
-
-        function applyAdminMode() {
-            const isAdmin = localStorage.getItem("yakult_admin") === "true";
-
-            document.querySelectorAll(".edit-btn").forEach(btn => {
-                btn.style.display = isAdmin ? "block" : "none";
-            });
-        }
-
-
-
-        /* ========= ADMIN EDIT GAME ========= */
-
-        function editGame(index) {
-            const g = gamesData[index];
-
-            const newName = prompt("Tên game:", g.name);
-            if (!newName) return;
-
-            const newDesc = prompt("Mô tả:", g.description);
-            if (!newDesc) return;
-
-            const newImg = prompt("Link ảnh:", g.image);
-            if (!newImg) return;
-
-            const newFeature = prompt("Features (ngăn cách bằng dấu phẩy):",
-                                      g.features.join(", "));
-            if (!newFeature) return;
-
-            const newMonth = prompt("Giá tháng (K):", g.monthly);
-            const newLife = prompt("Giá vĩnh viễn (K):", g.lifetime);
-
-            // UPDATE
-            gamesData[index].name = newName;
-            gamesData[index].description = newDesc;
-            gamesData[index].image = newImg;
-            gamesData[index].features = newFeature.split(",").map(x => x.trim());
-            gamesData[index].monthly = newMonth;
-            gamesData[index].lifetime = newLife;
-
-            alert("Đã lưu thay đổi!");
-
-            renderGames();
-        }
-
-    </script>
+gameList.appendChild(el);
+});
+</script>
 
 </body>
 </html>
