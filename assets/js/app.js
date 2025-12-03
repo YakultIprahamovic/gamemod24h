@@ -92,4 +92,32 @@ function renderGames(list) {
     });
 }
 
+function showDetail(id) {
+    db.ref("games/" + id).once("value", snap => {
+        let g = snap.val();
+        if (!g) return;
+
+        dImage.src = g.image;
+        dName.innerText = g.name;
+        dDescription.innerText = g.description;
+
+        dFeatures.innerHTML = g.features.map(f => `<li>${f}</li>`).join("");
+
+        dMonthly.innerText = g.monthly || "8$";
+        dLifetime.innerText = g.lifetime || "80$";
+
+        buyBtn.href = "https://t.me/YakultIpramovic";
+
+        requestUpdate.onclick = () => {
+            window.open("https://t.me/YakultIpramovic", "_blank");
+        };
+
+        gameDetail.style.display = "flex";
+    });
+}
+
+function closeDetail() {
+    gameDetail.style.display = "none";
+}
+
 
