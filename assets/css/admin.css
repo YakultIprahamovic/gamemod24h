@@ -1,62 +1,148 @@
 body {
-    background: #000;
-    color: #0fefc0;
-    font-family: Arial, sans-serif;
+    background: #06131d;
+    font-family: Arial;
+    margin: 0;
+    color: #e8ffff;
 }
 
-header {
+.login-box {
+    width: 350px;
+    margin: 100px auto;
     text-align: center;
-    padding: 20px;
-    background: #021d18;
-    border-bottom: 2px solid #0fffac;
+    background: #0c1d2b;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00eaff33;
 }
 
-.container {
+.login-box input {
     width: 90%;
-    margin: auto;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #00ffc877;
+    background: #07141f;
+    color: white;
 }
 
-h2 {
-    margin-top: 25px;
-    border-left: 4px solid #0fffac;
-    padding-left: 8px;
-}
-
-.game-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.game-card {
-    background: rgba(0,255,150,0.08);
-    border: 1px solid #00ffbf44;
+.login-box button {
+    width: 90%;
     padding: 12px;
-    border-radius: 12px;
-}
-
-.btn {
-    padding: 10px 18px;
+    background: #00ffc8;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
+    margin-top: 10px;
     font-weight: bold;
 }
 
-.btn.save {
-    background: #00ffa6;
-    color: #003327;
+.admin-panel {
+    padding: 20px;
 }
 
-.btn.export {
-    background: #0077ff;
-    color: #d9f6ff;
-    margin-bottom: 15px;
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.btn.delete {
-    background: #ff0033;
+.logout {
+    padding: 8px 15px;
+    background: #ff0066;
+    border-radius: 8px;
     color: white;
-    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.add-box {
+    background: #0c1d2b;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+.add-box input, .add-box textarea, .add-box select {
+    width: 100%;
+    padding: 10px;
+    background: #07141f;
+    border: 1px solid #00ffc877;
+    border-radius: 8px;
+    margin: 8px 0;
+    color: white;
+}
+
+.add-btn {
+    width: 100%;
+    padding: 12px;
+    background: #00eaff;
+    border: none;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.list-title {
+    margin-top: 30px;
+}
+
+.game-list {
+    margin-top: 20px;
+}
+
+.game-item {
+    background: #0c1d2b;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 15px;
+}
+
+.game-thumb {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.info {
+    flex: 1;
+}
+
+.status-tag {
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-size: 10px;
+    color: white;
+}
+
+.status-newgame { background: #ff9900; }
+.status-update { background: #00b7ff; }
+.status-normal { background: #777; }
+
+.showdetail-btn {
+    padding: 8px 12px;
+    background: #00ffc8;
+    color: black;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: #ff0033;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.detail-box {
+    display: none;
+    background: #0a1723;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
 }
