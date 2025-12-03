@@ -1,5 +1,5 @@
 const gamesData = [
-{
+  {
     id: 101,
     name: "PRITIVEMER BROTHER",
     description: "Antiban – Attack Speed – Damage – Diamond – Box Lv300 + Tier",
@@ -2424,5 +2424,5 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ]
-}
+  }
 ];
