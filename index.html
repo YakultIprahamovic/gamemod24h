@@ -1,86 +1,102 @@
 <!DOCTYPE html>
 <html lang="vi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Mod 24H</title>
-<!-- Favicon -->
-<link rel="icon" type="image/png" href="assets/img/logo.png">
-<link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
 
-<!-- Load CSS -->
-<link rel="stylesheet" href="assets/css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Mod 24H</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-<!-- 🟦 HERO -->
-<header class="hero-section">
-<img src="assets/img/logo.png" class="hero-avatar" alt="Yakult Ipramovic">
+    <!-- 🟦 HERO SECTION -->
+    <header class="hero-section">
 
-<h1 class="hero-title">YAKULT IPRAMOVIC ✦</h1>
+        <img src="assets/img/logo.png" class="hero-avatar" alt="Yakult Ipramovic">
 
-<p class="hero-subtitle">Script & Mod Game VIP • Made by xGh0stZ</p>
-<p class="hero-stats">
-    🔥 Hiện có <span id="totalScripts">0</span> script VIP đang cập nhật mỗi ngày!
-</p>
+        <h1 class="hero-title">YAKULT IPRAMOVIC ✦</h1>
 
-<a href="https://t.me/YakultIpramovic" class="btn-hero btn-tele">
-    📢 Tham gia Telegram Channel
-</a>
+        <p class="hero-subtitle">Script & Mod Game VIP • Made by xGh0stZ</p>
 
-<a href="#games" class="btn-hero">Xem danh sách game</a>
-</header>
+        <p class="hero-stats">
+            🔥 Hiện có <span id="totalScripts">0</span> script VIP đang cập nhật mỗi ngày!
+        </p>
 
-<!-- 🟩 GAME LIST -->
-<section id="games">
-<h2 style="text-align:center; color:#00eaff; text-shadow:0 0 10px #00eaff;">Danh sách game</h2>
-<div class="game-grid" id="gameList"></div>
-</section>
+        <a href="https://t.me/YakultIpramovic" class="btn-hero btn-tele">
+            📢 Tham gia Telegram Channel
+        </a>
 
-<!-- Load game data -->
-<script src="assets/data/games.js"></script>
+        <a href="#games" class="btn-hero">
+            Xem danh sách game
+        </a>
 
-<!-- Render Game UI -->
-<script>
-const gameList = document.getElementById("gameList");
+    </header>
 
-gamesData.forEach(game => {
-const el = document.createElement("div");
-el.className = "game-card";
+    <!-- 🟩 GAME LIST SECTION -->
+    <section id="games">
+        <h2 style="text-align:center; color:#00eaff; text-shadow:0 0 10px #00eaff;">Danh sách game</h2>
 
-el.innerHTML = `
-               <img src="${game.image}" class="game-img">
-               <div class="game-name">${game.name}</div>
+        <div class="game-grid" id="gameList"></div>
+    </section>
 
-               <button class="btn-details">Show Details</button>
+    <!-- Load game data -->
+    <script src="assets/data/games.js"></script>
 
-               <div class="details-box">
-                   <b>Mô tả:</b> ${game.description}<br><br>
-                   <b>Features:</b>
-                   <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
+    <!-- Render Game UI -->
+    <script>
+        const gameList = document.getElementById("gameList");
+        const totalScripts = document.getElementById("totalScripts");
 
-                   <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
-                   <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
+        // Gán số lượng script
+        totalScripts.innerText = gamesData.length;
 
-                   <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
-                   <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
-               </div>
-           `;
+        // Render từng game
+        gamesData.forEach(game => {
+            const el = document.createElement("div");
+            el.className = "game-card";
 
-el.querySelector(".btn-details").onclick = () => {
-const box = el.querySelector(".details-box");
-box.style.display = box.style.display === "block" ? "none" : "block";
-};
+            el.innerHTML = `
+                <img src="${game.image}" class="game-img">
 
-gameList.appendChild(el);
-});
-</script>
+                <div class="game-name">${game.name}</div>
+
+                <button class="btn-details">Show Details</button>
+
+                <div class="details-box">
+                    <b>Mô tả:</b> ${game.description}<br><br>
+
+                    <b>Features:</b>
+                    <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
+
+                    <div class="price-box">
+                        💳 Giá tháng: <b>${game.monthly}K</b>
+                    </div>
+
+                    <div class="price-box">
+                        💎 Vĩnh viễn: <b>${game.lifetime}K</b>
+                    </div>
+
+                    <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
+                    <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
+                </div>
+            `;
+
+            // Toggle details
+            el.querySelector(".btn-details").onclick = () => {
+                const box = el.querySelector(".details-box");
+                box.style.display = box.style.display === "block" ? "none" : "block";
+            };
+
+            gameList.appendChild(el);
+        });
+    </script>
 
 </body>
 </html>
-
-<script>
-    document.getElementById("totalScripts").innerText = gamesData.length;
-</script>
-
