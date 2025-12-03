@@ -73,4 +73,23 @@ copyBtn.onclick = () => {
 };
 
 // INITIAL RENDER
-renderGames(gamesData);
+function renderGames(list) {
+    gameListEl.innerHTML = "";
+
+    list.forEach(g => {
+        let card = document.createElement("div");
+        card.className = "game-card";
+        card.innerHTML = `
+            <img src="${g.image}" class="game-img">
+            <h3 class="game-title">${g.name}</h3>
+            <span class="vip-tag">VIP</span>
+
+            <button class="show-btn" onclick="showDetail(${g.id})">
+                Show Details
+            </button>
+        `;
+        gameListEl.appendChild(card);
+    });
+}
+
+
