@@ -254,3 +254,70 @@ body {
     filter: drop-shadow(0 0 6px #00ffbf);
     border-radius: 6px;
 }
+.detail-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000c0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-content {
+    background: #0c1d2b;
+    padding: 20px;
+    width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #00ffc855;
+    color: white;
+}
+
+.detail-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.close-btn {
+    float: right;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #ff6666;
+    cursor: pointer;
+}
+
+.feature-list li {
+    margin: 5px 0;
+    list-style: none;
+}
+
+.feature-list li::before {
+    content: "✔ ";
+    color: #00ffb2;
+}
+
+.buy-btn {
+    display: block;
+    margin-top: 20px;
+    background: #00ff99;
+    padding: 12px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.update-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: #ff0044;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+
