@@ -238,3 +238,38 @@ h2 {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+/* Giữ toàn bộ card có chiều cao bằng nhau */
+.game-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Container chứa text + nút */
+.game-card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tên game không làm thay đổi độ cao */
+.game-title {
+    min-height: 45px;       /* tên đồng độ cao */
+    display: flex;
+    align-items: center;
+}
+
+/* Hàng VIP badge */
+.badge-row {
+    min-height: 28px;       /* giữ badge luôn có chỗ */
+    display: flex;
+    align-items: center;
+}
+
+/* Nút Show Details luôn nằm dưới cùng */
+.show-details-wrapper {
+    margin-top: auto;  
+    width: 100%;
+}
