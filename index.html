@@ -17,6 +17,23 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 </head>
+<script>
+// Snowfall
+function createSnow() {
+    const snow = document.createElement("div");
+    snow.classList.add("snowflake");
+    snow.innerHTML = "❄";
+
+    snow.style.left = Math.random() * 100 + "vw";
+    snow.style.fontSize = Math.random() * 10 + 10 + "px";
+    snow.style.animationDuration = Math.random() * 3 + 2 + "s";
+
+    document.body.appendChild(snow);
+
+    setTimeout(() => snow.remove(), 5000);
+}
+setInterval(createSnow, 120);
+</script>
 
 <body>
 
@@ -56,3 +73,4 @@
 
 </body>
 </html>
+
