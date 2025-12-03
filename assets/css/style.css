@@ -1,0 +1,248 @@
+/* ============================
+   Yakult Script Hub — Neon UI
+   Màu: Xanh Lá + Xanh Dương
+   ============================ */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #03111f 0%, #000 80%);
+    color: #e5fdf4;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: rgba(0, 0, 0, 0.35);
+    border-bottom: 1px solid rgba(0, 255, 170, 0.2);
+    backdrop-filter: blur(12px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-dot {
+    width: 16px;
+    height: 16px;
+    background: radial-gradient(circle, #00ff95, #009dff);
+    border-radius: 4px;
+    box-shadow: 0 0 12px #00ff95;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00ffbf, #24a3ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.nav a {
+    margin-left: 20px;
+    color: #c8ffec;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.25s;
+}
+
+.nav a:hover {
+    color: #00ffbf;
+}
+
+/* HERO */
+.hero {
+    padding: 60px 25px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #00ffbf, #1ea7ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 1px;
+}
+
+.hero-desc {
+    color: #9be8d1;
+    font-size: 1rem;
+    max-width: 420px;
+    margin: 0 auto 25px;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 22px;
+    background: linear-gradient(120deg, #00ffbf, #1ea7ff);
+    border-radius: 10px;
+    color: #03211c;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.btn-primary:hover {
+    filter: brightness(1.15);
+    transform: translateY(-3px);
+}
+
+/* SEARCH BOX */
+.search-box {
+    width: 90%;
+    max-width: 420px;
+    display: block;
+    margin: 0 auto 30px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 170, 0.3);
+    background: rgba(0, 0, 0, 0.35);
+    color: #d7fff2;
+    font-size: 0.95rem;
+    outline: none;
+    transition: 0.25s;
+}
+
+.search-box:focus {
+    border-color: #00ffbf;
+    box-shadow: 0 0 10px #00ffbf;
+}
+
+/* GAME GRID */
+.games-section {
+    padding: 30px 20px 70px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.6rem;
+    background: linear-gradient(90deg, #00ffbf, #1ea7ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 25px;
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.game-card {
+    background: linear-gradient(160deg, rgba(0, 255, 170, 0.1), rgba(0, 100, 255, 0.1));
+    border: 1px solid rgba(0, 255, 170, 0.2);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 255, 170, 0.35);
+}
+
+.game-img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-bottom: 1px solid rgba(0, 255, 170, 0.2);
+}
+
+.game-info {
+    padding: 12px 14px;
+}
+
+.game-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #baffea;
+}
+
+.game-desc {
+    font-size: 0.82rem;
+    color: #88cbb6;
+    margin-top: 5px;
+}
+
+/* MODAL */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 20, 15, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(12px);
+    z-index: 200;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    width: 90%;
+    max-width: 500px;
+    background: #021b14;
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid rgba(0, 255, 170, 0.35);
+    box-shadow: 0 0 20px rgba(0,255,190,0.4);
+}
+
+.modal-close {
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #00ffbf;
+}
+
+.modal-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.modal-script {
+    background: #000;
+    color: #00ffbf;
+    padding: 12px;
+    border-radius: 10px;
+    white-space: pre-wrap;
+    margin-bottom: 12px;
+    border: 1px solid rgba(0,255,170,0.25);
+}
+
+.btn-copy {
+    width: 100%;
+    background: linear-gradient(90deg, #00ffbf, #1ea7ff);
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    color: #02251b;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.btn-copy:hover {
+    filter: brightness(1.15);
+}

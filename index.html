@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Yakult Script Hub – Game Mod & Script Library</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-dot"></span>
+            <h1 class="logo-text">Scipt Made By xGh0stZ</h1>
+        </div>
+        <nav class="nav">
+            <a href="#games">Danh sách game</a>
+            <a href="#about">Giới thiệu</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1 class="hero-title">Kho Script & Mod Game VIP</h1>
+        <p class="hero-desc">
+            Tổng hợp script, mod và tool dành cho các tựa game hot.  
+        </p>
+        <a href="#games" class="btn-primary">Xem danh sách game</a>
+    </section>
+
+    <!-- GAME GRID -->
+    <section id="games" class="games-section">
+        <h2 class="section-title">Danh sách game</h2>
+
+        <input type="text" id="searchInput" class="search-box" placeholder="Tìm theo tên game…">
+
+        <div id="gameList" class="game-grid">
+            <!-- App.js sẽ render game vào đây -->
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span id="modalClose" class="modal-close">×</span>
+
+            <img id="modalImg" class="modal-img" src="">
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+
+            <h3>Script</h3>
+            <pre id="modalScript" class="modal-script"></pre>
+
+            <button id="copyBtn" class="btn-copy">Copy Script</button>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="assets/data/games.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+</html>
