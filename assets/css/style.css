@@ -1,101 +1,118 @@
+/* RESET */
 body {
-    background: #060b10;
-    font-family: Arial, sans-serif;
-    color: #fff;
     margin: 0;
+    padding: 0;
+    background: #060b10;
+    color: #fff;
+    font-family: Poppins, Arial, sans-serif;
+    overflow-x: hidden;
 }
 
-/* ==================== HERO ===================== */
-.hero-section {
+/* PARTICLES BACKGROUND */
+#particles-js {
+    position: fixed;
     width: 100%;
-    padding: 50px 0;
+    height: 100%;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    background: #02060b;
+}
+
+/* HERO */
+.hero-section {
     text-align: center;
+    padding: 70px 0;
 }
 
 .hero-avatar {
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 0 0 20px #ff0044aa;
-    animation: floatAnime 3s ease-in-out infinite;
+    width: 260px;
+    animation: float 4s ease-in-out infinite;
+    filter: drop-shadow(0 0 15px #00eaff);
 }
 
-.hero-title {
-    font-size: 45px;
-    font-weight: 700;
-    margin-top: 15px;
-    color: #00f7ff;
-    text-shadow: 0 0 10px #00f7ff, 0 0 20px #0099aa;
-}
-
-.hero-subtitle {
-    font-size: 20px;
-    opacity: 0.9;
-    margin-top: 5px;
-    color: #ffffffb7;
-}
-.hero-stats {
-    font-size: 18px;
-    margin-top: 10px;
-    color: #00eaff;
-    text-shadow: 0 0 10px #00eaffaa;
-    animation: fadeIn 1.6s ease forwards;
-}
-
-/* TELEGRAM BUTTON */
-.btn-tele {
-    margin-top: 15px;
-    background: linear-gradient(90deg, #00f7ff, #00c3ff);
-    box-shadow: 0 0 18px #00eaffaa;
-}
-
-.btn-tele:hover {
-    transform: scale(1.08);
-    box-shadow: 0 0 25px #00d9ff, 0 0 40px #00aaff;
-}
-
-.btn-hero {
-    margin-top: 25px;
-    padding: 14px 28px;
-    display: inline-block;
-    background: linear-gradient(90deg, #00eaff, #0077ff);
-    color: black;
-    font-weight: 700;
-    border-radius: 10px;
-    text-decoration: none;
-    box-shadow: 0 0 18px #00c8ff;
-}
-
-@keyframes floatAnime {
+@keyframes float {
     0% { transform: translateY(0); }
     50% { transform: translateY(-12px); }
     100% { transform: translateY(0); }
 }
 
-/* ==================== GAME GRID ===================== */
-#games {
+.hero-title {
+    font-size: 52px;
+    font-weight: 900;
+    margin-top: 20px;
+    color: #00eaff;
+    text-shadow: 0 0 18px #00eaff;
+    animation: fadeIn 1s ease;
+}
+
+.hero-subtitle {
+    opacity: 0.85;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.hero-stats {
+    margin-top: 10px;
+    color: #ffde59;
+    font-size: 20px;
+    text-shadow: 0 0 8px #ffde59;
+}
+
+/* BUTTONS */
+.btn-hero {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 15px 8px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #00eaff, #007bff);
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.25s;
+    box-shadow: 0 0 20px #00eaff80;
+}
+
+.btn-hero:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px #00eaff;
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+    color: #00eaff;
+    text-shadow: 0 0 12px #00eaff;
+}
+
+/* GAME GRID */
+.game-grid {
     width: 90%;
     margin: auto;
-    margin-top: 40px;
-}
-
-.game-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 25px;
+    gap: 22px;
 }
 
-/* CARD FIX HEIGHT */
+/* GAME CARD */
 .game-card {
-    background: #0b1118;
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
     padding: 12px;
-    box-shadow: 0 0 12px #000;
+    backdrop-filter: blur(12px);
+    border: 1px solid #00eaff55;
+    box-shadow: 0 0 15px #000;
     text-align: center;
+    transition: 0.25s;
+    cursor: pointer;
+    transform-style: preserve-3d;
+}
 
-    /* FIX QUAN TRỌNG */
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+.game-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 0 25px #00b3ff;
 }
 
 .game-img {
@@ -104,27 +121,22 @@ body {
 }
 
 .game-name {
-    font-size: 17px;
-    margin: 10px 0;
-    min-height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 10px;
+    font-weight: 700;
+    text-shadow: 0 0 6px #00eaff;
 }
 
-/* ==================== BUTTON SHOW ===================== */
+/* DETAILS */
 .btn-details {
     padding: 8px;
+    margin-top: 10px;
     width: 100%;
-    background: #101820;
-    border-radius: 8px;
+    background: transparent;
     border: 1px solid #00eaff;
+    border-radius: 8px;
     color: #00eaff;
     cursor: pointer;
-    transition: 0.25s ease;
-
-    /* FIX: giữ nút cuối card */
-    margin-top: auto;
+    transition: 0.25s;
 }
 
 .btn-details:hover {
@@ -132,138 +144,40 @@ body {
     color: black;
 }
 
-/* ==================== DETAILS ===================== */
 .details-box {
-    background: #091017;
-    padding: 15px;
-    border-radius: 10px;
     margin-top: 10px;
+    padding: 12px;
+    background: rgba(15, 25, 35, 0.7);
+    border-radius: 10px;
     display: none;
-    text-align: left;
-    font-size: 14px;
+    animation: slideDown 0.3s ease;
 }
 
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* PRICE TAG */
 .price-box {
-    background: #08131c;
-    padding: 8px;
-    border-radius: 6px;
     margin-top: 8px;
+    background: #08131c;
+    padding: 10px;
+    border-radius: 8px;
     color: #00eaff;
-    font-weight: bold;
+    font-weight: 700;
 }
 
-.btn-buy,
-.btn-update {
+/* BUY BUTTON */
+.btn-buy, .btn-update {
+    display: block;
     width: 100%;
     padding: 10px;
-    margin-top: 10px;
-    display: block;
-    text-align: center;
     border-radius: 8px;
     font-weight: bold;
     text-decoration: none;
-}
-
-.btn-buy {
-    background: #00eaff;
-    color: black;
-}
-
-.btn-update {
-    background: #ff0044;
-    color: white;
-}
-
-/* ==================== RESPONSIVE ===================== */
-@media (max-width: 1200px) {
-    .game-grid { grid-template-columns: repeat(4, 1fr); }
-}
-@media (max-width: 900px) {
-    .game-grid { grid-template-columns: repeat(3, 1fr); }
-}
-@media (max-width: 600px) {
-    .game-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 420px) {
-    .game-grid { grid-template-columns: repeat(1, 1fr); }
-}
-/* Badge updated */
-.badge-update {
-    font-size: 16px;
-    background: #00eaff33;
-    padding: 4px 10px;
-    margin-left: 8px;
-    border-radius: 6px;
-    color: #00eaff;
-    text-shadow: 0 0 6px #00eaff;
-    animation: glowPulse 2s infinite ease-in-out;
-}
-
-/* Glow badge effect */
-@keyframes glowPulse {
-    0% { box-shadow: 0 0 5px #00eaff; }
-    50% { box-shadow: 0 0 20px #00eaff; }
-    100% { box-shadow: 0 0 5px #00eaff; }
-}
-
-/* News Ticker */
-.news-ticker {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 20px 0;
-    color: #00eaff;
-    text-shadow: 0 0 10px #00eaffaa;
-}
-
-.news-ticker span {
-    display: inline-block;
-    padding-left: 100%;
-    animation: tickerMove 14s linear infinite;
-}
-
-@keyframes tickerMove {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
-
-/* Counter text */
-.hero-stats {
-    font-size: 20px;
     margin-top: 10px;
-    color: #00eaff;
-    font-weight: bold;
-    text-shadow: 0 0 10px #00eaff;
 }
 
-/* Telegram buttons */
-.tele-buttons {
-    margin-top: 20px;
-}
-
-.btn-tele,
-.btn-tele-support {
-    display: inline-block;
-    margin: 6px;
-    padding: 12px 26px;
-    border-radius: 10px;
-    background: linear-gradient(90deg, #00eaff, #0094ff);
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    box-shadow: 0 0 15px #00caffaa;
-    transition: 0.25s;
-}
-
-.btn-tele-support {
-    background: linear-gradient(90deg, #ff4d6d, #ff1e42);
-    color: #fff;
-    box-shadow: 0 0 15px #ff2a55aa;
-}
-
-.btn-tele:hover,
-.btn-tele-support:hover {
-    transform: scale(1.08);
-}
-
-
+.btn-buy { background: #00eaff; color: black; }
+.btn-update { background: #ff0044; color: white; }
