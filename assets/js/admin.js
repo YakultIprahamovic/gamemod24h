@@ -1,121 +1,100 @@
+/* ============================
+    AUTH
+============================ */
+firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+        loginBox.style.display = "none";
+        adminPanel.style.display = "block";
+        loadGames();
+    }
+});
+
+function login() {
+    firebase.auth().signInWithEmailAndPassword(email.value, password.value)
+        .catch(() => loginStatus.innerText = "Sai tài khoản hoặc mật khẩu!");
+}
+
 function logout() {
-    localStorage.removeItem("yakult_admin_token");
-    window.location.href = "admin-login.html";
+    firebase.auth().signOut();
 }
 
-let editing = null;
 
-// ================================
-// HIỂN THỊ DANH SÁCH GAME
-// ================================
-function renderList() {
-    const box = document.getElementById("gameList");
-    box.innerHTML = "";
+/* ============================
+    CLOUDINARY UPLOAD
+============================ */
+async function uploadImage(file) {
+    const url = `https://api.cloudinary.com/v1_1/${cloudName}/upload`;
 
-    gamesData.forEach(g => {
-        const card = document.createElement("div");
-        card.className = "game-card";
+    const form = new FormData();
+    form.append("file", file);
+    form.append("upload_preset", uploadPreset);
 
-        card.innerHTML = `
-            <h3>${g.name}</h3>
-            <img src="${g.image}" width="100%" style="border-radius:8px;margin:5px 0;">
-            <p>${g.description}</p>
+    const res = await fetch(url, {
+        method: "POST",
+        body: form
+    });
 
-            <button class="btn delete" onclick="deleteGame(${g.id})">Xóa</button>
-            <button class="btn save" onclick="editGame(${g.id})">Sửa</button>
-        `;
+    const data = await res.json();
+    return data.secure_url; // link ảnh
+}
 
-        box.appendChild(card);
+
+/* ============================
+    ADD GAME
+============================ */
+async function addGame() {
+    let id = Date.now();
+
+    let name = gName.value;
+    let description = gDescription.value;
+    let script = gScript.value;
+    let video = gVideo.value;
+    let features = gFeatures.value.split("\n").filter(f => f.trim() !== "");
+
+    let file = gImage.files[0];
+    if (!file) return alert("Chưa chọn ảnh!");
+
+    // UPLOAD CLOUDINARY
+    let imageUrl = await uploadImage(file);
+
+    db.ref("games/" + id).set({
+        id, name, description, script, video, image: imageUrl, features
+    });
+
+    alert("Đã thêm game!");
+    loadGames();
+}
+
+
+/* ============================
+    LOAD GAME LIST
+============================ */
+function loadGames() {
+    db.ref("games").once("value", snap => {
+        let data = snap.val() || {};
+        let html = "";
+
+        Object.values(data).forEach(g => {
+            html += `
+                <div class="gameRow">
+                    <img src="${g.image}" class="thumb">
+                    <b>${g.name}</b>
+                    <button onclick="deleteGame(${g.id})">Xoá</button>
+                </div>
+            `;
+        });
+
+        document.getElementById("gameList").innerHTML = html;
     });
 }
 
-// ================================
-// XÓA GAME
-// ================================
+
+/* ============================
+    DELETE GAME
+============================ */
 function deleteGame(id) {
-    const index = gamesData.findIndex(g => g.id === id);
-    if (index !== -1) {
-        gamesData.splice(index, 1);
-        renderList();
-        alert("Đã xóa game!");
-    }
+    if (!confirm("Xoá game này?")) return;
+
+    db.ref("games/" + id).remove();
+    loadGames();
 }
-
-// ================================
-// SỬA GAME
-// ================================
-function editGame(id) {
-    const g = gamesData.find(x => x.id === id);
-
-    document.getElementById("editId").value = g.id;
-    document.getElementById("name").value = g.name;
-    document.getElementById("description").value = g.description;
-    document.getElementById("script").value = g.script;
-
-    editing = id;
-}
-
-// ================================
-// THÊM / LƯU GAME
-// ================================
-document.getElementById("gameForm").onsubmit = async function(e) {
-    e.preventDefault();
-
-    const id = editing ?? (gamesData.at(-1)?.id + 1 || 1);
-    const name = document.getElementById("name").value;
-    const description = document.getElementById("description").value;
-    const script = document.getElementById("script").value;
-
-    let imgBase64 = null;
-    const file = document.getElementById("imageInput").files[0];
-
-    if (file) {
-        imgBase64 = await toBase64(file);
-    }
-
-    const newGame = {
-        id,
-        name,
-        description,
-        script,
-        image: imgBase64 || (gamesData.find(g => g.id === id)?.image ?? "")
-    };
-
-    if (editing) {
-        const index = gamesData.findIndex(g => g.id === editing);
-        gamesData[index] = newGame;
-    } else {
-        gamesData.push(newGame);
-    }
-
-    editing = null;
-    this.reset();
-    renderList();
-    alert("Đã lưu game!");
-};
-
-// ================================
-// CHUYỂN FILE → BASE64
-// ================================
-function toBase64(file) {
-    return new Promise((resolve) => {
-        const reader = new FileReader();
-        reader.onload = () => resolve(reader.result);
-        reader.readAsDataURL(file);
-    });
-}
-
-// ================================
-// EXPORT games.js
-// ================================
-document.getElementById("exportBtn").onclick = function() {
-    const content = "const gamesData = " + JSON.stringify(gamesData, null, 2) + ";";
-    const a = document.createElement("a");
-
-    a.href = URL.createObjectURL(new Blob([content], { type: "text/javascript" }));
-    a.download = "games.js";
-    a.click();
-};
-
-// Khởi động
-renderList();
