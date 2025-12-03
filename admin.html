@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Yakult Admin Panel</title>
+    <link rel="stylesheet" href="assets/css/admin.css">
+
+    <!-- FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+</head>
+
+<body>
+
+<div id="loginBox" class="login-box">
+    <h2>Yakult Admin Login</h2>
+    <input id="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Mật khẩu">
+    <button onclick="login()">Đăng nhập</button>
+    <p id="loginStatus"></p>
+</div>
+
+<div id="adminPanel" class="admin-panel" style="display:none;">
+    <h1>Quản lý Game</h1>
+    <button onclick="logout()">Đăng xuất</button>
+
+    <h2>Thêm game mới</h2>
+
+    <input id="gName" placeholder="Tên game">
+    <input id="gDescription" placeholder="Mô tả game">
+    <input id="gScript" placeholder="Link script">
+    <input id="gVideo" placeholder="Link video review">
+
+    <h3>Ảnh game</h3>
+    <input id="gImage" type="file">
+
+    <h3>Features (mỗi dòng 1 feature)</h3>
+    <textarea id="gFeatures"></textarea>
+
+    <button onclick="addGame()">Thêm Game</button>
+
+    <h2>Danh sách game</h2>
+    <div id="gameList"></div>
+</div>
+
+<script src="assets/js/firebase-config.js"></script>
+<script src="assets/js/admin.js"></script>
+
+</body>
+</html>
