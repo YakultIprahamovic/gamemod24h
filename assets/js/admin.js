@@ -9,14 +9,14 @@ firebase.auth().onAuthStateChanged((user) => {
 
 function login() {
     firebase.auth().signInWithEmailAndPassword(email.value, password.value)
-    .catch(() => loginStatus.innerText = "Sai thông tin đăng nhập!");
+    .catch(() => loginStatus.innerText = "Sai tài khoản hoặc mật khẩu!");
 }
 
 function logout() {
     firebase.auth().signOut();
 }
 
-/* UPLOAD CLOUDINARY */
+/* CLOUDINARY UPLOAD */
 async function uploadImage(file) {
     const form = new FormData();
     form.append("file", file);
@@ -28,7 +28,7 @@ async function uploadImage(file) {
     });
 
     const data = await res.json();
-    return data.secure_url; 
+    return data.secure_url;
 }
 
 /* ADD GAME */
@@ -39,7 +39,7 @@ async function addGame() {
 
     let imageUrl = await uploadImage(file);
 
-    let gameData = {
+    let game = {
         id,
         name: gName.value,
         description: gDescription.value,
@@ -47,15 +47,15 @@ async function addGame() {
         script: gScript.value,
         video: gVideo.value,
         image: imageUrl,
-        features: gFeatures.value.split("\n").filter(x => x.trim() !== "")
+        features: gFeatures.value.split("\n").filter(f => f.trim() !== "")
     };
 
-    db.ref("games/" + id).set(gameData);
+    db.ref("games/" + id).set(game);
     alert("Đã thêm game!");
     loadGames();
 }
 
-/* SHOW LIST */
+/* LOAD GAMES */
 function loadGames() {
     db.ref("games").on("value", snap => {
         let data = snap.val() || {};
@@ -70,11 +70,9 @@ function loadGames() {
 
                     <div class="info">
                         <h3>${g.name}</h3>
-                        <span class="status-tag status-${g.status}">${g.status}</span>
+                        <span class="status-tag status-${g.status}">${g.status.toUpperCase()}</span>
 
-                        <button class="showdetail-btn" onclick="toggleDetail(${g.id})">
-                            Show Details
-                        </button>
+                        <button class="showdetail-btn" onclick="toggleDetail(${g.id})">Show Details</button>
                         <button class="delete-btn" onclick="deleteGame(${g.id})">Xoá</button>
 
                         <div id="detail-${g.id}" class="detail-box">
@@ -87,8 +85,8 @@ function loadGames() {
                                 ${g.features.map(f => `<li>${f}</li>`).join("")}
                             </ul>
 
-                            <a href="https://t.me/YakultIpramovic" 
-                               target="_blank" 
+                            <a href="https://t.me/YakultIpramovic"
+                               target="_blank"
                                class="buy-btn">Mua Script</a>
                         </div>
                     </div>
@@ -102,13 +100,12 @@ function loadGames() {
 
 /* TOGGLE DETAILS */
 function toggleDetail(id) {
-    let box = document.getElementById("detail-" + id);
+    const box = document.getElementById("detail-" + id);
     box.style.display = box.style.display === "none" ? "block" : "none";
 }
 
 /* DELETE */
 function deleteGame(id) {
-    if (confirm("Bạn có chắc muốn xoá?")) {
-        db.ref("games/" + id).remove();
-    }
+    if (!confirm("Xoá game?")) return;
+    db.ref("games/" + id).remove();
 }
