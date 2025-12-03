@@ -33,6 +33,25 @@ body {
     margin-top: 5px;
     color: #ffffffb7;
 }
+.hero-stats {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaffaa;
+    animation: fadeIn 1.6s ease forwards;
+}
+
+/* TELEGRAM BUTTON */
+.btn-tele {
+    margin-top: 15px;
+    background: linear-gradient(90deg, #00f7ff, #00c3ff);
+    box-shadow: 0 0 18px #00eaffaa;
+}
+
+.btn-tele:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px #00d9ff, 0 0 40px #00aaff;
+}
 
 .btn-hero {
     margin-top: 25px;
@@ -168,3 +187,4 @@ body {
 @media (max-width: 420px) {
     .game-grid { grid-template-columns: repeat(1, 1fr); }
 }
+
