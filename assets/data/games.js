@@ -172,7 +172,7 @@ const gamesData = [
     id: 114,
     name: "LUCIFER IDLE",
     description: "Free Shop",
-    image: "assets/img/game_114.png",
+    image: "assets/img/game_141.png",
     script: "https://t.me/YakultIpramovic",
     download: "https://t.me/YakultIpramovic",
     video: "https://t.me/YakultIpramovic",
@@ -263,7 +263,7 @@ const gamesData = [
     id: 121,
     name: "ZOMBIE KINGDOM IDLE RPG",
     description: "Free Shop",
-    image: "assets/img/game_121.png",
+    image: "assets/img/game_151.png",
     script: "https://t.me/YakultIpramovic",
     download: "https://t.me/YakultIpramovic",
     video: "https://t.me/YakultIpramovic",
@@ -328,7 +328,7 @@ const gamesData = [
     id: 126,
     name: "CASTLE DEFENSE OATH KEEPERS TD",
     description: "Free Shop – Multi Reward",
-    image: "assets/img/game_126.png",
+    image: "assets/img/game_102.png",
     script: "https://t.me/YakultIpramovic",
     download: "https://t.me/YakultIpramovic",
     video: "https://t.me/YakultIpramovic",
@@ -406,7 +406,7 @@ const gamesData = [
     id: 132,
     name: "CROWN RUSH",
     description: "Antiban – Free Shop – Hack Resources",
-    image: "assets/img/game_132.png",
+    image: "assets/img/game_128.png",
     script: "https://t.me/YakultIpramovic",
     download: "https://t.me/YakultIpramovic",
     video: "https://t.me/YakultIpramovic",
@@ -679,7 +679,7 @@ const gamesData = [
     id: 153,
     name: "DEMON HUNTER IDLE RPG",
     description: "Antiban – Free Shop – Speed Game",
-    image: "assets/img/game_153.png",
+    image: "assets/img/game_107.png",
     script: "https://t.me/YakultIpramovic",
     download: "https://t.me/YakultIpramovic",
     video: "https://t.me/YakultIpramovic",
@@ -1211,4 +1211,5 @@ const gamesData = [
     ]
   }
 ];
+
 
