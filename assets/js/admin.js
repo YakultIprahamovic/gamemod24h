@@ -1,6 +1,4 @@
-/* ============================
-    AUTH
-============================ */
+/* LOGIN */
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
         loginBox.style.display = "none";
@@ -11,90 +9,106 @@ firebase.auth().onAuthStateChanged((user) => {
 
 function login() {
     firebase.auth().signInWithEmailAndPassword(email.value, password.value)
-        .catch(() => loginStatus.innerText = "Sai tài khoản hoặc mật khẩu!");
+    .catch(() => loginStatus.innerText = "Sai thông tin đăng nhập!");
 }
 
 function logout() {
     firebase.auth().signOut();
 }
 
-
-/* ============================
-    CLOUDINARY UPLOAD
-============================ */
+/* UPLOAD CLOUDINARY */
 async function uploadImage(file) {
-    const url = `https://api.cloudinary.com/v1_1/${cloudName}/upload`;
-
     const form = new FormData();
     form.append("file", file);
     form.append("upload_preset", uploadPreset);
 
-    const res = await fetch(url, {
+    const res = await fetch(`https://api.cloudinary.com/v1_1/${cloudName}/upload`, {
         method: "POST",
         body: form
     });
 
     const data = await res.json();
-    return data.secure_url; // link ảnh
+    return data.secure_url; 
 }
 
-
-/* ============================
-    ADD GAME
-============================ */
+/* ADD GAME */
 async function addGame() {
     let id = Date.now();
-
-    let name = gName.value;
-    let description = gDescription.value;
-    let script = gScript.value;
-    let video = gVideo.value;
-    let features = gFeatures.value.split("\n").filter(f => f.trim() !== "");
-
     let file = gImage.files[0];
     if (!file) return alert("Chưa chọn ảnh!");
 
-    // UPLOAD CLOUDINARY
     let imageUrl = await uploadImage(file);
 
-    db.ref("games/" + id).set({
-        id, name, description, script, video, image: imageUrl, features
-    });
+    let gameData = {
+        id,
+        name: gName.value,
+        description: gDescription.value,
+        status: gStatus.value,
+        script: gScript.value,
+        video: gVideo.value,
+        image: imageUrl,
+        features: gFeatures.value.split("\n").filter(x => x.trim() !== "")
+    };
 
+    db.ref("games/" + id).set(gameData);
     alert("Đã thêm game!");
     loadGames();
 }
 
-
-/* ============================
-    LOAD GAME LIST
-============================ */
+/* SHOW LIST */
 function loadGames() {
-    db.ref("games").once("value", snap => {
+    db.ref("games").on("value", snap => {
         let data = snap.val() || {};
         let html = "";
 
-        Object.values(data).forEach(g => {
+        for (let id in data) {
+            let g = data[id];
+
             html += `
-                <div class="gameRow">
-                    <img src="${g.image}" class="thumb">
-                    <b>${g.name}</b>
-                    <button onclick="deleteGame(${g.id})">Xoá</button>
+                <div class="game-item">
+                    <img src="${g.image}" class="game-thumb">
+
+                    <div class="info">
+                        <h3>${g.name}</h3>
+                        <span class="status-tag status-${g.status}">${g.status}</span>
+
+                        <button class="showdetail-btn" onclick="toggleDetail(${g.id})">
+                            Show Details
+                        </button>
+                        <button class="delete-btn" onclick="deleteGame(${g.id})">Xoá</button>
+
+                        <div id="detail-${g.id}" class="detail-box">
+                            <p><b>Mô tả:</b> ${g.description}</p>
+                            <p><b>Script:</b> ${g.script}</p>
+                            <p><b>Review:</b> ${g.video}</p>
+
+                            <p><b>Features:</b></p>
+                            <ul>
+                                ${g.features.map(f => `<li>${f}</li>`).join("")}
+                            </ul>
+
+                            <a href="https://t.me/YakultIpramovic" 
+                               target="_blank" 
+                               class="buy-btn">Mua Script</a>
+                        </div>
+                    </div>
                 </div>
             `;
-        });
+        }
 
-        document.getElementById("gameList").innerHTML = html;
+        gameList.innerHTML = html;
     });
 }
 
+/* TOGGLE DETAILS */
+function toggleDetail(id) {
+    let box = document.getElementById("detail-" + id);
+    box.style.display = box.style.display === "none" ? "block" : "none";
+}
 
-/* ============================
-    DELETE GAME
-============================ */
+/* DELETE */
 function deleteGame(id) {
-    if (!confirm("Xoá game này?")) return;
-
-    db.ref("games/" + id).remove();
-    loadGames();
+    if (confirm("Bạn có chắc muốn xoá?")) {
+        db.ref("games/" + id).remove();
+    }
 }
