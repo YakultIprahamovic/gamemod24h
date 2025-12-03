@@ -16,24 +16,25 @@
     <!-- Particles.js -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
+    <!-- ❄ Snowfall Script -->
+    <script>
+        function createSnow() {
+            const snow = document.createElement("div");
+            snow.classList.add("snowflake");
+            snow.innerHTML = "❄";
+
+            snow.style.left = Math.random() * 100 + "vw";
+            snow.style.fontSize = Math.random() * 10 + 10 + "px";
+            snow.style.animationDuration = Math.random() * 3 + 2 + "s";
+
+            document.body.appendChild(snow);
+
+            setTimeout(() => snow.remove(), 5000);
+        }
+        setInterval(createSnow, 120);
+    </script>
+
 </head>
-<script>
-// Snowfall
-function createSnow() {
-    const snow = document.createElement("div");
-    snow.classList.add("snowflake");
-    snow.innerHTML = "❄";
-
-    snow.style.left = Math.random() * 100 + "vw";
-    snow.style.fontSize = Math.random() * 10 + 10 + "px";
-    snow.style.animationDuration = Math.random() * 3 + 2 + "s";
-
-    document.body.appendChild(snow);
-
-    setTimeout(() => snow.remove(), 5000);
-}
-setInterval(createSnow, 120);
-</script>
 
 <body>
 
@@ -65,12 +66,56 @@ setInterval(createSnow, 120);
     <script src="assets/data/games.js"></script>
 
     <!-- MAIN UI SCRIPT -->
-    <script src="assets/js/app.js"></script>
-
     <script>
+        const gameList = document.getElementById("gameList");
+
+        gamesData.forEach(game => {
+            const el = document.createElement("div");
+            el.className = "game-card";
+
+            el.innerHTML = `
+            <div class="badge-box">
+                ${game.free ? `<span class="badge free">FREE</span>` : ""}
+                ${game.sale ? `<span class="badge sale">${game.sale}</span>` : ""}
+            </div>
+
+            <img src="${game.image}" class="game-img">
+
+            <div class="game-name">${game.name}</div>
+
+            <div class="show-details-wrapper">
+                <button class="btn-details">Show Details</button>
+            </div>
+
+            <div class="details-box">
+                <b>Mô tả:</b> ${game.description}<br><br>
+
+                <b>Features:</b>
+                <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
+
+                <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
+                <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
+
+                <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
+                <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
+            </div>
+        `;
+
+            // Toggle details
+            el.querySelector(".btn-details").onclick = () => {
+                const box = el.querySelector(".details-box");
+                box.style.display = box.style.display === "block" ? "none" : "block";
+            };
+
+            gameList.appendChild(el);
+        });
+
+        // Update total scripts
+        document.getElementById("totalScripts").innerText = gamesData.length;
+
+        // Load particles
         particlesJS.load("particles-js", "assets/js/particles.json");
     </script>
 
 </body>
 </html>
-
