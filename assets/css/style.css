@@ -80,6 +80,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    position: relative;
 }
 
 /* ẢNH GAME */
@@ -142,7 +143,39 @@ body {
     font-weight: bold;
     text-decoration: none;
 }
+/* TAG CONTAINER */
+.tag-box {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    gap: 6px;
+}
+
+/* TAG FREE */
+.tag.free {
+    background: #00c853;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #00ff6eaa;
+}
+
+/* TAG SALE */
+.tag.sale {
+    background: #ff1744;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 0 8px #ff1744cc;
+}
+
 .btn-buy { background: #00eaff; color: black; }
 .btn-update { background: #ff0044; color: white; }
 
 .btn-buy:hover, .btn-update:hover { opacity: 0.8; }
+
