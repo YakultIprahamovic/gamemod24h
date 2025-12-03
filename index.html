@@ -61,7 +61,30 @@
     <!-- JS -->
     <script src="assets/data/games.js"></script>
     <script src="assets/js/app.js"></script>
+<!-- GAME DETAIL POPUP -->
+<div id="gameDetail" class="detail-popup">
+    <div class="detail-content">
+        <button onclick="closeDetail()" class="close-btn">✖</button>
+
+        <img id="dImage" class="detail-img">
+        <h2 id="dName"></h2>
+        <p id="dDescription"></p>
+
+        <h3>Features</h3>
+        <ul id="dFeatures" class="feature-list"></ul>
+
+        <h3>Pricing</h3>
+        <div class="price-box">
+            <p><b>Monthly:</b> <span id="dMonthly"></span></p>
+            <p><b>Lifetime:</b> <span id="dLifetime"></span></p>
+        </div>
+
+        <a id="buyBtn" class="buy-btn" target="_blank">Buy Now</a>
+        <button id="requestUpdate" class="update-btn">Request Update</button>
+    </div>
+</div>
 
 </body>
 </html>
+
 
