@@ -100,3 +100,19 @@
 
 </body>
 </html>
+
+<script>
+    // COUNTER ANIMATION
+    let total = gamesData.length;
+    let counter = 0;
+    const speed = 30;
+
+    function animateCounter() {
+        if (counter < total) {
+            counter++;
+            document.getElementById("totalScripts").innerText = counter;
+            setTimeout(animateCounter, speed);
+        }
+    }
+    animateCounter();
+</script>
