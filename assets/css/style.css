@@ -184,3 +184,40 @@ body {
     position: relative;
 }
 
+/* --- FIX NÚT SHOW DETAILS KHÔNG BAO GIỜ LỆCH --- */
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Khung chứa toàn bộ nội dung, trừ nút Show Details */
+.game-top {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tên game luôn đồng độ cao */
+.game-name {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Khung cố định vị trí nút Show Details */
+.game-bottom {
+    margin-top: auto;
+}
+
+/* Nút Show Details luôn thẳng hàng */
+.btn-details {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
