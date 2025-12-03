@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Yakult Admin Panel</title>
+
     <link rel="stylesheet" href="assets/css/admin.css">
 
     <!-- FIREBASE -->
@@ -14,6 +15,7 @@
 
 <body>
 
+<!-- LOGIN BOX -->
 <div id="loginBox" class="login-box">
     <h2>Yakult Admin Login</h2>
     <input id="email" placeholder="Email">
@@ -22,27 +24,41 @@
     <p id="loginStatus"></p>
 </div>
 
+<!-- ADMIN PANEL -->
 <div id="adminPanel" class="admin-panel" style="display:none;">
-    <h1>Quản lý Game</h1>
-    <button onclick="logout()">Đăng xuất</button>
 
-    <h2>Thêm game mới</h2>
+    <div class="topbar">
+        <h1>Admin Dashboard</h1>
+        <button class="logout" onclick="logout()">Đăng xuất</button>
+    </div>
 
-    <input id="gName" placeholder="Tên game">
-    <input id="gDescription" placeholder="Mô tả game">
-    <input id="gScript" placeholder="Link script">
-    <input id="gVideo" placeholder="Link video review">
+    <div class="add-box">
+        <h2>Thêm Game Mới</h2>
 
-    <h3>Ảnh game</h3>
-    <input id="gImage" type="file">
+        <input id="gName" placeholder="Tên game">
+        <input id="gDescription" placeholder="Mô tả game">
+        <select id="gStatus">
+            <option value="normal">Normal</option>
+            <option value="newgame">New Game</option>
+            <option value="update">New Update</option>
+        </select>
 
-    <h3>Features (mỗi dòng 1 feature)</h3>
-    <textarea id="gFeatures"></textarea>
+        <input id="gScript" placeholder="Link Script">
+        <input id="gVideo" placeholder="Link Video Review">
 
-    <button onclick="addGame()">Thêm Game</button>
+        <h3>Ảnh game</h3>
+        <input id="gImage" type="file">
 
-    <h2>Danh sách game</h2>
-    <div id="gameList"></div>
+        <h3>Features</h3>
+        <textarea id="gFeatures" placeholder="Mỗi dòng 1 feature"></textarea>
+
+        <button class="add-btn" onclick="addGame()">Thêm Game</button>
+    </div>
+
+    <h2 class="list-title">Danh sách game</h2>
+
+    <div id="gameList" class="game-list"></div>
+
 </div>
 
 <script src="assets/js/firebase-config.js"></script>
