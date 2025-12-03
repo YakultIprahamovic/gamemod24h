@@ -1,54 +1,48 @@
-// LOAD LIST GAME FROM games.js
-renderGames(gamesData);
+const gameList = document.getElementById("gameList");
+const totalScripts = document.getElementById("totalScripts");
 
-// RENDER LIST
-function renderGames(list) {
-    const gameListEl = document.getElementById("gameList");
-    gameListEl.innerHTML = "";
+totalScripts.innerText = gamesData.length;
 
-    list.forEach(g => {
-        let card = document.createElement("div");
-        card.className = "game-card";
-        card.innerHTML = `
-            <img src="${g.image}" class="game-img">
-            <h3 class="game-title">${g.name}</h3>
-            <div class="vip-tag">VIP</div>
-            <button class="show-btn" onclick="showDetail(${g.id})">Show Details</button>
-        `;
-        gameListEl.appendChild(card);
+gamesData.forEach(game => {
+    const el = document.createElement("div");
+    el.className = "game-card";
+
+    // 3D TILT
+    el.addEventListener("mousemove", e => {
+        const rect = el.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        el.style.transform = `rotateY(${x / 20}deg) rotateX(${-y / 20}deg)`;
     });
-}
-
-// SEARCH
-function searchGame() {
-    let txt = document.getElementById("searchInput").value.toLowerCase();
-    let cards = document.querySelectorAll(".game-card");
-
-    cards.forEach(c => {
-        let name = c.querySelector(".game-title").innerText.toLowerCase();
-        c.style.display = name.includes(txt) ? "block" : "none";
+    el.addEventListener("mouseleave", () => {
+        el.style.transform = "rotateY(0) rotateX(0)";
     });
-}
 
-// SHOW DETAIL POPUP
-function showDetail(id) {
-    let g = gamesData.find(x => x.id == id);
-    if (!g) return;
+    el.innerHTML = `
+        <img src="${game.image}" class="game-img">
 
-    dImage.src = g.image;
-    dName.innerText = g.name;
-    dDescription.innerText = g.description;
-    dFeatures.innerHTML = g.features.map(f => `<li>${f}</li>`).join("");
+        <div class="game-name">${game.name}</div>
 
-    dMonthly.innerText = g.monthly;
-    dLifetime.innerText = g.lifetime;
+        <button class="btn-details">Show Details</button>
 
-    buyBtn.href = "https://t.me/YakultIpramovic";
-    requestUpdate.onclick = () => window.open("https://t.me/YakultIpramovic");
+        <div class="details-box">
+            <b>Mô tả:</b> ${game.description}<br><br>
 
-    gameDetail.style.display = "flex";
-}
+            <b>Features:</b>
+            <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
 
-function closeDetail() {
-    gameDetail.style.display = "none";
-}
+            <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
+            <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
+
+            <a href="https://t.me/YakultIpramovic" class="btn-buy">Mua ngay</a>
+            <a href="https://t.me/YakultIpramovic" class="btn-update">Yêu cầu cập nhật</a>
+        </div>
+    `;
+
+    el.querySelector(".btn-details").onclick = () => {
+        const box = el.querySelector(".details-box");
+        box.style.display = box.style.display === "block" ? "none" : "block";
+    };
+
+    gameList.appendChild(el);
+});
