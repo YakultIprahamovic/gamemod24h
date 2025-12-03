@@ -1,74 +1,27 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8" />
-    <title>Game Scripts</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="icon" type="image/png" href="assets/img/logo.png">
+    <meta charset="UTF-8">
+    <title>GameMOD24H – Script & Mod VIP</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
-<header class="header">
-    <div class="logo">
-        <img src="assets/img/logo.png" class="logo-img">
-            <h1 class="logo-text">Scipt Made By xGh0stZ</h1>
-        </div>
-        <nav class="nav">
-            <a href="#games">Danh sách game</a>
-            <a href="#about">Giới thiệu</a>
-        </nav>
-    </header>
+<h1 class="title">Danh sách game</h1>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h1 class="hero-title">Kho Script & Mod Game VIP</h1>
-        <p class="hero-desc">
-            Tổng hợp script, mod và tool dành cho các tựa game hot.  
-        </p>
-        <a href="#games" class="btn-primary">Xem danh sách game</a>
-    </section>
+<input type="text" id="searchInput" placeholder="Tìm theo tên game..." onkeyup="searchGame()" />
 
-    <!-- GAME GRID -->
-    <section id="games" class="games-section">
-        <h2 class="section-title">Danh sách game</h2>
+<div id="gameList" class="game-grid"></div>
 
-        <input type="text" id="searchInput" class="search-box" placeholder="Tìm theo tên game…">
-
-        <div id="gameList" class="game-grid">
-            <!-- App.js sẽ render game vào đây -->
-        </div>
-    </section>
-
-    <!-- MODAL -->
-    <div id="modal" class="modal hidden">
-        <div class="modal-content">
-            <span id="modalClose" class="modal-close">×</span>
-
-            <img id="modalImg" class="modal-img" src="">
-            <h2 id="modalTitle"></h2>
-            <p id="modalDesc"></p>
-
-            <h3>Script</h3>
-            <pre id="modalScript" class="modal-script"></pre>
-
-            <button id="copyBtn" class="btn-copy">Copy Script</button>
-        </div>
-    </div>
-
-    <!-- JS -->
-    <script src="assets/data/games.js"></script>
-    <script src="assets/js/app.js"></script>
-<!-- GAME DETAIL POPUP -->
+<!-- POPUP DETAIL -->
 <div id="gameDetail" class="detail-popup">
     <div class="detail-content">
         <button onclick="closeDetail()" class="close-btn">✖</button>
 
         <img id="dImage" class="detail-img">
         <h2 id="dName"></h2>
-        <p id="dDescription"></p>
+        <p id="dDescription" class="detail-desc"></p>
 
         <h3>Features</h3>
         <ul id="dFeatures" class="feature-list"></ul>
@@ -84,7 +37,8 @@
     </div>
 </div>
 
+<script src="assets/data/games.js"></script>
+<script src="assets/js/app.js"></script>
+
 </body>
 </html>
-
-
