@@ -5,208 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yakult Ipramovic Scripts</title>
 
-    <style>
-        body {
-            background: #060b10;
-            font-family: Arial, sans-serif;
-            color: #fff;
-            margin: 0;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            width: 100%;
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        .hero-avatar {
-            width: 300px;
-            border-radius: 20px;
-            box-shadow: 0 0 20px #ff0044aa;
-            animation: floatAnime 3s ease-in-out infinite;
-        }
-
-        .hero-title {
-            font-size: 45px;
-            font-weight: 700;
-            margin-top: 15px;
-            color: #00f7ff;
-            text-shadow: 0 0 10px #00f7ff, 0 0 20px #0099aa;
-            animation: slideIn 1s ease forwards;
-        }
-
-        .hero-subtitle {
-            font-size: 20px;
-            opacity: 0.9;
-            margin-top: 5px;
-            color: #ffffffb7;
-            animation: fadeIn 1.4s ease forwards;
-        }
-
-        .btn-hero {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 14px 28px;
-            background: linear-gradient(90deg, #00eaff, #0077ff);
-            color: black;
-            font-weight: 700;
-            border-radius: 10px;
-            text-decoration: none;
-            box-shadow: 0 0 18px #00c8ff;
-            animation: popAnime 0.9s ease forwards;
-            transition: 0.25s ease;
-        }
-
-        .btn-hero:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 25px #00e5ff, 0 0 40px #0080ff;
-        }
-
-        /* Anime Effects */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateX(-40px); }
-            to   { opacity: 1; transform: translateX(0); }
-        }
-
-        @keyframes floatAnime {
-            0%   { transform: translateY(0); }
-            50%  { transform: translateY(-12px); }
-            100% { transform: translateY(0); }
-        }
-
-        @keyframes popAnime {
-            0%   { transform: scale(0.6); opacity: 0; }
-            100% { transform: scale(1); opacity: 1; }
-        }
-
-        /* Game Card Grid */
-        #games {
-            width: 90%;
-            margin: auto;
-            margin-top: 40px;
-        }
-
-        .game-grid {
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 25px;
-        }
-
-        .game-card {
-            background: #0b1118;
-            border-radius: 12px;
-            padding: 12px;
-            box-shadow: 0 0 12px #000;
-            text-align: center;
-            transition: 0.25s ease;
-        }
-
-        .game-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 0 20px #00b3ff88;
-        }
-
-        .game-img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .game-name {
-            margin-top: 10px;
-            font-weight: bold;
-            font-size: 17px;
-        }
-
-        .btn-details {
-            margin-top: 10px;
-            padding: 8px 12px;
-            width: 100%;
-            background: #101820;
-            border-radius: 8px;
-            border: 1px solid #00eaff;
-            color: #00eaff;
-            cursor: pointer;
-            transition: 0.25s ease;
-        }
-
-        .btn-details:hover {
-            background: #00eaff;
-            color: black;
-            font-weight: bold;
-        }
-
-        /* Details Box */
-        .details-box {
-            background: #091017;
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 10px;
-            display: none;
-            text-align: left;
-            font-size: 14px;
-        }
-
-        .price-box {
-            margin-top: 10px;
-            padding: 10px;
-            border-radius: 8px;
-            background: #08131c;
-            color: #00f7ff;
-            font-weight: bold;
-        }
-
-        .btn-buy {
-            width: 100%;
-            padding: 10px;
-            background: #00eaff;
-            border-radius: 8px;
-            color: black;
-            font-weight: bold;
-            margin-top: 10px;
-            cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        .btn-update {
-            width: 100%;
-            padding: 10px;
-            background: #ff0044;
-            border-radius: 8px;
-            color: white;
-            font-weight: bold;
-            margin-top: 10px;
-            cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-        }
-    </style>
+    <!-- Load CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <!-- 🟦 HERO ANIME HEADER -->
+    <!-- 🟦 HERO -->
     <header class="hero-section">
-        <div class="hero-content">
-            <img src="assets/img/logo.png" class="hero-avatar" alt="Yakult Ipramovic">
+        <img src="assets/img/logo.png" class="hero-avatar" alt="Yakult Ipramovic">
 
-            <h1 class="hero-title">YAKULT IPRAMOVIC ✦</h1>
+        <h1 class="hero-title">YAKULT IPRAMOVIC ✦</h1>
 
-            <p class="hero-subtitle">Script & Mod Game VIP • Made by xGh0stZ</p>
+        <p class="hero-subtitle">Script & Mod Game VIP • Made by xGh0stZ</p>
 
-            <a href="#games" class="btn-hero">Xem danh sách game</a>
-        </div>
+        <a href="#games" class="btn-hero">Xem danh sách game</a>
     </header>
 
     <!-- 🟩 GAME LIST -->
     <section id="games">
-        <h2>Danh sách game</h2>
+        <h2 style="text-align:center; color:#00eaff; text-shadow:0 0 10px #00eaff;">Danh sách game</h2>
         <div class="game-grid" id="gameList"></div>
     </section>
 
@@ -224,6 +42,7 @@
             el.innerHTML = `
                 <img src="${game.image}" class="game-img">
                 <div class="game-name">${game.name}</div>
+
                 <button class="btn-details">Show Details</button>
 
                 <div class="details-box">
@@ -234,15 +53,15 @@
                     <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
                     <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
 
-                    <a href="https://t.me/YakultIpramovic" class="btn-buy">Mua ngay</a>
-                    <a href="https://t.me/YakultIpramovic" class="btn-update">Yêu cầu cập nhật</a>
+                    <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
+                    <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
                 </div>
             `;
 
-            el.querySelector(".btn-details").addEventListener("click", () => {
+            el.querySelector(".btn-details").onclick = () => {
                 const box = el.querySelector(".details-box");
                 box.style.display = box.style.display === "block" ? "none" : "block";
-            });
+            };
 
             gameList.appendChild(el);
         });
@@ -250,4 +69,3 @@
 
 </body>
 </html>
-
