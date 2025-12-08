@@ -10,8 +10,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop(Account)", "Damage", "Attack Speed", "Diamond", "Totem Count", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -25,8 +25,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Damage", "Multi Reward", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -40,8 +40,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Gold In Battle", "Stone In Battle", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -55,8 +55,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -70,8 +70,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Spee Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -85,8 +85,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Gold + Exp Drop", "Attack Speed", "Damage", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -100,8 +100,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop(Account)", "Ruby", "Key Dungeon", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -115,8 +115,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "No Ads", "Gold + Stone + Exp Drop", "Currency", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -130,8 +130,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Gold+ Exp + Stone Drop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -145,8 +145,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Unlock All Content", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -160,8 +160,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -175,8 +175,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Damage", "Auto Win", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -190,8 +190,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -205,8 +205,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Damage", "Gold Drop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -220,8 +220,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -235,8 +235,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Max Level", "No Skill CD", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -250,8 +250,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -265,8 +265,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -280,8 +280,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -295,8 +295,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Low Cost Summon", "Attack Speed", "Damage", "God Mode", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -310,8 +310,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -325,8 +325,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop Costume", "Unlimited Reward", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -340,8 +340,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Currency", "Damage", "Attack Speed", "God Mode", "Diamond", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -355,8 +355,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Unlock All Content", "Damage", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -370,8 +370,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Custom Reward", "Attack Speed", "Damage", "God Mode", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -385,8 +385,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Damage", "Multi Reward", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -400,8 +400,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop Currency", "Custom Reward", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -415,8 +415,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop Currency", "Damage", "Custom Reward", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -430,8 +430,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Damage", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -445,8 +445,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Gold + Exp + Lucky Coin Drop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -460,8 +460,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -475,8 +475,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop Currency", "Damage", "Custom Reward", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -490,8 +490,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Damage", "Gold + Exp Drop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -505,8 +505,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Gold+ Exp + Stone Drop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -520,8 +520,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Damage", "Coin In Battle", "Dump Enemy", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -535,8 +535,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Unlock Content", "Complete All Mission", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -550,8 +550,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Damage"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -565,8 +565,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Damage", "Unlimited Currency", "Attack Speed", "Unlock All Costume", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -580,8 +580,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Unlock All Slime", "Key Dungeon", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -595,8 +595,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Gold + Exp Drop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -610,8 +610,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Damage", "Gold Drop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -625,8 +625,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop(Account)", "Gem", "Exp Drop", "Multi Drop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -640,8 +640,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Unlimited Currency", "Unlock SSS Equipment", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -655,8 +655,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Max Level", "No Skill CD", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -670,8 +670,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Damage", "Auto Win", "Dump Enemy", "No Skill CD"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -685,8 +685,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Diamond", "Gold + Exp + Cube Drop", "Attack Speed", "God Mode", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -700,8 +700,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Free Shop"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -715,8 +715,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Complete All Mission", "Custom Currency", "Damage", "God Mode", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -730,8 +730,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Gold + Exp Drop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -745,8 +745,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop Costume", "Unlimited Reward", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -760,8 +760,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -775,8 +775,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Active Buff", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -790,8 +790,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop(Account)", "Ruby", "Key Dungeon", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -805,8 +805,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -820,8 +820,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -835,8 +835,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "No Ads", "Gold + Stone + Exp Drop", "Currency", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -850,8 +850,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Currency", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -865,8 +865,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Damage", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -880,8 +880,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Damage", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -895,8 +895,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Gold + Exp Drop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -910,8 +910,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -925,8 +925,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -940,8 +940,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -955,8 +955,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -970,8 +970,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -985,8 +985,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Antiban", "Freeshop(Account)", "Damage", "Attack Speed", "Diamond", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1000,8 +1000,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1015,8 +1015,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["MP - MC (Account)"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1030,8 +1030,8 @@ const gamesData = [
     monthly: "250",
     lifetime: "500",
     features: ["Freeshop(Account)", "Speed Game"],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1052,8 +1052,8 @@ const gamesData = [
       "Unlimited Currency",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1074,8 +1074,8 @@ const gamesData = [
       "Currency",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1095,8 +1095,8 @@ const gamesData = [
       "No Skill CD",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1114,8 +1114,8 @@ const gamesData = [
       "Unlock No Ads",
       "Speed x10"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1134,8 +1134,8 @@ const gamesData = [
       "Currency",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1152,8 +1152,8 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1170,8 +1170,8 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1188,8 +1188,8 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1206,8 +1206,8 @@ const gamesData = [
       "Dumps Enemy",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1224,8 +1224,8 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1242,8 +1242,8 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1260,8 +1260,8 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1281,8 +1281,8 @@ const gamesData = [
       "Move Speed",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1299,8 +1299,8 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1324,8 +1324,8 @@ const gamesData = [
       "Gold + Exp Drop",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1345,8 +1345,8 @@ const gamesData = [
       "Free Costume",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1363,8 +1363,8 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   },
   {
@@ -1381,8 +1381,8 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    update: true,
-    sale: "VIP",
+    updated: true,
+    badge: "VIP",
     createdAt: "2025-12-8"
   }
 ];
