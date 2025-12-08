@@ -221,3 +221,59 @@ body {
     margin-top: 10px;
 }
 
+/* ===== BADGE ===== */
+.badge-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 6px;
+}
+
+.badge-sale {
+    background: linear-gradient(90deg, #ff006a, #ff3c00);
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    width: fit-content;
+    color: white;
+}
+
+.badge-update {
+    background: linear-gradient(90deg, #00d0ff, #0066ff);
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    width: fit-content;
+    color: white;
+}
+
+/* ===== PAGINATION ===== */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.page-btn {
+    padding: 10px 16px;
+    background: #0e1a24;
+    border: 1px solid #00eaff;
+    border-radius: 6px;
+    color: #00eaff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.page-btn.active {
+    background: #00eaff;
+    color: #000;
+}
+
+.page-btn:hover {
+    background: #00eaff;
+    color: #000;
+}
+
