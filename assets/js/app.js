@@ -1,38 +1,64 @@
-const gameList = document.getElementById("gameList");
-const pagination = document.getElementById("pagination");
-
-const gamesPerPage = 25; // 5 hàng × 5 cột
+// ====== PAGINATION CONFIG ======
+const ITEMS_PER_PAGE = 25;
 let currentPage = 1;
 
-// Sắp xếp game: updated → lên đầu
-let sortedGames = [...gamesData].sort((a, b) => {
-    return (b.updated === true) - (a.updated === true);
+// ====== SORT GAME BY UPDATED + DATE ======
+const sortedGames = gamesData.sort((a, b) => {
+    if (a.updated && !b.updated) return -1;
+    if (!a.updated && b.updated) return 1;
+    return new Date(b.createdAt) - new Date(a.createdAt);
 });
 
-function renderGames(page) {
+// ====== RENDER PAGINATION ======
+function renderPagination(totalPages) {
+    const container = document.getElementById("pagination");
+    container.innerHTML = "";
+
+    for (let i = 1; i <= totalPages; i++) {
+        const btn = document.createElement("button");
+        btn.className = "page-btn";
+        if (i === currentPage) btn.classList.add("active");
+
+        btn.innerText = i;
+        btn.onclick = () => {
+            currentPage = i;
+            renderGames();
+        };
+
+        container.appendChild(btn);
+    }
+}
+
+// ====== RENDER GAME LIST ======
+function renderGames() {
+    const gameList = document.getElementById("gameList");
     gameList.innerHTML = "";
-    pagination.innerHTML = "";
 
-    const start = (page - 1) * gamesPerPage;
-    const end = start + gamesPerPage;
+    const start = (currentPage - 1) * ITEMS_PER_PAGE;
+    const end = start + ITEMS_PER_PAGE;
 
-    const pageGames = sortedGames.slice(start, end);
+    const pageItems = sortedGames.slice(start, end);
 
-    pageGames.forEach(game => {
+    pageItems.forEach(game => {
         const el = document.createElement("div");
         el.className = "game-card";
 
+        // Badge logic
+        let badgeHTML = "";
+        if (game.badge)
+            badgeHTML += `<span class="badge badge-${game.badge.toLowerCase()}">${game.badge}</span>`;
+        if (game.updated)
+            badgeHTML += `<span class="badge badge-update">UPDATE</span>`;
+
         el.innerHTML = `
-            <img src="${game.image}" class="game-img">
-
-            <div class="game-name">${game.name}</div>
-
-            <div class="badge-wrap">
-                ${game.sale ? `<div class="badge-sale">🔥 SALE</div>` : ""}
-                ${game.updated ? `<div class="badge-update">✨ UPDATE</div>` : ""}
+            <div class="img-wrapper">
+                <img src="${game.image}" class="game-img">
+                <div class="badge-box">${badgeHTML}</div>
             </div>
 
-            <button class="btn-details">Show Details</button>
+            <div class="game-title">${game.name}</div>
+
+            <button class="btn-details show-btn">Show Details</button>
 
             <div class="details-box">
                 <b>Mô tả:</b> ${game.description}<br><br>
@@ -43,11 +69,14 @@ function renderGames(page) {
                 <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
                 <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
 
-                <a href="https://t.me/YakultIpramovic" class="btn-buy">Mua ngay</a>
-                <a href="https://t.me/YakultIpramovic" class="btn-update">Yêu cầu cập nhật</a>
+                <div class="updated-date">📅 Cập nhật: ${game.createdAt}</div>
+
+                <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
+                <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
             </div>
         `;
 
+        // Toggle details
         el.querySelector(".btn-details").onclick = () => {
             const box = el.querySelector(".details-box");
             box.style.display = box.style.display === "block" ? "none" : "block";
@@ -56,26 +85,10 @@ function renderGames(page) {
         gameList.appendChild(el);
     });
 
-    renderPagination();
+    // Re-render pagination
+    const totalPages = Math.ceil(sortedGames.length / ITEMS_PER_PAGE);
+    renderPagination(totalPages);
 }
 
-function renderPagination() {
-    const totalPages = Math.ceil(sortedGames.length / gamesPerPage);
-
-    for (let i = 1; i <= totalPages; i++) {
-        const btn = document.createElement("button");
-        btn.className = "page-btn" + (i === currentPage ? " active" : "");
-        btn.innerText = i;
-
-        btn.addEventListener("click", () => {
-            currentPage = i;
-            renderGames(i);
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        });
-
-        pagination.appendChild(btn);
-    }
-}
-
-// Khởi chạy trang đầu
-renderGames(1);
+renderGames();
+document.getElementById("totalScripts").innerText = gamesData.length;
