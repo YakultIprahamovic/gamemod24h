@@ -282,3 +282,78 @@ body {
 .hero-section {
     padding-top: 20px !important;
 }
+/* ===== HERO FIX ===== */
+.hero-section.compact {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 10px;
+}
+
+/* ===== BADGES ===== */
+.badge-box {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.badge {
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 25px;
+    width: fit-content;
+}
+
+.badge-vip { background: #ff0066; }
+.badge-free { background: #00cc66; }
+.badge-sale { background: #ffcc00; color: #000; }
+.badge-update { background: #0099ff; }
+
+/* ===== CARD IMG WRAPPER ===== */
+.img-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* ===== FIX SHOW DETAILS ALIGN ===== */
+.game-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.show-btn {
+    margin-top: auto;
+}
+
+/* ===== PAGINATION ===== */
+.pagination {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.page-btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: 1px solid #00eaff;
+    background: #0b1118;
+    color: #00eaff;
+    cursor: pointer;
+}
+
+.page-btn.active,
+.page-btn:hover {
+    background: #00eaff;
+    color: #000;
+}
+
+/* DATE TEXT */
+.updated-date {
+    margin-top: 10px;
+    color: #aaffff;
+    font-size: 13px;
+}
+
