@@ -523,7 +523,7 @@ body {
     margin: 0;
 }
 .hero-avatar {
-    width: 400px;
+    width: 300px;
     margin: 0 auto 10px auto;
 }
 @keyframes fall {
@@ -533,6 +533,7 @@ body {
 #games {
     margin-top: 10px !important;
 }
+
 
 
 
