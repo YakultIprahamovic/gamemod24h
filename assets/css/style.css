@@ -1,4 +1,6 @@
-/* BACKGROUND */
+/* ============================
+        GLOBAL
+============================ */
 body {
     background: #060b10;
     font-family: Arial, sans-serif;
@@ -12,10 +14,10 @@ body {
     position: fixed;
     top: -10px;
     color: #fff;
-    font-size: 12px;
-    opacity: 0.8;
+    opacity: 0.85;
     pointer-events: none;
     animation: fall linear infinite;
+    z-index: 9999;
 }
 
 @keyframes fall {
@@ -23,10 +25,18 @@ body {
     100% { transform: translateY(110vh) rotate(360deg); }
 }
 
-/* HERO */
+/* ============================
+        HERO SECTION
+============================ */
 .hero-section {
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;
+}
+
+.hero-section.compact {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 5px;
 }
 
 .hero-avatar {
@@ -37,7 +47,7 @@ body {
 
 .hero-title {
     font-size: 42px;
-    font-weight: bold;
+    font-weight: 700;
     color: #00eaff;
     margin-top: 15px;
     text-shadow: 0 0 10px #00eaff;
@@ -50,18 +60,23 @@ body {
 
 .btn-hero {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 16px;
     padding: 12px 24px;
     background: #00eaff;
-    color: black;
+    color: #000;
     border-radius: 8px;
     font-weight: bold;
     text-decoration: none;
     transition: 0.2s;
 }
-.btn-hero:hover { transform: scale(1.06); }
 
-/* GAME GRID */
+.btn-hero:hover {
+    transform: scale(1.06);
+}
+
+/* ============================
+        GAME GRID
+============================ */
 .game-grid {
     width: 90%;
     margin: auto;
@@ -70,7 +85,9 @@ body {
     gap: 25px;
 }
 
-/* CARD */
+/* ============================
+        GAME CARD
+============================ */
 .game-card {
     background: #0b1118;
     border-radius: 12px;
@@ -83,37 +100,82 @@ body {
     position: relative;
 }
 
-/* ẢNH GAME */
+/* Ảnh game */
+.img-wrapper {
+    width: 100%;
+    position: relative;
+}
+
 .game-img {
     width: 100%;
     border-radius: 10px;
 }
 
-/* TÊN GAME */
+/* ============================
+        BADGES
+============================ */
+.badge-box {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 5;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    width: fit-content;
+    color: white;
+    box-shadow: 0 0 6px #000;
+}
+
+.badge-vip { background: #ff0099; }
+.badge-free { background: #00cc66; }
+.badge-sale { background: #ffcc00; color: #000; }
+.badge-update { background: #0099ff; }
+
+/* ============================
+        GAME NAME
+============================ */
 .game-name {
     margin-top: 10px;
     font-size: 17px;
     font-weight: bold;
-    min-height: 42px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* NÚT SHOW DETAILS — THẲNG HÀNG */
+/* ============================
+        SHOW DETAILS BUTTON
+============================ */
+.show-btn,
 .btn-details {
     width: 100%;
-    margin-top: auto;
     padding: 8px;
-    border: 1px solid #00eaff;
     background: #101820;
-    color: #00eaff;
     border-radius: 8px;
+    border: 1px solid #00eaff;
+    color: #00eaff;
     cursor: pointer;
-}
-.btn-details:hover {
-    background: #00eaff;
-    color: black;
+    transition: 0.2s;
+    margin-top: auto;
 }
 
-/* DETAILS BOX — CĂN TRÁI CHUẨN */
+.btn-details:hover {
+    background: #00eaff;
+    color: #000;
+}
+
+/* ============================
+        DETAILS BOX
+============================ */
 .details-box {
     display: none;
     background: #091017;
@@ -123,17 +185,21 @@ body {
     border-radius: 10px;
 }
 
-/* GIÁ */
+/* ============================
+        PRICE BOX
+============================ */
 .price-box {
     background: #0e1c25;
     padding: 10px;
     border-radius: 6px;
     color: #00eaff;
-    margin-top: 10px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
-/* BUTTONS */
+/* ============================
+        BUTTON BUY / UPDATE
+============================ */
 .btn-buy, .btn-update {
     display: block;
     text-align: center;
@@ -144,108 +210,26 @@ body {
     text-decoration: none;
 }
 
+.btn-buy { background: #00eaff; color: #000; }
+.btn-update { background: #ff0044; color: #fff; }
 
-
-.btn-buy { background: #00eaff; color: black; }
-.btn-update { background: #ff0044; color: white; }
-
-.btn-buy:hover, .btn-update:hover { opacity: 0.8; }
-/* BADGE AREA */
-.badge-box {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    gap: 6px;
-    z-index: 5;
+.btn-buy:hover,
+.btn-update:hover {
+    opacity: 0.85;
 }
 
-.badge {
-    padding: 4px 10px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
-    color: white;
-    box-shadow: 0 0 8px #000;
-}
-
-.badge.free {
-    background: #00c853;
-    box-shadow: 0 0 8px #00ff6e;
-}
-
-.badge.sale {
-    background: #ff1744;
-    box-shadow: 0 0 8px #ff1744;
-}
-
-/* Ensure card supports badge absolute */
-.game-card {
-    position: relative;
-}
-
-/* --- FIX NÚT SHOW DETAILS KHÔNG BAO GIỜ LỆCH --- */
-
-.game-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-/* Khung chứa toàn bộ nội dung, trừ nút Show Details */
-.game-top {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Tên game luôn đồng độ cao */
-.game-name {
-    min-height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-/* Khung cố định vị trí nút Show Details */
-.game-bottom {
-    margin-top: auto;
-}
-
-/* Nút Show Details luôn thẳng hàng */
-.btn-details {
-    width: 100%;
-    padding: 10px;
+/* ============================
+        UPDATED DATE
+============================ */
+.updated-date {
     margin-top: 10px;
+    color: #aaffff;
+    font-size: 13px;
 }
 
-/* Badge */
-.badge-box {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.badge {
-    padding: 4px 10px;
-    border-radius: 20px;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    width: fit-content;
-}
-
-.badge-vip { background: #ff0099; }
-.badge-free { background: #00cc66; }
-.badge-sale { background: #ffcc00; color: #000; }
-.badge-update { background: #00aaff; }
-
-/* Pagination */
+/* ============================
+        PAGINATION
+============================ */
 .pagination {
     margin-top: 30px;
     display: flex;
@@ -254,88 +238,6 @@ body {
 }
 
 .page-btn {
-    background: #0b1118;
-    border: 1px solid #00eaff;
-    padding: 8px 14px;
-    color: #00eaff;
-    cursor: pointer;
-    border-radius: 6px;
-}
-
-.page-btn.active,
-.page-btn:hover {
-    background: #00eaff;
-    color: #000;
-}
-
-/* Fix card layout */
-.game-card {
-    display: flex;
-    flex-direction: column;
-}
-
-.show-btn {
-    margin-top: auto;
-}
-
-/* Reduce top padding hero section */
-.hero-section {
-    padding-top: 20px !important;
-}
-/* ===== HERO FIX ===== */
-.hero-section.compact {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
-    margin-bottom: 10px;
-}
-
-/* ===== BADGES ===== */
-.badge-box {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.badge {
-    padding: 3px 10px;
-    font-size: 12px;
-    font-weight: bold;
-    color: #fff;
-    border-radius: 25px;
-    width: fit-content;
-}
-
-.badge-vip { background: #ff0066; }
-.badge-free { background: #00cc66; }
-.badge-sale { background: #ffcc00; color: #000; }
-.badge-update { background: #0099ff; }
-
-/* ===== CARD IMG WRAPPER ===== */
-.img-wrapper {
-    position: relative;
-    width: 100%;
-}
-
-/* ===== FIX SHOW DETAILS ALIGN ===== */
-.game-card {
-    display: flex;
-    flex-direction: column;
-}
-
-.show-btn {
-    margin-top: auto;
-}
-
-/* ===== PAGINATION ===== */
-.pagination {
-    margin-top: 25px;
-    text-align: center;
-}
-
-.page-btn {
     padding: 8px 14px;
     border-radius: 6px;
     border: 1px solid #00eaff;
@@ -350,10 +252,23 @@ body {
     color: #000;
 }
 
-/* DATE TEXT */
-.updated-date {
-    margin-top: 10px;
-    color: #aaffff;
-    font-size: 13px;
+/* ============================
+        RESPONSIVE
+============================ */
+@media (max-width: 900px) {
+    .game-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
+@media (max-width: 600px) {
+    .game-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 420px) {
+    .game-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
