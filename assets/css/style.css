@@ -36,6 +36,15 @@ body {
     align-items: center;
     justify-content: center;
 }
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+}
 
 
 
@@ -500,6 +509,31 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+.hero-section {
+    padding: 10px 0 !important;
+    margin: 0;
+}
+.hero-avatar {
+    width: 180px;
+    margin: 0 auto 10px auto;
+}
+@keyframes fall {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(100vh); }
+}
+#games {
+    margin-top: 10px !important;
+}
+
 
 
 
