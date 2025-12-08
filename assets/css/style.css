@@ -29,9 +29,11 @@ body {
         HERO SECTION
 ============================ */
 .hero-section {
-    text-align: center;
-    padding: 20px 0;
+    padding-top: 5px !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 0 !important;
 }
+
 
 .hero-section.compact {
     padding-top: 10px !important;
@@ -272,3 +274,51 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+/* ==== FIX SECTION THỪA KHOẢNG TRẮNG ==== */
+#games {
+    margin-top: 10px !important;
+    padding-top: 0 !important;
+}
+
+.section-title {
+    margin-top: 10px !important;
+    margin-bottom: 15px !important;
+}
+
+/* ==== PRICE GRID ==== */
+.price-grid {
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.price-item {
+    background: #0b1118;
+    border: 1px solid #00eaff55;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 12px #000;
+}
+
+.price-item h3 {
+    color: #00eaff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px #00eaff;
+}
+
+.price-item p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* RESPONSIVE PRICE GRID */
+@media (max-width: 700px) {
+    .price-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
