@@ -1,55 +1,87 @@
 const gameList = document.getElementById("gameList");
-const totalScripts = document.getElementById("totalScripts");
+const gamesPerPage = 25;  // 5 cột × 5 hàng
+let currentPage = 1;
 
-totalScripts.innerText = gamesData.length;
+// ===== SẮP XẾP GAME: UPDATED → lên đầu =====
+let sortedGames = [...gamesData].sort((a, b) => {
+    return (b.updated === true) - (a.updated === true);
+});
 
-gamesData.forEach(game => {
-    const el = document.createElement("div");
-    el.className = "game-card";
+// ===== RENDER TRANG =====
+function renderGames(page) {
+    gameList.innerHTML = "";
 
-    // 3D TILT
-    el.addEventListener("mousemove", e => {
-        const rect = el.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
-        el.style.transform = `rotateY(${x / 20}deg) rotateX(${-y / 20}deg)`;
+    const start = (page - 1) * gamesPerPage;
+    const end = start + gamesPerPage;
+
+    const gamesToShow = sortedGames.slice(start, end);
+
+    gamesToShow.forEach(game => {
+        const el = document.createElement("div");
+        el.className = "game-card";
+
+        el.innerHTML = `
+            <img src="${game.image}" class="game-img">
+
+            <div class="game-name">${game.name}</div>
+
+            <div class="badge-wrap">
+                ${game.sale ? `<div class="badge-sale">🔥 SALE</div>` : ""}
+                ${game.updated ? `<div class="badge-update">✨ UPDATE</div>` : ""}
+            </div>
+
+            <button class="btn-details">Show Details</button>
+
+            <div class="details-box">
+                <b>Mô tả:</b> ${game.description}<br><br>
+
+                <b>Features:</b>
+                <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
+
+                <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
+                <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
+
+                <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
+                <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
+            </div>
+        `;
+
+        el.querySelector(".btn-details").onclick = () => {
+            const box = el.querySelector(".details-box");
+            box.style.display = box.style.display === "block" ? "none" : "block";
+        };
+
+        gameList.appendChild(el);
     });
-    el.addEventListener("mouseleave", () => {
-        el.style.transform = "rotateY(0) rotateX(0)";
-    });
 
-el.innerHTML = `
-    <div class="badge-box">
-        ${game.free ? `<span class="badge free">FREE</span>` : ""}
-        ${game.sale ? `<span class="badge sale">${game.sale}</span>` : ""}
-    </div>
+    renderPagination();
+}
 
-    <div class="game-top">
+// ===== NÚT CHUYỂN TRANG =====
+function renderPagination() {
+    const totalPages = Math.ceil(sortedGames.length / gamesPerPage);
 
-        <img src="${game.image}" class="game-img">
+    let paginationHTML = `<div class="pagination">`;
 
-        <div class="game-name">${game.name}</div>
+    for (let i = 1; i <= totalPages; i++) {
+        paginationHTML += `
+            <button class="page-btn ${i === currentPage ? "active" : ""}"
+                    onclick="goToPage(${i})">${i}</button>
+        `;
+    }
 
-    </div>
+    paginationHTML += `</div>`;
 
-    <div class="game-bottom">
+    document.getElementById("games").insertAdjacentHTML("beforeend", paginationHTML);
+}
 
-        <button class="btn-details">Show Details</button>
+// ===== ĐI ĐẾN TRANG =====
+function goToPage(page) {
+    currentPage = page;
+    renderGames(page);
 
-        <div class="details-box">
-            <b>Mô tả:</b> ${game.description}<br><br>
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
-            <b>Features:</b>
-            <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
-
-            <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
-            <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
-
-            <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
-            <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
-        </div>
-
-    </div>
-`;
-
-
+// ===== KHỞI TẠO =====
+renderGames(1);
