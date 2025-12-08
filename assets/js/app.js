@@ -1,22 +1,24 @@
 const gameList = document.getElementById("gameList");
-const gamesPerPage = 25;  // 5 cột × 5 hàng
+const pagination = document.getElementById("pagination");
+
+const gamesPerPage = 25; // 5 hàng × 5 cột
 let currentPage = 1;
 
-// ===== SẮP XẾP GAME: UPDATED → lên đầu =====
+// Sắp xếp game: updated → lên đầu
 let sortedGames = [...gamesData].sort((a, b) => {
     return (b.updated === true) - (a.updated === true);
 });
 
-// ===== RENDER TRANG =====
 function renderGames(page) {
     gameList.innerHTML = "";
+    pagination.innerHTML = "";
 
     const start = (page - 1) * gamesPerPage;
     const end = start + gamesPerPage;
 
-    const gamesToShow = sortedGames.slice(start, end);
+    const pageGames = sortedGames.slice(start, end);
 
-    gamesToShow.forEach(game => {
+    pageGames.forEach(game => {
         const el = document.createElement("div");
         el.className = "game-card";
 
@@ -41,8 +43,8 @@ function renderGames(page) {
                 <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
                 <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
 
-                <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
-                <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
+                <a href="https://t.me/YakultIpramovic" class="btn-buy">Mua ngay</a>
+                <a href="https://t.me/YakultIpramovic" class="btn-update">Yêu cầu cập nhật</a>
             </div>
         `;
 
@@ -57,31 +59,23 @@ function renderGames(page) {
     renderPagination();
 }
 
-// ===== NÚT CHUYỂN TRANG =====
 function renderPagination() {
     const totalPages = Math.ceil(sortedGames.length / gamesPerPage);
 
-    let paginationHTML = `<div class="pagination">`;
-
     for (let i = 1; i <= totalPages; i++) {
-        paginationHTML += `
-            <button class="page-btn ${i === currentPage ? "active" : ""}"
-                    onclick="goToPage(${i})">${i}</button>
-        `;
+        const btn = document.createElement("button");
+        btn.className = "page-btn" + (i === currentPage ? " active" : "");
+        btn.innerText = i;
+
+        btn.addEventListener("click", () => {
+            currentPage = i;
+            renderGames(i);
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        pagination.appendChild(btn);
     }
-
-    paginationHTML += `</div>`;
-
-    document.getElementById("games").insertAdjacentHTML("beforeend", paginationHTML);
 }
 
-// ===== ĐI ĐẾN TRANG =====
-function goToPage(page) {
-    currentPage = page;
-    renderGames(page);
-
-    window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-// ===== KHỞI TẠO =====
+// Khởi chạy trang đầu
 renderGames(1);
