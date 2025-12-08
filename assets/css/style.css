@@ -330,3 +330,65 @@ body {
     color: #000;
 }
 
+/* Badge */
+.badge-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    width: fit-content;
+}
+
+.badge-vip { background: #ff0099; }
+.badge-free { background: #00cc66; }
+.badge-sale { background: #ffcc00; color: #000; }
+.badge-update { background: #00aaff; }
+
+/* Pagination */
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.page-btn {
+    background: #0b1118;
+    border: 1px solid #00eaff;
+    padding: 8px 14px;
+    color: #00eaff;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.page-btn.active,
+.page-btn:hover {
+    background: #00eaff;
+    color: #000;
+}
+
+/* Fix card layout */
+.game-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.show-btn {
+    margin-top: auto;
+}
+
+/* Reduce top padding hero section */
+.hero-section {
+    padding-top: 20px !important;
+}
+
