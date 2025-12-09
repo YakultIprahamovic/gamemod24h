@@ -875,6 +875,151 @@ body {
     color: #fff;
 }
 
+/* =============================
+      BESTSELLER HORIZONTAL
+============================= */
+.best-grid {
+    width: 95%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.bestseller-card {
+    background: #0b1118;
+    border-radius: 14px;
+    padding: 12px;
+    box-shadow: 0 0 12px #000;
+    transition: .25s ease;
+    position: relative;
+}
+
+.bestseller-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px #00b3ff99;
+}
+
+.best-img-box {
+    position: relative;
+}
+
+.best-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Badges */
+.hot-badge {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background: #ff3300;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    animation: pulseHot 1.2s infinite;
+}
+
+@keyframes pulseHot {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.15); opacity: .75; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.rank-badge {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    color: #000;
+}
+
+.rank-1 { background: #ffd700; }
+.rank-2 { background: silver; }
+.rank-3 { background: #cd7f32; }
+.rank-4 { background: #00eaff; }
+
+.bestseller-name {
+    margin-top: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bestseller-meta {
+    font-size: 13px;
+    opacity: .8;
+    text-align: center;
+}
+
+/* Buttons */
+.best-btn-box {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.best-btn {
+    padding: 7px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.best-btn-script {
+    background: #00eaff;
+    color: #000;
+}
+
+.best-btn-shop {
+    background: #0066ff;
+    color: #fff;
+}
+
+/* popup */
+.details-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #091017;
+    padding: 14px;
+    border-radius: 10px;
+    display: none;
+    z-index: 5;
+}
+
+.details-box.show {
+    display: block;
+    animation: slideUpB 0.3s ease forwards;
+}
+
+@keyframes slideUpB {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close-box {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #ff0044;
+    padding: 4px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
 
 
 
