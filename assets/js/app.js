@@ -105,7 +105,6 @@ pageData.forEach(game => {
             shopBox.style.display = shopBox.style.display === "block" ? "none" : "block";
             scriptBox.style.display = "none";
         };
-    }
 
     // Nút X đóng popup
     el.querySelectorAll(".close-box").forEach(btn => {
@@ -176,6 +175,7 @@ document.addEventListener("click", function(e) {
 ================================*/
 animateCount(gamesData.length);
 renderGames();
+
 
 
 
