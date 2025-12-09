@@ -222,6 +222,26 @@ function renderPagination(total) {
         pag.appendChild(btn);
     }
 }
+/* ==============================
+      COUNT ANIMATION
+============================== */
+function animateCount(target) {
+    let start = 0;
+    const counter = document.getElementById("totalScripts");
+
+    const timer = setInterval(() => {
+        start++;
+        counter.innerText = start;
+        counter.style.transform = "scale(1.25)";
+        counter.style.transition = "0.2s";
+        
+        setTimeout(() => {
+            counter.style.transform = "scale(1)";
+        }, 150);
+
+        if (start >= target) clearInterval(timer);
+    }, 20);
+}
 
 /* ==============================
            INIT
@@ -229,3 +249,4 @@ function renderPagination(total) {
 animateCount(gamesData.length);
 renderBestSellers();
 renderGames();
+
