@@ -401,4 +401,36 @@ body {
     }
 }
 
+/* Không cho details-box đẩy layout */
+.details-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    background: #091017;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 20;
+    display: none;
+}
+
+/* Card phải có position relative mới overlay được */
+.game-card {
+    position: relative !important;
+    overflow: visible !important;
+    padding-bottom: 70px; /* Chừa chỗ cho overlay */
+}
+
+/* Khi mở – trượt êm */
+.details-box.show {
+    display: block !important;
+    animation: slideUp 0.3s ease forwards;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
 
