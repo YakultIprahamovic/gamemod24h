@@ -5,6 +5,11 @@ gamesData.forEach(game => {
     el.className = "game-card";
 
     el.innerHTML = `
+        <div class="badge-row">
+            <span class="badge vip-badge">VIP</span>
+            <span class="badge update-badge">UPDATE</span>
+        </div>
+
         <img src="${game.image}" class="game-img">
 
         <div class="game-name">${game.name}</div>
@@ -39,7 +44,7 @@ gamesData.forEach(game => {
                 : `
                     <ul>
                         ${game.shop.map(s => `
-                            <li>💠 ${s.name} → <b>${s.price}</b></li>
+                        <li>💠 ${s.name} → <b>${s.price}</b></li>
                         `).join("")}
                     </ul>
                     <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp tài nguyên</a>
@@ -48,7 +53,6 @@ gamesData.forEach(game => {
         </div>
     `;
 
-    // BUTTON HANDLERS
     const scriptBtn = el.querySelector(".btn-script");
     const shopBtn = el.querySelector(".btn-shop");
     const scriptBox = el.querySelector(".script-box");
