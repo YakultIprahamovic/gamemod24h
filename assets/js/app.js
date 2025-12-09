@@ -1,10 +1,17 @@
+/* ===============================
+        GET ELEMENTS
+================================*/
 const gameList = document.getElementById("gameList");
 const itemsPerPage = 25;
 let currentPage = 1;
 
-// ------------------- RENDER PAGINATION -------------------
+/* ===============================
+        PAGINATION RENDER
+================================*/
 function renderPagination(totalPages) {
     const pagination = document.getElementById("pagination");
+    if (!pagination) return;
+
     pagination.innerHTML = "";
 
     for (let i = 1; i <= totalPages; i++) {
@@ -23,13 +30,14 @@ function renderPagination(totalPages) {
     }
 }
 
-// ------------------- RENDER GAMES -------------------
+/* ===============================
+        RENDER GAME CARDS
+================================*/
 function renderGames() {
     gameList.innerHTML = "";
 
     const start = (currentPage - 1) * itemsPerPage;
     const end = start + itemsPerPage;
-
     const pageData = gamesData.slice(start, end);
 
     pageData.forEach(game => {
@@ -40,19 +48,22 @@ function renderGames() {
             <div class="image-wrapper">
                 <img src="${game.image}" class="game-img">
 
-                <span class="badge vip-badge animate-badge">VIP</span>
-                <span class="badge update-badge animate-badge">${game.updateCount || 0}</span>
+                <!-- BADGES -->
+                <span class="badge vip-badge">VIP</span>
+                <span class="badge update-badge">${game.updateCount || ""}</span>
             </div>
 
             <div class="game-name">${game.name}</div>
 
+            <!-- Buttons row -->
             <div class="action-buttons">
                 <button class="btn-details btn-script">Script</button>
                 ${game.shop && game.shop.length > 0 
-                    ? `<button class="btn-details btn-shop">Shop Tài Nguyên</button>`
+                    ? `<button class="btn-details btn-shop">Shop Tài Nguyên</button>` 
                     : ""}
             </div>
 
+            <!-- SCRIPT DETAILS -->
             <div class="script-box details-box">
                 <b>Mô tả:</b> ${game.description}<br><br>
                 <b>Features:</b>
@@ -65,6 +76,7 @@ function renderGames() {
                 <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
             </div>
 
+            <!-- SHOP DETAILS -->
             <div class="shop-box details-box">
                 ${(!game.shop || game.shop.length === 0)
                     ? `<i>❌ Game này không hỗ trợ tài nguyên.</i>`
@@ -73,12 +85,12 @@ function renderGames() {
                         <ul>
                             ${game.shop.map(s => `<li>💠 ${s.name} → <b>${s.price}</b></li>`).join("")}
                         </ul>
-                        <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp tài nguyên</a>
+                        <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp</a>
                     `}
             </div>
         `;
 
-        // ------------ SCRIPT BUTTON ------------
+        // Buttons
         const scriptBtn = el.querySelector(".btn-script");
         const shopBtn = el.querySelector(".btn-shop");
         const scriptBox = el.querySelector(".script-box");
@@ -89,7 +101,6 @@ function renderGames() {
             if (shopBox) shopBox.style.display = "none";
         };
 
-        // ------------ SHOP BUTTON ------------
         if (shopBtn) {
             shopBtn.onclick = () => {
                 shopBox.style.display = shopBox.style.display === "block" ? "none" : "block";
@@ -103,7 +114,9 @@ function renderGames() {
     renderPagination(Math.ceil(gamesData.length / itemsPerPage));
 }
 
-// ------------------- COUNT ANIMATION -------------------
+/* ===============================
+        COUNT ANIMATION
+================================*/
 function animateCount(target) {
     let start = 0;
     const end = target;
@@ -115,21 +128,23 @@ function animateCount(target) {
         if (start < end) {
             start++;
             counter.innerText = start;
+
             counter.style.transform = "scale(1.3)";
             counter.style.opacity = "0.8";
 
             setTimeout(() => {
                 counter.style.transform = "scale(1)";
                 counter.style.opacity = "1";
-            }, 120);
+            }, 100);
 
             setTimeout(update, speed);
         }
     }
-
     update();
 }
 
-// ------------------- INIT -------------------
+/* ===============================
+        INIT LOAD
+================================*/
 animateCount(gamesData.length);
 renderGames();
