@@ -47,7 +47,7 @@ function renderBestSellers() {
 
                 <p class="best-meta">
                     ⏱ Cập nhật: <b>${game.updated}</b>
-                    • 🛒 Đã bán: <b>${game.soldCount || 0}</b>
+                    • 🛒 Đã bán: <b>${game.soldCount || 99+}</b>
                 </p>
 
                 <div class="best-features">
@@ -279,3 +279,4 @@ function animateCount(target) {
 animateCount(gamesData.length);
 renderBestSellers();
 renderGames();
+
