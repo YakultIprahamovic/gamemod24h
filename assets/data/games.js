@@ -2,7 +2,7 @@ const gamesData = [
   {
        id: 101,
     name: "PRITIVEMER BROTHER",
-    description: "Antiban – Attack Speed – Damage – Diamond – Box Lv300 + Tier",
+    description: "Antiban – Freeshop",
     image: "assets/img/game_101.png",
     script: "https://t.me/YakultIpramovic",
     download: "https://t.me/YakultIpramovic",
@@ -616,7 +616,7 @@ const gamesData = [
   {
     id: 133,
     name: "GHOST HUNTER IDLE",
-    description: "Antiban – Free Shop – Gold/Exp Drop",
+    description: "Antiban – Free Shop",
     image: "assets/img/game_133.png",
     script: "https://t.me/YakultIpramovic",
     download: "https://t.me/YakultIpramovic",
@@ -860,7 +860,7 @@ const gamesData = [
   {
     id: 146,
     name: "SLAYER LEGEND",
-    description: "Antiban – Diamond – Gold/Exp Drop – Damage – God Mode",
+    description: "Antiban 100% – Diamond",
     image: "assets/img/game_146.png",
     script: "https://t.me/YakultIpramovic",
     download: "https://t.me/YakultIpramovic",
@@ -1724,6 +1724,7 @@ const gamesData = [
     ]
   }
 ];
+
 
 
 
