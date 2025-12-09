@@ -543,6 +543,37 @@ body {
     box-shadow: 0 0 25px #ff00f2;
 }
 
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-script {
+    background: #00eaff;
+    color: #000;
+}
+
+.btn-shop {
+    background: #ff00a6;
+    color: #fff;
+}
+
+.btn-script:hover {
+    background: #00ffff;
+}
+
+.btn-shop:hover {
+    background: #ff33cc;
+}
+
+.shop-box ul li, 
+.script-box ul li {
+    text-align: left;
+    margin-left: 15px;
+}
+
 
 
 
