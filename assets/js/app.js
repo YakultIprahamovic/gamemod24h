@@ -13,40 +13,35 @@ let currentPage = 1;
 gamesData.sort((a, b) => new Date(b.updated) - new Date(a.updated));
 
 /* =====================================
-      RENDER BEST SELLERS – SORT BY SOLD
+   BEST SELLER – ONE LINE HORIZONTAL ROW
 ===================================== */
 function renderBestSellers() {
     if (!bestList) return;
 
     bestList.innerHTML = "";
 
-    // Sắp xếp theo số lượng bán giảm dần
+    // Top 4 game bán chạy nhất
     const bestGames = [...gamesData]
         .filter(g => g.bestSeller)
         .sort((a, b) => (b.soldCount || 0) - (a.soldCount || 0))
         .slice(0, 4);
 
-    // Icon rank và CSS
-    const rankIcons = ["🥇", "🥈", "🥉", "⭐"];
-    const rankClass = ["rank-1", "rank-2", "rank-3", "rank-4"];
-
     bestGames.forEach((game, index) => {
+
         const row = document.createElement("div");
-        row.className = "best-seller-row";
+        row.className = "bestseller-horizontal";
 
         row.innerHTML = `
-            <div class="best-left">
-                <img src="${game.image}" class="best-img">
-
+            <div class="best-col-img">
                 <span class="hot-badge">🔥 HOT</span>
-                <span class="rank-circle ${rankClass[index]}">${rankIcons[index]}</span>
+                <img src="${game.image}" class="best-img-large">
             </div>
 
-            <div class="best-right">
-                <h3 class="best-title">${game.name}</h3>
+            <div class="best-col-info">
+                <h2 class="best-title">${game.name}</h2>
 
                 <p class="best-meta">
-                    ⏱ Cập nhật: <b>${game.updated}</b>
+                    ⏱ Cập nhật: <b>${game.updated}</b>  
                     • 🛒 Đã bán: <b>${game.soldCount || 0}</b>
                 </p>
 
@@ -55,22 +50,26 @@ function renderBestSellers() {
                     <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
                 </div>
 
+                <p class="best-description">
+                    <b>Mô tả:</b> ${game.description}
+                </p>
+
                 <p class="best-price">
-                    💳 Tháng: <b>${game.monthly}K</b>  
+                    💳 Tháng: <b>${game.monthly}K</b>
                     • 💎 Vĩnh viễn: <b>${game.lifetime}K</b>
                 </p>
 
-                <!-- BUTTONS -->
                 <div class="best-buttons">
-                    <button class="best-btn-script btn-script">Script</button>
-                    ${game.shop ? `<button class="best-btn-shop btn-shop">Shop Tài Nguyên</button>` : ""}
+                    <button class="btn-script">Script</button>
+                    ${game.shop ? `<button class="btn-shop">Shop Tài Nguyên</button>` : ""}
                 </div>
 
-                <!-- SCRIPT POPUP -->
+                <!-- POPUP SCRIPT -->
                 <div class="details-box script-box">
                     <button class="close-box">✕</button>
-                    <h4>Script – ${game.name}</h4>
-                    <p><b>Mô tả:</b> ${game.description}</p>
+                    <h3>Script – ${game.name}</h3>
+
+                    <b>Mô tả:</b> ${game.description}<br><br>
 
                     <b>Features:</b>
                     <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
@@ -81,38 +80,32 @@ function renderBestSellers() {
                     <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
                 </div>
 
-                <!-- SHOP POPUP -->
+                <!-- POPUP SHOP -->
                 <div class="details-box shop-box">
                     <button class="close-box">✕</button>
-                    <h4>Shop tài nguyên</h4>
+                    <h3>Shop tài nguyên</h3>
 
                     ${
                         !game.shop ? 
-                        `<i>❌ Không hỗ trợ tài nguyên.</i>`
-                        :
-                        `<ul>
-                            ${game.shop.map(s => `<li>💠 ${s.name} — <b>${s.price}</b></li>`).join("")}
-                        </ul>
-                        <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp</a>`
+                        `<i>Không hỗ trợ tài nguyên</i>` :
+                        `<ul>${game.shop.map(s => `<li>💠 ${s.name}: <b>${s.price}</b></li>`).join("")}</ul>
+                         <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp</a>`
                     }
                 </div>
             </div>
         `;
 
-        // Button Actions
         const scriptBtn = row.querySelector(".btn-script");
         const shopBtn = row.querySelector(".btn-shop");
         const scriptBox = row.querySelector(".script-box");
         const shopBox = row.querySelector(".shop-box");
 
-        // Open script popup
         scriptBtn.onclick = () => {
             const open = scriptBox.classList.contains("show");
             closeAllPopups();
             if (!open) scriptBox.classList.add("show");
         };
 
-        // Open shop popup
         if (shopBtn) {
             shopBtn.onclick = () => {
                 const open = shopBox.classList.contains("show");
@@ -121,13 +114,12 @@ function renderBestSellers() {
             };
         }
 
-        // Close popup
-        row.querySelectorAll(".close-box").forEach(btn => {
+        row.querySelectorAll(".close-box").forEach(btn =>
             btn.onclick = () => {
                 scriptBox.classList.remove("show");
                 shopBox.classList.remove("show");
-            };
-        });
+            }
+        );
 
         bestList.appendChild(row);
     });
@@ -279,6 +271,7 @@ function animateCount(target) {
 animateCount(gamesData.length);
 renderBestSellers();
 renderGames();
+
 
 
 
