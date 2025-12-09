@@ -273,4 +273,25 @@ function animateCount(target) {
 animateCount(gamesData.length);
 renderBestSellers();
 renderGames();
+/* ==================================
+   🚀 AUTO SLIDE BEST SELLER
+================================== */
+let bestScrollPos = 0;
+
+setInterval(() => {
+    const box = document.getElementById("bestList");
+    if (!box) return;
+
+    bestScrollPos += 460; // mỗi card rộng 450px + khoảng cách
+    if (bestScrollPos >= box.scrollWidth) {
+        bestScrollPos = 0;
+    }
+
+    box.scrollTo({
+        left: bestScrollPos,
+        behavior: "smooth"
+    });
+
+}, 3500);  // 3.5 giây đổi 1 card
+
 
