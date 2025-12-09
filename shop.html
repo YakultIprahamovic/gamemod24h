@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop Tài Nguyên - Yakult Ipramovic</title>
+
+<link rel="icon" type="image/png" href="assets/img/logo.png" />
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<style>
+.page-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 36px;
+    color: #00eaff;
+    text-shadow: 0 0 15px #00eaff;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header class="hero-section">
+    <img src="assets/img/logo.png" class="hero-avatar">
+
+    <h1 class="hero-title">SHOP TÀI NGUYÊN ✦</h1>
+
+    <p class="hero-subtitle">Hỗ trợ nạp Ruby • Gold • Diamond • Exp</p>
+
+    <a href="index.html" class="btn-hero">⬅ Quay lại trang Script</a>
+</header>
+
+<section id="games">
+    <h2 class="page-title">Danh sách game hỗ trợ nạp</h2>
+
+    <div class="game-grid" id="shopList"></div>
+</section>
+
+<script src="assets/data/games.js"></script>
+
+<script>
+// Render shop items
+const shopList = document.getElementById("shopList");
+
+gamesData.forEach(game => {
+    const el = document.createElement("div");
+    el.className = "game-card";
+
+    el.innerHTML = `
+        <img src="${game.image}" class="game-img">
+        <div class="game-name">${game.name}</div>
+
+        <button class="btn-details">Xem gói nạp</button>
+
+        <div class="details-box">
+            <b>Loại tài khoản:</b>
+            <ul>
+                <li>✔ Account Login / Package</li>
+            </ul>
+
+            <b>Tài nguyên hỗ trợ:</b>
+            <ul>
+                <li>✔ Ruby</li>
+                <li>✔ Gold</li>
+                <li>✔ Diamond</li>
+                <li>✔ Exp</li>
+                <li>✔ Stone</li>
+                <li>✔ Coin</li>
+            </ul>
+
+            <b>Gói nạp:</b>
+            <ul>
+                <li>💎 10K – 20K – 50K</li>
+                <li>💎 100K – 200K – 500K</li>
+                <li>💎 Gói cao cấp VIP</li>
+                <li>💎 Custom theo yêu cầu người chơi</li>
+            </ul>
+
+            <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ mua</a>
+        </div>
+    `;
+
+    el.querySelector(".btn-details").onclick = () => {
+        const box = el.querySelector(".details-box");
+        box.style.display = box.style.display === "block" ? "none" : "block";
+    };
+
+    shopList.appendChild(el);
+});
+</script>
+
+<script>
+particlesJS.load("particles-js", "assets/js/particles.json");
+</script>
+
+</body>
+</html>
