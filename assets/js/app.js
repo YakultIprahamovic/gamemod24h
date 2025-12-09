@@ -12,9 +12,6 @@ let currentPage = 1;
 ============================== */
 gamesData.sort((a, b) => new Date(b.updated) - new Date(a.updated));
 
-/* ==============================
-        BEST SELLERS (Top 4)
-============================== */
 /* =====================================
       RENDER BEST SELLERS – LIST STYLE
 ===================================== */
@@ -23,10 +20,7 @@ function renderBestSellers() {
 
     bestList.innerHTML = "";
 
-    // Top 4 game có bestSeller = true
-    const bestGames = gamesData
-        .filter(g => g.bestSeller)
-        .slice(0, 4);
+    const bestGames = gamesData.filter(g => g.bestSeller).slice(0, 4);
 
     const rankIcons = ["🥇", "🥈", "🥉", "⭐"];
     const rankClass = ["rank-1", "rank-2", "rank-3", "rank-4"];
@@ -48,7 +42,7 @@ function renderBestSellers() {
 
                 <p class="best-meta">
                     ⏱ Cập nhật: <b>${game.updated}</b>  
-                    • 🛒 Đã bán: <b>${game.soldCount || 99+}</b>
+                    • 🛒 Đã bán: <b>${game.soldCount || "99+"}</b>
                 </p>
 
                 <div class="best-features">
@@ -63,18 +57,17 @@ function renderBestSellers() {
                     • 💎 Vĩnh viễn: <b>${game.lifetime}K</b>
                 </p>
 
-                  <div class="best-buttons">
-                      <button class="best-btn-script btn-script">Script</button>
-                      ${game.shop ? `<button class="best-btn-shop btn-shop">Shop Tài Nguyên</button>` : ""}
-                  </div>
+                <div class="best-buttons">
+                    <button class="best-btn-script btn-script">Script</button>
+                    ${game.shop ? `<button class="best-btn-shop btn-shop">Shop Tài Nguyên</button>` : ""}
+                </div>
 
-
-                <!-- POPUP SCRIPT -->
                 <div class="details-box script-box">
                     <button class="close-box">✕</button>
-                    <h4>Script – ${game.name}</h4>
 
+                    <h4>Script – ${game.name}</h4>
                     <p><b>Mô tả:</b> ${game.description}</p>
+
                     <b>Features:</b>
                     <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
 
@@ -84,15 +77,13 @@ function renderBestSellers() {
                     <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
                 </div>
 
-                <!-- POPUP SHOP -->
                 <div class="details-box shop-box">
                     <button class="close-box">✕</button>
-                    <h4>Shop tài nguyên</h4>
 
+                    <h4>Shop tài nguyên</h4>
                     ${
-                        !game.shop ? 
-                        `<i>❌ Không hỗ trợ tài nguyên.</i>`
-                        :
+                        !game.shop ?
+                        `<i>❌ Không hỗ trợ tài nguyên.</i>` :
                         `<ul>
                             ${game.shop.map(s => `<li>💠 ${s.name} — <b>${s.price}</b></li>`).join("")}
                         </ul>
@@ -102,7 +93,6 @@ function renderBestSellers() {
             </div>
         `;
 
-        // Event buttons
         const scriptBtn = row.querySelector(".btn-script");
         const shopBtn = row.querySelector(".btn-shop");
         const scriptBox = row.querySelector(".script-box");
@@ -133,7 +123,6 @@ function renderBestSellers() {
     });
 }
 
-
 /* ==============================
         CLOSE ALL POPUPS
 ============================== */
@@ -158,6 +147,7 @@ function renderGames() {
         card.innerHTML = `
             <div class="image-wrapper">
                 <img src="${game.image}" class="game-img">
+
                 <span class="badge vip-badge">VIP</span>
                 <span class="badge update-badge">${game.updateCount || 0}</span>
             </div>
@@ -173,22 +163,24 @@ function renderGames() {
             <div class="details-box script-box">
                 <button class="close-box">✕</button>
                 <b>Mô tả:</b> ${game.description}<br><br>
+
                 <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
+
                 <div class="price-box">💳 ${game.monthly}K</div>
                 <div class="price-box">💎 ${game.lifetime}K</div>
+
                 <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
             </div>
 
             <div class="details-box shop-box">
                 <button class="close-box">✕</button>
                 ${
-                    !game.shop?.length
-                    ? `<i>❌ Không hỗ trợ tài nguyên.</i>`
-                    : `
-                        <b>Gói tài nguyên:</b><br><br>
-                        <ul>${game.shop.map(s => `<li>💠 ${s.name}: <b>${s.price}</b></li>`).join("")}</ul>
-                        <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp</a>
-                      `
+                    !game.shop?.length ?
+                    `<i>❌ Không hỗ trợ tài nguyên.</i>`
+                    :
+                    `<b>Gói tài nguyên:</b><br><br>
+                    <ul>${game.shop.map(s => `<li>💠 ${s.name}: <b>${s.price}</b></li>`).join("")}</ul>
+                    <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp</a>`
                 }
             </div>
         `;
@@ -212,12 +204,12 @@ function renderGames() {
             };
         }
 
-        card.querySelectorAll(".close-box").forEach(x =>
-            x.onclick = () => {
+        card.querySelectorAll(".close-box").forEach(btn => {
+            btn.onclick = () => {
                 sBox.classList.remove("show");
                 shBox.classList.remove("show");
-            }
-        );
+            };
+        });
 
         gameList.appendChild(card);
     });
@@ -248,6 +240,7 @@ function renderPagination(total) {
         pag.appendChild(btn);
     }
 }
+
 /* ==============================
       COUNT ANIMATION
 ============================== */
@@ -260,7 +253,7 @@ function animateCount(target) {
         counter.innerText = start;
         counter.style.transform = "scale(1.25)";
         counter.style.transition = "0.2s";
-        
+
         setTimeout(() => {
             counter.style.transform = "scale(1)";
         }, 150);
@@ -275,7 +268,3 @@ function animateCount(target) {
 animateCount(gamesData.length);
 renderBestSellers();
 renderGames();
-
-
-
-
