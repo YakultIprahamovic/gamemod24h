@@ -120,3 +120,53 @@ renderGames();
 
 /* Tổng số script */
 document.getElementById("totalScripts").innerText = gamesData.length;
+// SHOP TÀI NGUYÊN
+const shopList = document.getElementById("shopList");
+
+gamesData.forEach(game => {
+    const item = document.createElement("div");
+    item.className = "game-card";
+
+    item.innerHTML = `
+        <img src="${game.image}" class="game-img">
+
+        <div class="game-name">${game.name}</div>
+
+        <button class="btn-details">Xem Gói Nạp</button>
+
+        <div class="details-box">
+
+            <b>Loại tài khoản:</b>
+            <ul>
+                <li>✔ Account: ${game.accountType ?? "Login / Package"}</li>
+            </ul>
+
+            <b>Tài nguyên hỗ trợ:</b>
+            <ul>
+                <li>✔ Ruby</li>
+                <li>✔ Gold</li>
+                <li>✔ Diamond</li>
+                <li>✔ Exp</li>
+                <li>✔ Stone</li>
+                <li>✔ Coin</li>
+            </ul>
+
+            <b>Gói nạp:</b>
+            <ul>
+                <li>💎 10K – 20K – 50K</li>
+                <li>💎 100K – 200K – 500K</li>
+                <li>💎 Custom theo yêu cầu</li>
+            </ul>
+
+            <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ mua</a>
+        </div>
+    `;
+
+    item.querySelector(".btn-details").onclick = () => {
+        const box = item.querySelector(".details-box");
+        box.style.display = box.style.display === "block" ? "none" : "block";
+    };
+
+    shopList.appendChild(item);
+});
+
