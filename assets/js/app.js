@@ -28,7 +28,7 @@ function renderBestSellers() {
         .sort((a, b) => (b.soldCount || 0) - (a.soldCount || 0))
         .slice(0, 4);
 
-    const rankIcons = ["🥇", "🥈", "🥉", "⭐"];
+    const rankIcons = ["Top 1", "Top 2", "Top 3", "Top 4"];
     const rankClass = ["rank-1", "rank-2", "rank-3", "rank-4"];
 
     bestGames.forEach((game, index) => {
@@ -273,3 +273,4 @@ function animateCount(target) {
 animateCount(gamesData.length);
 renderBestSellers();
 renderGames();
+
