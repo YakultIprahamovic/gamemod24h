@@ -63,10 +63,11 @@ function renderBestSellers() {
                     • 💎 Vĩnh viễn: <b>${game.lifetime}K</b>
                 </p>
 
-                <div class="action-buttons">
-                    <button class="btn-script">Script</button>
-                    ${game.shop ? `<button class="btn-shop">Shop Tài Nguyên</button>` : ""}
-                </div>
+                  <div class="best-buttons">
+                      <button class="best-btn-script btn-script">Script</button>
+                      ${game.shop ? `<button class="best-btn-shop btn-shop">Shop Tài Nguyên</button>` : ""}
+                  </div>
+
 
                 <!-- POPUP SCRIPT -->
                 <div class="details-box script-box">
@@ -274,6 +275,7 @@ function animateCount(target) {
 animateCount(gamesData.length);
 renderBestSellers();
 renderGames();
+
 
 
 
