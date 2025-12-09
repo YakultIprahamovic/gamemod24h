@@ -162,11 +162,7 @@ function animateCount(target) {
     update();
 }
 // Nút đóng popup
-el.querySelectorAll(".close-box").forEach(btn => {
-    btn.onclick = () => {
-        el.querySelectorAll(".details-box").forEach(box => box.classList.remove("show"));
-    };
-});
+
 document.addEventListener("click", function(e) {
     if (!e.target.closest(".details-box") && !e.target.closest(".btn-details")) {
         document.querySelectorAll(".details-box").forEach(box => box.classList.remove("show"));
@@ -178,6 +174,7 @@ document.addEventListener("click", function(e) {
 ================================*/
 animateCount(gamesData.length);
 renderGames();
+
 
 
 
