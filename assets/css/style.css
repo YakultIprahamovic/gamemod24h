@@ -482,6 +482,88 @@ body {
     background: #ff335f;
 }
 
+/* ============================
+      BEST SELLER FIRE BORDER
+============================ */
+.best-seller-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+}
+
+.best-seller-card::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 16px;
+    padding: 3px;
+    background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff9a00,
+        #ffdd00,
+        #ff9a00,
+        #ff0000
+    );
+    background-size: 400% 400%;
+    animation: fireGlow 3s linear infinite;
+    z-index: -1;
+}
+
+@keyframes fireGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ============================
+       HOT Badge Animated
+============================ */
+.hot-badge {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 14px;
+    background: linear-gradient(90deg, #ff0000, #ff8700);
+    color: #fff;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 13px;
+    animation: hotPulse 1.2s infinite alternate ease-in-out;
+    text-shadow: 0 0 6px #ff0000;
+}
+
+@keyframes hotPulse {
+    0% {
+        transform: translateX(-50%) scale(1);
+        box-shadow: 0 0 10px #ff3c00;
+    }
+    100% {
+        transform: translateX(-50%) scale(1.15);
+        box-shadow: 0 0 20px #ff9100;
+    }
+}
+
+/* ============================
+        RANK BADGE
+============================ */
+.rank-badge {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #000a;
+    padding: 6px 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.rank-1 { color: #ffd700; text-shadow: 0 0 8px #ffd700; }
+.rank-2 { color: #c0c0c0; text-shadow: 0 0 8px #c0c0c0; }
+.rank-3 { color: #cd7f32; text-shadow: 0 0 8px #cd7f32; }
+.rank-4 { color: #00eaff; text-shadow: 0 0 8px #00eaff; }
+
 
 
 
