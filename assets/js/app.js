@@ -97,18 +97,30 @@ function renderGames() {
         const shopBox = el.querySelector(".shop-box");
 
           // SCRIPT BUTTON
-        scriptBtn.onclick = () => {
-            scriptBox.classList.toggle("show");
-            if (shopBox) shopBox.classList.remove("show");
-        };
-        
-        // SHOP BUTTON
-        if (shopBtn) {
-            shopBtn.onclick = () => {
-                shopBox.classList.toggle("show");
-                scriptBox.classList.remove("show");
-            };
-        }
+// SCRIPT BUTTON
+scriptBtn.onclick = () => {
+    const isOpen = scriptBox.classList.contains("show");
+
+    // Đóng tất cả box của mọi game khác
+    document.querySelectorAll(".details-box").forEach(b => b.classList.remove("show"));
+
+    // Nếu đang mở → đóng, đang đóng → mở
+    if (!isOpen) scriptBox.classList.add("show");
+};
+
+// SHOP BUTTON
+if (shopBtn) {
+    shopBtn.onclick = () => {
+        const isOpen = shopBox.classList.contains("show");
+
+        // Đóng tất cả trước
+        document.querySelectorAll(".details-box").forEach(b => b.classList.remove("show"));
+
+        // Nếu đang mở → đóng, đang đóng → mở
+        if (!isOpen) shopBox.classList.add("show");
+    };
+}
+
 
 
         gameList.appendChild(el);
@@ -151,5 +163,6 @@ function animateCount(target) {
 ================================*/
 animateCount(gamesData.length);
 renderGames();
+
 
 
