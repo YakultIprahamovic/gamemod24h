@@ -65,4 +65,6 @@ gamesData.forEach(game => {
 
     gameList.appendChild(el);
 });
+document.getElementById("totalScripts").innerText = gamesData.length;
+
 
