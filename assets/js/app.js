@@ -40,82 +40,83 @@ function renderGames() {
     const end = start + itemsPerPage;
     const pageData = gamesData.slice(start, end);
 
-    pageData.forEach(game => {
-        const el = document.createElement("div");
-        el.className = "game-card";
+pageData.forEach(game => {
 
-        el.innerHTML = `
-            <div class="image-wrapper">
-                <img src="${game.image}" class="game-img">
+    const el = document.createElement("div");
+    el.className = "game-card";
 
-                <!-- BADGES -->
-                <span class="badge vip-badge">VIP</span>
-                <span class="badge update-badge">${game.updateCount || ""}</span>
-            </div>
+    el.innerHTML = `
+        <div class="image-wrapper">
+            <img src="${game.image}" class="game-img">
 
-            <div class="game-name">${game.name}</div>
+            <span class="badge vip-badge animate-badge">VIP</span>
+            <span class="badge update-badge animate-badge">${game.updateCount || 0}</span>
+        </div>
 
-            <!-- Buttons row -->
-            <div class="action-buttons">
-                <button class="btn-details btn-script">Script</button>
-                ${game.shop && game.shop.length > 0 
-                    ? `<button class="btn-details btn-shop">Shop Tài Nguyên</button>` 
-                    : ""}
-            </div>
+        <div class="game-name">${game.name}</div>
 
-            <!-- SCRIPT DETAILS -->
-                <div class="script-box details-box">
-                    <button class="close-box">✕</button>
-                
-                    <b>Mô tả:</b> ${game.description}<br><br>
-                    <b>Features:</b>
-                    <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
-                
-                    <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
-                    <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
-                
-                    <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
-                    <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
-                </div>
-                
-                <div class="shop-box details-box">
-                    <button class="close-box">✕</button>
-                
-                    ${(!game.shop || game.shop.length === 0)
-                        ? `<i>❌ Game này không hỗ trợ tài nguyên.</i>`
-                        : `
-                            <b>Các gói tài nguyên:</b><br><br>
-                            <ul>
-                                ${game.shop.map(s => `<li>💠 ${s.name} → <b>${s.price}</b></li>`).join("")}
-                            </ul>
-                            <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp tài nguyên</a>
-                        `}
-                </div>
+        <div class="action-buttons">
+            <button class="btn-details btn-script">Script</button>
+            ${game.shop && game.shop.length > 0 
+                ? `<button class="btn-details btn-shop">Shop Tài Nguyên</button>`
+                : ""}
+        </div>
 
-        `;
+        <div class="script-box details-box">
+            <button class="close-box">✕</button>
+            <b>Mô tả:</b> ${game.description}<br><br>
+            <b>Features:</b>
+            <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
 
-        // Buttons
-        const scriptBtn = el.querySelector(".btn-script");
-        const shopBtn = el.querySelector(".btn-shop");
-        const scriptBox = el.querySelector(".script-box");
-        const shopBox = el.querySelector(".shop-box");
+            <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
+            <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
 
-          // SCRIPT BUTTON
-// SCRIPT BUTTON
-scriptBtn.onclick = () => {
-    const isOpen = scriptBox.classList.contains("show");
+            <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
+            <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
+        </div>
 
-    // Đóng tất cả box của mọi game khác
-    document.querySelectorAll(".details-box").forEach(b => b.classList.remove("show"));
+        <div class="shop-box details-box">
+            <button class="close-box">✕</button>
+            ${(!game.shop || game.shop.length === 0)
+                ? `<i>❌ Game này không hỗ trợ tài nguyên.</i>`
+                : `
+                    <b>Các gói tài nguyên:</b><br><br>
+                    <ul>
+                        ${game.shop.map(s => `<li>💠 ${s.name} → <b>${s.price}</b></li>`).join("")}
+                    </ul>
+                    <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp tài nguyên</a>
+                `}
+        </div>
+    `;
 
-    // Nếu đang mở → đóng, đang đóng → mở
-    if (!isOpen) scriptBox.classList.add("show");
-};
+    // Nút Script
+    const scriptBtn = el.querySelector(".btn-script");
+    const shopBtn = el.querySelector(".btn-shop");
+    const scriptBox = el.querySelector(".script-box");
+    const shopBox = el.querySelector(".shop-box");
 
-// SHOP BUTTON
-if (shopBtn) {
-    shopBtn.onclick = () => {
-        const isOpen = shopBox.classList.contains("show");
+    scriptBtn.onclick = () => {
+        scriptBox.style.display = scriptBox.style.display === "block" ? "none" : "block";
+        if (shopBox) shopBox.style.display = "none";
+    };
+
+    if (shopBtn) {
+        shopBtn.onclick = () => {
+            shopBox.style.display = shopBox.style.display === "block" ? "none" : "block";
+            scriptBox.style.display = "none";
+        };
+    }
+
+    // Nút X đóng popup
+    el.querySelectorAll(".close-box").forEach(btn => {
+        btn.onclick = () => {
+            scriptBox.style.display = "none";
+            if (shopBox) shopBox.style.display = "none";
+        };
+    });
+
+    gameList.appendChild(el);
+});
 
         // Đóng tất cả trước
         document.querySelectorAll(".details-box").forEach(b => b.classList.remove("show"));
@@ -161,12 +162,7 @@ function animateCount(target) {
     }
     update();
 }
-// Nút đóng popup
-el.querySelectorAll(".close-box").forEach(btn => {
-    btn.onclick = () => {
-        el.querySelectorAll(".details-box").forEach(box => box.classList.remove("show"));
-    };
-});
+
 
 document.addEventListener("click", function(e) {
     if (!e.target.closest(".details-box") && !e.target.closest(".btn-details")) {
@@ -180,6 +176,7 @@ document.addEventListener("click", function(e) {
 ================================*/
 animateCount(gamesData.length);
 renderGames();
+
 
 
 
