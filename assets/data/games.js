@@ -11,6 +11,7 @@ const gamesData = [
     lifetime: "500",
     features: ["Antiban", "Freeshop(Account)", "Damage", "Attack Speed", "Diamond", "Totem Count", "Speed Game"],
     updated: true,
+    bestSeller: true,
     badge: "VIP",
     createdAt: "2025-12-8",
     shop: [
@@ -555,6 +556,7 @@ const gamesData = [
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Speed Game"],
     updated: true,
+    bestSeller: true,
     badge: "VIP",
     createdAt: "2025-12-8",
     shop: [
@@ -591,6 +593,7 @@ const gamesData = [
     lifetime: "500",
     features: ["Antiban", "Freeshop", "Damage", "Gold + Exp Drop", "Speed Game"],
     updated: true,
+    bestSeller: true,
     badge: "VIP",
     createdAt: "2025-12-8",
     shop: [
@@ -821,6 +824,7 @@ const gamesData = [
     lifetime: "500",
     features: ["Antiban", "Diamond", "Gold + Exp + Cube Drop", "Attack Speed", "God Mode", "Speed Game"],
     updated: true,
+    bestSeller: true,
     badge: "VIP",
     createdAt: "2025-12-8",
     shop: [
@@ -1633,4 +1637,5 @@ const gamesData = [
     ]
   }
 ];
+
 
