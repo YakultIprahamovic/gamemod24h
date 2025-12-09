@@ -556,9 +556,10 @@ body {
 }
 
 .btn-shop {
-    background: #ff00a6;
-    color: #fff;
+    background: #005eff !important;
+    color: #fff !important;
 }
+
 
 .btn-script:hover {
     background: #00ffff;
@@ -573,6 +574,29 @@ body {
     text-align: left;
     margin-left: 15px;
 }
+.badge-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.badge {
+    padding: 3px 10px;
+    font-size: 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.vip-badge {
+    background: #ffd700;
+    color: #000;
+}
+
+.update-badge {
+    background: #00eaff;
+    color: #000;
+}
+
 
 
 
