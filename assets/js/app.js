@@ -64,30 +64,34 @@ function renderGames() {
             </div>
 
             <!-- SCRIPT DETAILS -->
-            <div class="script-box details-box">
-                <b>Mô tả:</b> ${game.description}<br><br>
-                <b>Features:</b>
-                <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
+                <div class="script-box details-box">
+                    <button class="close-box">✕</button>
+                
+                    <b>Mô tả:</b> ${game.description}<br><br>
+                    <b>Features:</b>
+                    <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
+                
+                    <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
+                    <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
+                
+                    <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
+                    <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
+                </div>
+                
+                <div class="shop-box details-box">
+                    <button class="close-box">✕</button>
+                
+                    ${(!game.shop || game.shop.length === 0)
+                        ? `<i>❌ Game này không hỗ trợ tài nguyên.</i>`
+                        : `
+                            <b>Các gói tài nguyên:</b><br><br>
+                            <ul>
+                                ${game.shop.map(s => `<li>💠 ${s.name} → <b>${s.price}</b></li>`).join("")}
+                            </ul>
+                            <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp tài nguyên</a>
+                        `}
+                </div>
 
-                <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
-                <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
-
-                <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
-                <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
-            </div>
-
-            <!-- SHOP DETAILS -->
-            <div class="shop-box details-box">
-                ${(!game.shop || game.shop.length === 0)
-                    ? `<i>❌ Game này không hỗ trợ tài nguyên.</i>`
-                    : `
-                        <b>Các gói tài nguyên:</b><br><br>
-                        <ul>
-                            ${game.shop.map(s => `<li>💠 ${s.name} → <b>${s.price}</b></li>`).join("")}
-                        </ul>
-                        <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp</a>
-                    `}
-            </div>
         `;
 
         // Buttons
@@ -157,12 +161,24 @@ function animateCount(target) {
     }
     update();
 }
+// Nút đóng popup
+el.querySelectorAll(".close-box").forEach(btn => {
+    btn.onclick = () => {
+        el.querySelectorAll(".details-box").forEach(box => box.classList.remove("show"));
+    };
+});
+document.addEventListener("click", function(e) {
+    if (!e.target.closest(".details-box") && !e.target.closest(".btn-details")) {
+        document.querySelectorAll(".details-box").forEach(box => box.classList.remove("show"));
+    }
+});
 
 /* ===============================
         INIT LOAD
 ================================*/
 animateCount(gamesData.length);
 renderGames();
+
 
 
 
