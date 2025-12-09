@@ -990,5 +990,133 @@ body {
 .best-btn-script { background: #00eaff; color: #000; }
 .best-btn-shop { background: #0066ff; color: #fff; }
 
+/* ===============================
+   BEST SELLER – ANIMATION EFFECTS
+================================*/
+
+/* Container chính */
+.bestseller-horizontal {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #0b1118;
+    box-shadow: 0 0 12px #000;
+    margin-bottom: 25px;
+    overflow: hidden;
+
+    animation: fadeIn 0.8s ease forwards;
+}
+
+/* Fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* 🔥 Viền chạy Neon */
+.bestseller-horizontal::before {
+    content: "";
+    position: absolute;
+    top: -2px; left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 12px;
+    pointer-events: none;
+
+    background: linear-gradient(90deg,
+        #00eaff,
+        #0088ff,
+        #00eaff,
+        #00ffaa,
+        #00eaff
+    );
+    background-size: 400%;
+    animation: borderRun 6s linear infinite;
+    z-index: 0;
+    opacity: 0.35;
+}
+
+@keyframes borderRun {
+    0% { background-position: 0%; }
+    100% { background-position: 400%; }
+}
+
+/* Hover phát sáng */
+.bestseller-horizontal:hover {
+    box-shadow: 0 0 18px #00eaffaa;
+    transform: translateY(-4px);
+    transition: 0.25s ease;
+}
+
+/* Ảnh */
+.best-img-large {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.25s ease;
+}
+
+/* Ảnh phóng nhẹ khi hover */
+.bestseller-horizontal:hover .best-img-large {
+    transform: scale(1.06);
+}
+
+/* HOT badge nhấp nháy */
+.hot-badge {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background: #ff3300;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    animation: hotBlink 1.2s infinite ease-in-out;
+}
+
+@keyframes hotBlink {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(1.08); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+/* Top badge */
+.rank-circle {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #ffd700;
+    padding: 4px 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #000;
+    animation: crownShake 1.8s infinite ease-in-out;
+}
+
+/* Rung nhẹ badge top */
+@keyframes crownShake {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(2deg); }
+    40% { transform: rotate(-2deg); }
+    60% { transform: rotate(1deg); }
+    80% { transform: rotate(-1deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Text phần info */
+.best-col-info {
+    position: relative;
+    z-index: 2;
+}
+
+.best-title {
+    font-size: 24px;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
 
 
