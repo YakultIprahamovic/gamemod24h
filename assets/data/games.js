@@ -13,6 +13,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 102,
@@ -28,6 +31,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 103,
@@ -43,6 +49,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 104,
@@ -58,6 +67,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 105,
@@ -73,6 +85,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 106,
@@ -88,6 +103,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 107,
@@ -103,6 +121,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 108,
@@ -118,6 +139,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 109,
@@ -133,6 +157,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 110,
@@ -148,6 +175,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 111,
@@ -163,6 +193,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 112,
@@ -178,6 +211,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 113,
@@ -193,6 +229,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 114,
@@ -208,6 +247,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 115,
@@ -223,6 +265,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 116,
@@ -238,6 +283,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 117,
@@ -253,6 +301,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 118,
@@ -268,6 +319,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 119,
@@ -283,6 +337,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 120,
@@ -298,6 +355,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 121,
@@ -313,6 +373,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 122,
@@ -328,6 +391,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 123,
@@ -343,6 +409,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 124,
@@ -358,6 +427,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 125,
@@ -373,6 +445,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 126,
@@ -388,6 +463,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 127,
@@ -403,6 +481,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 128,
@@ -418,6 +499,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 129,
@@ -433,6 +517,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 130,
@@ -448,6 +535,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 131,
@@ -463,6 +553,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 132,
@@ -478,6 +571,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 133,
@@ -493,6 +589,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 134,
@@ -508,6 +607,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 135,
@@ -523,6 +625,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 136,
@@ -538,6 +643,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 137,
@@ -553,6 +661,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 138,
@@ -568,6 +679,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 139,
@@ -583,6 +697,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 140,
@@ -598,6 +715,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 141,
@@ -613,6 +733,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 142,
@@ -628,6 +751,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 143,
@@ -643,6 +769,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 144,
@@ -658,6 +787,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 145,
@@ -673,6 +805,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 146,
@@ -688,6 +823,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 147,
@@ -703,6 +841,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 148,
@@ -718,6 +859,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 149,
@@ -733,6 +877,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 150,
@@ -748,6 +895,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 151,
@@ -763,6 +913,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 152,
@@ -778,6 +931,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 153,
@@ -793,6 +949,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 154,
@@ -808,6 +967,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 155,
@@ -823,6 +985,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 156,
@@ -838,6 +1003,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 157,
@@ -853,6 +1021,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 158,
@@ -868,6 +1039,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 159,
@@ -883,6 +1057,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 160,
@@ -898,6 +1075,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 161,
@@ -913,6 +1093,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 162,
@@ -928,6 +1111,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 163,
@@ -943,6 +1129,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 164,
@@ -958,6 +1147,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 165,
@@ -973,6 +1165,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 166,
@@ -988,6 +1183,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 167,
@@ -1003,6 +1201,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 168,
@@ -1018,6 +1219,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     id: 169,
@@ -1033,6 +1237,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 170,
@@ -1055,6 +1262,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 171,
@@ -1077,6 +1287,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 172,
@@ -1098,6 +1311,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 173,
@@ -1117,6 +1333,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 174,
@@ -1137,6 +1356,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 175,
@@ -1155,6 +1377,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 176,
@@ -1173,6 +1398,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 177,
@@ -1191,6 +1419,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 178,
@@ -1209,6 +1440,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 179,
@@ -1227,6 +1461,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 180,
@@ -1245,6 +1482,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 181,
@@ -1263,6 +1503,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 182,
@@ -1284,6 +1527,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 183,
@@ -1302,6 +1548,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 184,
@@ -1327,6 +1576,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 185,
@@ -1348,6 +1600,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 186,
@@ -1366,6 +1621,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   },
   {
     "id": 187,
@@ -1384,5 +1642,9 @@ const gamesData = [
     updated: true,
     badge: "VIP",
     createdAt: "2025-12-8"
+    shop: [
+        { name: "Ruby", price: "20K" },
+    ]
   }
 ];
+
