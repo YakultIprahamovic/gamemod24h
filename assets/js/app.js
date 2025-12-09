@@ -17,26 +17,93 @@ function renderBestSellers() {
 
     bestList.innerHTML = "";
 
-    const bestGames = gamesData.filter(g => g.bestSeller).slice(0, 4);
+    const bestGames = gamesData
+        .filter(g => g.bestSeller)
+        .slice(0, 4);
 
-    bestGames.forEach(game => {
-        const el = document.createElement("div");
-        el.className = "game-card";
+    bestGames.forEach((game, index) => {
 
-        el.innerHTML = `
+        const rankIcons = ["🥇", "🥈", "🥉", "⭐"];
+        const rankClass = ["rank-1", "rank-2", "rank-3", "rank-4"];
+
+        const card = document.createElement("div");
+        card.className = "game-card best-seller-card";
+
+        card.innerHTML = `
+            <span class="hot-badge">🔥 HOT</span>
+
             <div class="image-wrapper">
                 <img src="${game.image}" class="game-img">
+
                 <span class="badge vip-badge">VIP</span>
                 <span class="badge update-badge">${game.updateCount || 0}</span>
             </div>
 
+            <div class="rank-badge ${rankClass[index]}">
+                ${rankIcons[index]}
+            </div>
+
             <div class="game-name">${game.name}</div>
-            <div style="font-size:13px;color:#00eaff;margin-top:4px;">
-                ⏱ Update: ${game.updated}
+            <div class="update-date">⏱ ${game.updated}</div>
+
+            <div class="action-buttons">
+                <button class="btn-script">Script</button>
+                ${game.shop && game.shop.length > 0 
+                    ? `<button class="btn-shop">Shop Tài Nguyên</button>`
+                    : ""
+                }
+            </div>
+
+            <div class="details-box script-box">
+                <button class="close-box">✕</button>
+                <b>Mô tả:</b> ${game.description}<br><br>
+                <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
+
+                <div class="price-box">💳 ${game.monthly}K / tháng</div>
+                <div class="price-box">💎 ${game.lifetime}K vĩnh viễn</div>
+
+                <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
+            </div>
+
+            <div class="details-box shop-box">
+                <button class="close-box">✕</button>
+                ${
+                    !game.shop ? 
+                    `<i>Không hỗ trợ Shop tài nguyên</i>` :
+                    `<ul>${game.shop.map(s => `<li>💠 ${s.name} — <b>${s.price}</b></li>`).join("")}</ul>
+                     <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp</a>`
+                }
             </div>
         `;
 
-        bestList.appendChild(el);
+        // Button scripts
+        const scriptBtn = card.querySelector(".btn-script");
+        const shopBtn = card.querySelector(".btn-shop");
+        const scriptBox = card.querySelector(".script-box");
+        const shopBox = card.querySelector(".shop-box");
+
+        scriptBtn.onclick = () => {
+            const open = scriptBox.classList.contains("show");
+            closeAllPopups();
+            if (!open) scriptBox.classList.add("show");
+        };
+
+        if (shopBtn) {
+            shopBtn.onclick = () => {
+                const open = shopBox.classList.contains("show");
+                closeAllPopups();
+                if (!open) shopBox.classList.add("show");
+            };
+        }
+
+        card.querySelectorAll(".close-box").forEach(btn => {
+            btn.onclick = () => {
+                scriptBox.classList.remove("show");
+                shopBox.classList.remove("show");
+            };
+        });
+
+        bestList.appendChild(card);
     });
 }
 
@@ -294,4 +361,5 @@ function renderBestSellers() {
 animateCount(gamesData.length);
 renderBestSellers();
 renderGames();
+
 
