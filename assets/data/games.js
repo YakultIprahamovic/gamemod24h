@@ -13,6 +13,7 @@ const gamesData = [
     updateCount: "Update",
     bestSeller: true,
     badge: "VIP",
+      soldCount: 146,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -31,6 +32,7 @@ const gamesData = [
     features: ["Freeshop", "Damage", "Multi Reward", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Gói Nạp, Diamond, Gold", price: "200K" },
@@ -50,6 +52,7 @@ const gamesData = [
     features: ["Gold In Battle", "Stone In Battle", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: []
   },
@@ -66,6 +69,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Gói Nạp", price: "300K" },
@@ -85,6 +89,7 @@ const gamesData = [
     features: ["Freeshop", "Spee Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package, Gold, Ticket, Weapon", price: "$15/300K" },
@@ -103,6 +108,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Gold + Exp Drop", "Attack Speed", "Damage", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package, Gold, Exp", price: "$15/300K" },
@@ -121,6 +127,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop(Account)", "Ruby", "Key Dungeon", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
 
@@ -140,6 +147,7 @@ const gamesData = [
     features: ["Antiban", "No Ads", "Gold + Stone + Exp Drop", "Currency", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
 
@@ -159,6 +167,7 @@ const gamesData = [
     features: ["Gold+ Exp + Stone Drop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
 
@@ -178,6 +187,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Unlock All Content", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
 
@@ -197,6 +207,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: []
   },
@@ -213,6 +224,7 @@ const gamesData = [
     features: ["Freeshop", "Damage", "Auto Win", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
 
@@ -232,6 +244,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
 
@@ -251,6 +264,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Gold Drop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
 
@@ -270,6 +284,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
 
@@ -289,6 +304,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Max Level", "No Skill CD", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -307,6 +323,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -325,6 +342,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -343,6 +361,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package, Diamond, Gold", price: "$15/300K" },
@@ -361,6 +380,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Low Cost Summon", "Attack Speed", "Damage", "God Mode", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -379,6 +399,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -397,6 +418,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop Costume", "Unlimited Reward", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: []
   },
@@ -413,6 +435,7 @@ const gamesData = [
     features: ["Antiban", "Currency", "Damage", "Attack Speed", "God Mode", "Diamond", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Diamond", price: "$5/100K" },
@@ -431,6 +454,7 @@ const gamesData = [
     features: ["Freeshop", "Unlock All Content", "Damage", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -449,6 +473,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Custom Reward", "Attack Speed", "Damage", "God Mode", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Package, Currency", price: "$15/300K" },
@@ -467,6 +492,7 @@ const gamesData = [
     features: ["Freeshop", "Damage", "Multi Reward", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -485,6 +511,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop Currency", "Custom Reward", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Currency", price: "$15/300K" },
@@ -503,6 +530,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop Currency", "Damage", "Custom Reward", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -521,6 +549,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package, Currency", price: "$15/300K" },
@@ -539,6 +568,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Gold + Exp + Lucky Coin Drop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -558,6 +588,7 @@ const gamesData = [
     updateCount: "Update",
     bestSeller: true,
     badge: "VIP",
+      soldCount: 89,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package, Currency(Ban PVP)", price: "$5/100K" },
@@ -576,6 +607,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop Currency", "Damage", "Custom Reward", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -595,6 +627,7 @@ const gamesData = [
     updateCount: "Update",
     bestSeller: true,
     badge: "VIP",
+        soldCount: 55,
     updated: "2025-12-8",
     shop: [
         { name: "1.000.000 Red Ruby", price: "$15/300K" },
@@ -613,6 +646,7 @@ const gamesData = [
     features: ["Gold+ Exp + Stone Drop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Gold, Stone, Soul", price: "$15/300K" },
@@ -631,6 +665,7 @@ const gamesData = [
     features: ["Freeshop", "Damage", "Coin In Battle", "Dump Enemy", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Vip Package, Currency", price: "$15/300K" },
@@ -649,6 +684,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Unlock Content", "Complete All Mission", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -667,6 +703,7 @@ const gamesData = [
     features: ["Damage"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: []
   },
@@ -683,6 +720,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Unlimited Currency", "Attack Speed", "Unlock All Costume", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package, Currency", price: "$15/300K" },
@@ -701,6 +739,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Unlock All Slime", "Key Dungeon", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -719,6 +758,7 @@ const gamesData = [
     features: ["Freeshop", "Gold + Exp Drop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$10/200K" },
@@ -737,6 +777,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Gold Drop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$8/150K" },
@@ -755,6 +796,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop(Account)", "Gem", "Exp Drop", "Multi Drop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$10/250K" },
@@ -773,6 +815,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Unlimited Currency", "Unlock SSS Equipment", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package, Currency", price: "$15/300K" },
@@ -791,6 +834,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Max Level", "No Skill CD", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -809,6 +853,7 @@ const gamesData = [
     features: ["Damage", "Auto Win", "Dump Enemy", "No Skill CD"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: []
   },
@@ -826,6 +871,7 @@ const gamesData = [
     updateCount: "Update",
     bestSeller: true,
     badge: "VIP",
+        soldCount: 322,
     updated: "2025-12-8",
     shop: [
         { name: "Diamond, Gold, Cube, Exp(High risk)", price: "$5/50K" },
@@ -844,6 +890,7 @@ const gamesData = [
     features: ["Free Shop"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -862,6 +909,7 @@ const gamesData = [
     features: ["Antiban", "Complete All Mission", "Custom Currency", "Damage", "God Mode", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Character, Weapon, Rune,", price: "$15/300K" },
@@ -880,6 +928,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Gold + Exp Drop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "No ads, Vip, Currency", price: "$15/300K" },
@@ -898,6 +947,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop Costume", "Unlimited Reward", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: []
   },
@@ -914,6 +964,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$5/150K" },
@@ -932,6 +983,7 @@ const gamesData = [
     features: ["Freeshop", "Active Buff", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "500.000 Red Diamond", price: "$5/150K" },
@@ -950,6 +1002,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop(Account)", "Ruby", "Key Dungeon", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Package, Legend Chest, Key Dungeon", price: "$15/300K" },
@@ -968,6 +1021,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$5/100K" },
@@ -986,6 +1040,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$8/150K" },
@@ -1004,6 +1059,7 @@ const gamesData = [
     features: ["Antiban", "No Ads", "Gold + Stone + Exp Drop", "Currency", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "No Ads, Diamond, Currency, Level", price: "$10/200K" },
@@ -1022,6 +1078,7 @@ const gamesData = [
     features: ["Currency", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Currency", price: "$8/150K" },
@@ -1040,6 +1097,7 @@ const gamesData = [
     features: ["Freeshop", "Damage", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: []
   },
@@ -1056,6 +1114,7 @@ const gamesData = [
     features: ["Damage", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: []
   },
@@ -1072,6 +1131,7 @@ const gamesData = [
     features: ["Freeshop", "Gold + Exp Drop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$10/200K" },
@@ -1090,6 +1150,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$10/200K" },
@@ -1108,6 +1169,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$10/200K" },
@@ -1126,6 +1188,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$10/200K" },
@@ -1144,6 +1207,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$10/200K" },
@@ -1162,6 +1226,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$10/200K" },
@@ -1180,6 +1245,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop(Account)", "Damage", "Attack Speed", "Diamond", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package, Currency", price: "$10/250K" },
@@ -1198,6 +1264,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$10/200K" },
@@ -1216,6 +1283,7 @@ const gamesData = [
     features: ["MP - MC (Account)"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: ",P - MC", price: "$5/100K" },
@@ -1234,6 +1302,7 @@ const gamesData = [
     features: ["Freeshop(Account)", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$8/150K" },
@@ -1259,6 +1328,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: []
   },
@@ -1282,6 +1352,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Diamond, Gold", price: "$15/300K" },
@@ -1306,6 +1377,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package, Currency, Ticket Summon", price: "$15/300K" },
@@ -1328,6 +1400,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: []
   },
@@ -1349,6 +1422,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package, Diamond, Gold", price: "$8/150K" },
@@ -1370,6 +1444,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$5/100K" },
@@ -1391,6 +1466,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$10/200K" },
@@ -1412,6 +1488,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package, Currency", price: "$8/200K" },
@@ -1433,6 +1510,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: []
   },
@@ -1452,6 +1530,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$10/200K" },
@@ -1473,6 +1552,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -1494,6 +1574,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$15/300K" },
@@ -1518,6 +1599,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: []
   },
@@ -1537,6 +1619,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$10/200K" },
@@ -1565,6 +1648,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Diamond, Gold, Vip Player", price: "$8/200K" },
@@ -1589,6 +1673,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$8/100K" },
@@ -1610,6 +1695,7 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$10/200K" },
@@ -1631,12 +1717,14 @@ const gamesData = [
     ],
     updateCount: "Update",
     badge: "VIP",
+    soldCount: 25,
     updated: "2025-12-8",
     shop: [
         { name: "Full Package", price: "$10/200K" },
     ]
   }
 ];
+
 
 
 
