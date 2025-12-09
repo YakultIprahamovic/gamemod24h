@@ -37,27 +37,28 @@ function renderGames() {
     const pageData = gamesData.slice(start, end);
 
     pageData.forEach(game => {
-        const el = document.createElement("div");
-        el.className = "game-card";
+        const card = document.createElement("div");
+        card.className = "game-card";
 
-        el.innerHTML = `
+        card.innerHTML = `
             <div class="image-wrapper">
                 <img src="${game.image}" class="game-img">
 
-                <span class="badge vip-badge animate-badge">VIP</span>
-                <span class="badge update-badge animate-badge">${game.updateCount || 0}</span>
+                <span class="badge vip-badge">VIP</span>
+                <span class="badge update-badge">${game.updateCount || 0}</span>
             </div>
 
             <div class="game-name">${game.name}</div>
 
             <div class="action-buttons">
-                <button class="btn-details btn-script">Script</button>
+                <button class="btn-script">Script</button>
                 ${game.shop && game.shop.length > 0 
-                    ? `<button class="btn-details btn-shop">Shop Tài Nguyên</button>`
+                    ? `<button class="btn-shop">Shop Tài Nguyên</button>`
                     : ""}
             </div>
 
-            <div class="script-box details-box">
+            <!-- SCRIPT POPUP -->
+            <div class="details-box script-box">
                 <button class="close-box">✕</button>
                 <b>Mô tả:</b> ${game.description}<br><br>
                 <b>Features:</b>
@@ -70,62 +71,75 @@ function renderGames() {
                 <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
             </div>
 
-            <div class="shop-box details-box">
+            <!-- SHOP POPUP -->
+            <div class="details-box shop-box">
                 <button class="close-box">✕</button>
+
                 ${
                     (!game.shop || game.shop.length === 0)
-                    ? `<i>❌ Game này không hỗ trợ tài nguyên.</i>`
-                    : `
-                        <b>Các gói tài nguyên:</b><br><br>
-                        <ul>
-                            ${game.shop.map(s => `<li>💠 ${s.name} → <b>${s.price}</b></li>`).join("")}
-                        </ul>
-                        <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp tài nguyên</a>
-                    `
+                        ? `<i>❌ Game này không hỗ trợ tài nguyên.</i>`
+                        : `
+                            <b>Các gói tài nguyên:</b><br><br>
+                            <ul>
+                                ${game.shop.map(s => `<li>💠 ${s.name} → <b>${s.price}</b></li>`).join("")}
+                            </ul>
+                            <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp tài nguyên</a>
+                        `
                 }
             </div>
         `;
 
-        const scriptBtn = el.querySelector(".btn-script");
-        const shopBtn = el.querySelector(".btn-shop");
-        const scriptBox = el.querySelector(".script-box");
-        const shopBox = el.querySelector(".shop-box");
+        const scriptBtn = card.querySelector(".btn-script");
+        const shopBtn = card.querySelector(".btn-shop");
 
-        /* ------ CLICK SCRIPT ------ */
+        const scriptBox = card.querySelector(".script-box");
+        const shopBox = card.querySelector(".shop-box");
+
+        const closeBtns = card.querySelectorAll(".close-box");
+
+        /* ================================
+              CLICK SCRIPT
+        ================================= */
         scriptBtn.onclick = () => {
-            const isOpen = scriptBox.style.display === "block";
+            const isOpen = scriptBox.classList.contains("show");
             closeAllPopups();
-            scriptBox.style.display = isOpen ? "none" : "block";
+            if (!isOpen) scriptBox.classList.add("show");
         };
 
-        /* ------ CLICK SHOP ------ */
+        /* ================================
+              CLICK SHOP
+        ================================= */
         if (shopBtn) {
             shopBtn.onclick = () => {
-                const isOpen = shopBox.style.display === "block";
+                const isOpen = shopBox.classList.contains("show");
                 closeAllPopups();
-                shopBox.style.display = isOpen ? "none" : "block";
+                if (!isOpen) shopBox.classList.add("show");
             };
         }
 
-        /* ------ CLOSE BUTTONS ------ */
-        el.querySelectorAll(".close-box").forEach(btn => {
+        /* ================================
+              CLOSE POPUP (X button)
+        ================================= */
+        closeBtns.forEach(btn =>
             btn.onclick = () => {
-                scriptBox.style.display = "none";
-                shopBox.style.display = "none";
-            };
-        });
+                scriptBox.classList.remove("show");
+                shopBox.classList.remove("show");
+            }
+        );
 
-        gameList.appendChild(el);
+        gameList.appendChild(card);
     });
 
     renderPagination(Math.ceil(gamesData.length / itemsPerPage));
 }
 
 /* ===========================
-  CLOSE ALL POPUPS TO PREVENT LAYOUT SHIFT
+    CLOSE ALL POPUPS
 =========================== */
 function closeAllPopups() {
-    document.querySelectorAll(".details-box").forEach(b => b.style.display = "none");
+    document.querySelectorAll(".details-box").forEach(box => {
+        box.classList.remove("show");
+    });
 }
 
 /* ===========================
@@ -133,31 +147,18 @@ function closeAllPopups() {
 =========================== */
 function animateCount(target) {
     let start = 0;
-    const end = target;
-    const speed = 20;
     const counter = document.getElementById("totalScripts");
 
-    function update() {
-        if (start < end) {
-            start++;
-            counter.innerText = start;
-            counter.style.transform = "scale(1.3)";
-            counter.style.opacity = "0.8";
+    const timer = setInterval(() => {
+        start++;
+        counter.innerText = start;
 
-            setTimeout(() => {
-                counter.style.transform = "scale(1)";
-                counter.style.opacity = "1";
-            }, 120);
-
-            setTimeout(update, speed);
-        }
-    }
-
-    update();
+        if (start >= target) clearInterval(timer);
+    }, 20);
 }
 
 /* ===========================
-          INIT
+            INIT
 =========================== */
 animateCount(gamesData.length);
 renderGames();
