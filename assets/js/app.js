@@ -5,53 +5,46 @@ gamesData.forEach(game => {
     el.className = "game-card";
 
     el.innerHTML = `
-        <div class="badge-row">
-            <span class="badge vip-badge">VIP</span>
-            <span class="badge update-badge">UPDATE</span>
-        </div>
-
+    <div class="image-wrapper">
         <img src="${game.image}" class="game-img">
 
-        <div class="game-name">${game.name}</div>
+        <span class="badge vip-badge">VIP</span>
+        <span class="badge update-badge">UPDATE</span>
+    </div>
 
-        <div class="action-buttons">
-            <button class="btn-details btn-script">Script</button>
-            ${game.shop && game.shop.length > 0 
-                ? `<button class="btn-details btn-shop">Shop Tài Nguyên</button>` 
-                : ""}
-        </div>
+    <div class="game-name">${game.name}</div>
 
-        <!-- SCRIPT BOX -->
-        <div class="script-box details-box">
-            <b>Mô tả:</b> ${game.description}<br><br>
+    <div class="action-buttons">
+        <button class="btn-details btn-script">Script</button>
+        ${game.shop && game.shop.length > 0 
+            ? `<button class="btn-details btn-shop">Shop Tài Nguyên</button>`
+            : ""}
+    </div>
 
-            <b>Features:</b>
-            <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
+    <div class="script-box details-box">
+        <b>Mô tả:</b> ${game.description}<br><br>
+        <b>Features:</b>
+        <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
 
-            <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
-            <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
+        <div class="price-box">💳 Giá tháng: <b>${game.monthly}K</b></div>
+        <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
 
-            <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
-            <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
-        </div>
+        <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
+        <a class="btn-update" href="https://t.me/YakultIpramovic">Yêu cầu cập nhật</a>
+    </div>
 
-        <!-- SHOP BOX -->
-        <div class="shop-box details-box">
-            <b>Các gói tài nguyên:</b><br><br>
-
-            ${(!game.shop || game.shop.length === 0)
-                ? `<i>❌ Game này không hỗ trợ tài nguyên.</i>`
-                : `
-                    <ul>
-                        ${game.shop.map(s => `
-                        <li>💠 ${s.name} → <b>${s.price}</b></li>
-                        `).join("")}
-                    </ul>
-                    <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp tài nguyên</a>
-                `
-            }
-        </div>
-    `;
+    <div class="shop-box details-box">
+        ${(!game.shop || game.shop.length === 0)
+            ? `<i>❌ Game này không hỗ trợ tài nguyên.</i>`
+            : `
+                <b>Các gói tài nguyên:</b><br><br>
+                <ul>
+                    ${game.shop.map(s => `<li>💠 ${s.name} → <b>${s.price}</b></li>`).join("")}
+                </ul>
+                <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp tài nguyên</a>
+            `}
+    </div>
+`;
 
     const scriptBtn = el.querySelector(".btn-script");
     const shopBtn = el.querySelector(".btn-shop");
@@ -72,3 +65,4 @@ gamesData.forEach(game => {
 
     gameList.appendChild(el);
 });
+
