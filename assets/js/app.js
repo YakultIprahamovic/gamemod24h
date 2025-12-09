@@ -168,12 +168,19 @@ document.addEventListener("click", function(e) {
         document.querySelectorAll(".details-box").forEach(box => box.classList.remove("show"));
     }
 });
+// Nút đóng popup
+el.querySelectorAll(".close-box").forEach(btn => {
+    btn.onclick = () => {
+        el.querySelectorAll(".details-box").forEach(box => box.classList.remove("show"));
+    };
+});
 
 /* ===============================
         INIT LOAD
 ================================*/
 animateCount(gamesData.length);
 renderGames();
+
 
 
 
