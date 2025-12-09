@@ -301,4 +301,104 @@ body {
 #pagination {
     margin-bottom: 30px !important;
 }
+/* ============================
+   GÓI THÀNH VIÊN - FIX 3 CỘT
+============================ */
+.price-plans {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.price-title {
+    font-size: 32px;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+    margin-bottom: 25px;
+}
+
+/* GRID 3 CỘT CHUẨN */
+.price-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* CARD */
+.price-card {
+    background: #0b1118;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #00eaff55;
+    box-shadow: 0 0 12px #000;
+    transition: 0.3s;
+}
+
+.price-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 20px #00eaffaa;
+}
+
+.price-card h3 {
+    font-size: 20px;
+    color: #00eaff;
+}
+
+.price-value {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #ffffff;
+}
+
+.price-card ul {
+    padding: 0;
+    list-style: none;
+}
+
+.price-card ul li {
+    margin: 8px 0;
+    font-size: 15px;
+    color: #c8f7ff;
+}
+
+.price-card ul li.disable {
+    opacity: 0.4;
+}
+
+/* MOST POPULAR TAG */
+.price-card.popular {
+    border: 2px solid #00eaff;
+    box-shadow: 0 0 20px #00eaff80;
+    position: relative;
+}
+
+.tag-popular {
+    background: #00eaff;
+    color: #000;
+    font-size: 12px;
+    padding: 4px 14px;
+    border-radius: 20px;
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* RESPONSIVE 2 CỘT */
+@media (max-width: 900px) {
+    .price-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* RESPONSIVE 1 CỘT */
+@media (max-width: 600px) {
+    .price-grid-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 
