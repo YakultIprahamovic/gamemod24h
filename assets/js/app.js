@@ -1,6 +1,7 @@
 const gameList = document.getElementById("gameList");
 const itemsPerPage = 25;
 let currentPage = 1;
+gamesData.sort((a, b) => new Date(b.updated) - new Date(a.updated));
 
 /* ===========================
         RENDER PAGINATION
@@ -162,3 +163,4 @@ function animateCount(target) {
 =========================== */
 animateCount(gamesData.length);
 renderGames();
+
