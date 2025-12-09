@@ -291,3 +291,14 @@ body {
 @media (max-width: 450px) {
     .game-grid { grid-template-columns: repeat(1, 1fr); }
 }
+.price-plans {
+    margin-top: 50px !important;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 2; /* luôn nằm trên pagination */
+}
+
+#pagination {
+    margin-bottom: 30px !important;
+}
+
