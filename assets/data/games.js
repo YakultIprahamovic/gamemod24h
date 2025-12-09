@@ -12,7 +12,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop(Account)", "Damage", "Attack Speed", "Diamond", "Totem Count", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -30,7 +30,7 @@ const gamesData = [
     features: ["Freeshop", "Damage", "Multi Reward", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -48,7 +48,7 @@ const gamesData = [
     features: ["Gold In Battle", "Stone In Battle", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -66,7 +66,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -84,7 +84,7 @@ const gamesData = [
     features: ["Freeshop", "Spee Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -102,7 +102,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Gold + Exp Drop", "Attack Speed", "Damage", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -120,7 +120,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop(Account)", "Ruby", "Key Dungeon", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -138,7 +138,7 @@ const gamesData = [
     features: ["Antiban", "No Ads", "Gold + Stone + Exp Drop", "Currency", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -156,7 +156,7 @@ const gamesData = [
     features: ["Gold+ Exp + Stone Drop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -174,7 +174,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Unlock All Content", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -192,7 +192,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -210,7 +210,7 @@ const gamesData = [
     features: ["Freeshop", "Damage", "Auto Win", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -228,7 +228,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -246,7 +246,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Gold Drop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -264,7 +264,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -282,7 +282,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Max Level", "No Skill CD", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -300,7 +300,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -318,7 +318,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -336,7 +336,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -354,7 +354,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Low Cost Summon", "Attack Speed", "Damage", "God Mode", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -372,7 +372,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -390,7 +390,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop Costume", "Unlimited Reward", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -408,7 +408,7 @@ const gamesData = [
     features: ["Antiban", "Currency", "Damage", "Attack Speed", "God Mode", "Diamond", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -426,7 +426,7 @@ const gamesData = [
     features: ["Freeshop", "Unlock All Content", "Damage", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -444,7 +444,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Custom Reward", "Attack Speed", "Damage", "God Mode", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -462,7 +462,7 @@ const gamesData = [
     features: ["Freeshop", "Damage", "Multi Reward", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -480,7 +480,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop Currency", "Custom Reward", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -498,7 +498,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop Currency", "Damage", "Custom Reward", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -516,7 +516,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -534,7 +534,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Gold + Exp + Lucky Coin Drop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -552,7 +552,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -570,7 +570,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop Currency", "Damage", "Custom Reward", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -588,7 +588,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Gold + Exp Drop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -606,7 +606,7 @@ const gamesData = [
     features: ["Gold+ Exp + Stone Drop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -624,7 +624,7 @@ const gamesData = [
     features: ["Freeshop", "Damage", "Coin In Battle", "Dump Enemy", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -642,7 +642,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Unlock Content", "Complete All Mission", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -660,7 +660,7 @@ const gamesData = [
     features: ["Damage"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -678,7 +678,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Unlimited Currency", "Attack Speed", "Unlock All Costume", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -696,7 +696,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Unlock All Slime", "Key Dungeon", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -714,7 +714,7 @@ const gamesData = [
     features: ["Freeshop", "Gold + Exp Drop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -732,7 +732,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Gold Drop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -750,7 +750,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop(Account)", "Gem", "Exp Drop", "Multi Drop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -768,7 +768,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Unlimited Currency", "Unlock SSS Equipment", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -786,7 +786,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Max Level", "No Skill CD", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -804,7 +804,7 @@ const gamesData = [
     features: ["Damage", "Auto Win", "Dump Enemy", "No Skill CD"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -822,7 +822,7 @@ const gamesData = [
     features: ["Antiban", "Diamond", "Gold + Exp + Cube Drop", "Attack Speed", "God Mode", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -840,7 +840,7 @@ const gamesData = [
     features: ["Free Shop"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -858,7 +858,7 @@ const gamesData = [
     features: ["Antiban", "Complete All Mission", "Custom Currency", "Damage", "God Mode", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -876,7 +876,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop", "Damage", "Attack Speed", "Gold + Exp Drop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -894,7 +894,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop Costume", "Unlimited Reward", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -912,7 +912,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -930,7 +930,7 @@ const gamesData = [
     features: ["Freeshop", "Active Buff", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -948,7 +948,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop(Account)", "Ruby", "Key Dungeon", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -966,7 +966,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -984,7 +984,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1002,7 +1002,7 @@ const gamesData = [
     features: ["Antiban", "No Ads", "Gold + Stone + Exp Drop", "Currency", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1020,7 +1020,7 @@ const gamesData = [
     features: ["Currency", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1038,7 +1038,7 @@ const gamesData = [
     features: ["Freeshop", "Damage", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1056,7 +1056,7 @@ const gamesData = [
     features: ["Damage", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1074,7 +1074,7 @@ const gamesData = [
     features: ["Freeshop", "Gold + Exp Drop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1092,7 +1092,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1110,7 +1110,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1128,7 +1128,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1146,7 +1146,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1164,7 +1164,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1182,7 +1182,7 @@ const gamesData = [
     features: ["Antiban", "Freeshop(Account)", "Damage", "Attack Speed", "Diamond", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1200,7 +1200,7 @@ const gamesData = [
     features: ["Freeshop", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1218,7 +1218,7 @@ const gamesData = [
     features: ["MP - MC (Account)"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1236,7 +1236,7 @@ const gamesData = [
     features: ["Freeshop(Account)", "Speed Game"],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1261,7 +1261,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1286,7 +1286,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1310,7 +1310,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1332,7 +1332,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1355,7 +1355,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1376,7 +1376,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1397,7 +1397,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1418,7 +1418,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1439,7 +1439,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1460,7 +1460,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1481,7 +1481,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1502,7 +1502,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1526,7 +1526,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1547,7 +1547,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1575,7 +1575,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1599,7 +1599,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1620,7 +1620,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
@@ -1641,7 +1641,7 @@ const gamesData = [
     ],
     updated: true,
     badge: "VIP",
-    createdAt: "2025-12-8"
+    createdAt: "2025-12-8",
     shop: [
         { name: "Ruby", price: "20K" },
     ]
