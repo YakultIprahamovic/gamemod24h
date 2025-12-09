@@ -221,14 +221,36 @@ body {
 /* ===============================
         DETAILS BOX
 ================================*/
+/* Overlay details không đẩy layout */
 .details-box {
-    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
     background: #091017;
-    padding: 14px;
-    margin-top: 12px;
+    padding: 15px;
     border-radius: 10px;
-    font-size: 14px;
+    z-index: 20;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease;
 }
+
+/* Khi hiển thị */
+.details-box.show {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Card cần relative */
+.game-card {
+    position: relative;
+    overflow: visible !important;
+    padding-bottom: 75px; /* chừa chỗ cho overlay */
+}
+
 .details-box ul li {
     text-align: left;
     margin-left: 14px;
@@ -432,5 +454,6 @@ body {
     from { transform: translateY(100%); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
+
 
 
