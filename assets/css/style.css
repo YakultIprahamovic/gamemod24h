@@ -1118,5 +1118,143 @@ body {
     text-shadow: 0 0 10px #00eaff;
 }
 
+/* ===========================================================
+   🔥 BEST SELLER EFFECTS – FIRE BORDER + NEON BADGES + ZOOM
+   =========================================================== */
+
+/* Container BEST SELLER SLIDE WRAPPER */
+#bestList {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+#bestList::-webkit-scrollbar {
+    height: 8px;
+}
+#bestList::-webkit-scrollbar-thumb {
+    background: #00eaff88;
+    border-radius: 6px;
+}
+
+/* Each slide becomes a snap block */
+.bestseller-horizontal {
+    min-width: 450px;
+    max-width: 450px;
+    scroll-snap-align: center;
+    background: #0b1118;
+    padding: 18px;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 0 18px #000;
+    overflow: hidden;
+    transition: 0.25s ease;
+}
+
+/* Fire border animation */
+.bestseller-horizontal::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 14px;
+
+    background: conic-gradient(
+        #ff9900,
+        #ff3300,
+        #ff0000,
+        #ff6600,
+        #ffaa00,
+        #ff9900
+    );
+    filter: blur(6px);
+    animation: fireBorder 3.5s linear infinite;
+    z-index: 1;
+}
+
+@keyframes fireBorder {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Dark overlay so content is readable */
+.bestseller-horizontal::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #0b1118;
+    border-radius: 12px;
+    z-index: 2;
+}
+
+/* Content wrapper stays above */
+.bestseller-horizontal > * {
+    position: relative;
+    z-index: 3;
+}
+
+/* 🔥 HOT badge */
+.hot-badge {
+    background: #ff3300;
+    padding: 4px 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    animation: hotPulse 1.2s infinite ease-in-out;
+}
+
+@keyframes hotPulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: .5; transform: scale(1.15); }
+}
+
+/* ⭐ Rank Badge Neon */
+.rank-circle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    background: #ffd700;
+    color: #000;
+    text-shadow: 0 0 8px #fff;
+    animation: neonBlink 1.6s infinite ease-in-out;
+}
+
+@keyframes neonBlink {
+    0%, 100% { box-shadow: 0 0 6px #ffd700; }
+    50% { box-shadow: 0 0 18px #ffe666; }
+}
+
+/* Ảnh zoom mạnh khi hover */
+.best-img-large {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.35s ease;
+}
+
+.bestseller-horizontal:hover .best-img-large {
+    transform: scale(1.15);
+}
+
+/* Card hover lift */
+.bestseller-horizontal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #ff6600aa;
+}
+
+/* Info text */
+.best-title {
+    font-size: 22px;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
 
 
