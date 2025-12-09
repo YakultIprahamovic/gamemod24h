@@ -13,20 +13,20 @@ let currentPage = 1;
 gamesData.sort((a, b) => new Date(b.updated) - new Date(a.updated));
 
 /* =====================================
-   BEST SELLER – ONE LINE HORIZONTAL ROW
+   BEST SELLER – ONE LINE HORIZONTAL
 ===================================== */
 function renderBestSellers() {
     if (!bestList) return;
 
     bestList.innerHTML = "";
 
-    // Top 4 game bán chạy nhất
+    // Lấy top 4 game bán chạy nhất
     const bestGames = [...gamesData]
         .filter(g => g.bestSeller)
         .sort((a, b) => (b.soldCount || 0) - (a.soldCount || 0))
         .slice(0, 4);
 
-    bestGames.forEach((game, index) => {
+    bestGames.forEach((game) => {
 
         const row = document.createElement("div");
         row.className = "bestseller-horizontal";
@@ -74,8 +74,8 @@ function renderBestSellers() {
                     <b>Features:</b>
                     <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
 
-                    <div class="price-box">💳 Tháng: <b>${game.monthly}K</b></div>
-                    <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
+                    <div class="price-box">💳 ${game.monthly}K / tháng</div>
+                    <div class="price-box">💎 ${game.lifetime}K vĩnh viễn</div>
 
                     <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
                 </div>
@@ -86,15 +86,20 @@ function renderBestSellers() {
                     <h3>Shop tài nguyên</h3>
 
                     ${
-                        !game.shop ? 
-                        `<i>Không hỗ trợ tài nguyên</i>` :
-                        `<ul>${game.shop.map(s => `<li>💠 ${s.name}: <b>${s.price}</b></li>`).join("")}</ul>
-                         <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp</a>`
+                        !game.shop
+                        ? `<i>Không hỗ trợ tài nguyên.</i>`
+                        : `
+                            <ul>
+                                ${game.shop.map(s => `<li>💠 ${s.name}: <b>${s.price}</b></li>`).join("")}
+                            </ul>
+                            <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp</a>
+                        `
                     }
                 </div>
             </div>
         `;
 
+        // BUTTON EVENT
         const scriptBtn = row.querySelector(".btn-script");
         const shopBtn = row.querySelector(".btn-shop");
         const scriptBox = row.querySelector(".script-box");
@@ -114,17 +119,16 @@ function renderBestSellers() {
             };
         }
 
-        row.querySelectorAll(".close-box").forEach(btn =>
+        row.querySelectorAll(".close-box").forEach(btn => {
             btn.onclick = () => {
                 scriptBox.classList.remove("show");
                 shopBox.classList.remove("show");
-            }
-        );
+            };
+        });
 
         bestList.appendChild(row);
     });
 }
-
 
 /* ==============================
         CLOSE ALL POPUPS
@@ -134,7 +138,7 @@ function closeAllPopups() {
 }
 
 /* ==============================
-        RENDER GAME LIST
+        RENDER GAME GRID
 ============================== */
 function renderGames() {
     gameList.innerHTML = "";
@@ -150,7 +154,6 @@ function renderGames() {
         card.innerHTML = `
             <div class="image-wrapper">
                 <img src="${game.image}" class="game-img">
-
                 <span class="badge vip-badge">VIP</span>
                 <span class="badge update-badge">${game.updateCount || 0}</span>
             </div>
@@ -165,8 +168,8 @@ function renderGames() {
 
             <div class="details-box script-box">
                 <button class="close-box">✕</button>
-                <b>Mô tả:</b> ${game.description}<br><br>
 
+                <b>Mô tả:</b> ${game.description}<br><br>
                 <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
 
                 <div class="price-box">💳 ${game.monthly}K</div>
@@ -177,9 +180,10 @@ function renderGames() {
 
             <div class="details-box shop-box">
                 <button class="close-box">✕</button>
+
                 ${
-                    !game.shop?.length ?
-                    `<i>❌ Không hỗ trợ tài nguyên.</i>`
+                    !game.shop?.length
+                    ? `<i>❌ Không hỗ trợ tài nguyên.</i>`
                     :
                     `<b>Gói tài nguyên:</b><br><br>
                     <ul>${game.shop.map(s => `<li>💠 ${s.name}: <b>${s.price}</b></li>`).join("")}</ul>
@@ -254,12 +258,6 @@ function animateCount(target) {
     const timer = setInterval(() => {
         start++;
         counter.innerText = start;
-        counter.style.transform = "scale(1.25)";
-        counter.style.transition = "0.2s";
-
-        setTimeout(() => {
-            counter.style.transform = "scale(1)";
-        }, 150);
 
         if (start >= target) clearInterval(timer);
     }, 20);
@@ -271,10 +269,3 @@ function animateCount(target) {
 animateCount(gamesData.length);
 renderBestSellers();
 renderGames();
-
-
-
-
-
-
-
