@@ -533,6 +533,16 @@ body {
 #games {
     margin-top: 10px !important;
 }
+.btn-shop {
+    background: linear-gradient(90deg, #ff00a6, #ff0062);
+    box-shadow: 0 0 15px #ff00a6;
+}
+
+.btn-shop:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px #ff00f2;
+}
+
 
 
 
