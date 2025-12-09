@@ -677,6 +677,44 @@ body {
 }
 
 
+/* Hiệu ứng toàn dòng hero-stats */
+.hero-stats {
+    font-size: 22px;
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeSlideIn 1.4s ease forwards, glowPulse 2.3s infinite ease-in-out;
+}
+
+@keyframes fadeSlideIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glowPulse {
+    0% { text-shadow: 0 0 8px #00eaff; }
+    50% { text-shadow: 0 0 18px #00eaff; }
+    100% { text-shadow: 0 0 8px #00eaff; }
+}
+
+/* Chữ count script nổi bật riêng */
+.script-count {
+    font-weight: 900;
+    font-style: italic;
+    color: #00eaff;
+    display: inline-block;
+    animation: countPulse 1.4s infinite ease-in-out;
+}
+
+@keyframes countPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.25); }
+    100% { transform: scale(1); }
+}
+
 
 
 
