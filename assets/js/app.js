@@ -97,14 +97,15 @@ function renderGames() {
         const shopBox = el.querySelector(".shop-box");
 
         scriptBtn.onclick = () => {
-            scriptBox.style.display = scriptBox.style.display === "block" ? "none" : "block";
-            if (shopBox) shopBox.style.display = "none";
+            scriptBox.classList.toggle("show");
+                if (shopBox) shopBox.classList.remove("show");
         };
 
         if (shopBtn) {
             shopBtn.onclick = () => {
-                shopBox.style.display = shopBox.style.display === "block" ? "none" : "block";
-                scriptBox.style.display = "none";
+                shopBox.classList.toggle("show");
+                scriptBox.classList.remove("show");
+
             };
         }
 
@@ -148,3 +149,4 @@ function animateCount(target) {
 ================================*/
 animateCount(gamesData.length);
 renderGames();
+
