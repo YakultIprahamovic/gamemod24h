@@ -692,6 +692,98 @@ body {
     margin-bottom: 6px;
 }
 
+.bestseller-horizontal {
+    width: 100%;
+    background: #0b1118;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    gap: 25px;
+    box-shadow: 0 0 12px #000;
+    position: relative;
+}
+
+.best-col-img {
+    position: relative;
+}
+
+.best-img-large {
+    width: 170px;
+    height: 170px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.hot-badge {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    background: red;
+    padding: 3px 8px;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 6px;
+    animation: glowHot 1.5s infinite;
+}
+
+@keyframes glowHot {
+    0% { box-shadow: 0 0 5px red; }
+    50% { box-shadow: 0 0 15px yellow; }
+    100% { box-shadow: 0 0 5px red; }
+}
+
+.best-col-info {
+    flex: 1;
+}
+
+.best-title {
+    font-size: 22px;
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff;
+}
+
+.best-meta {
+    margin: 6px 0 10px;
+    opacity: .85;
+}
+
+.best-features ul {
+    margin: 4px 0 10px;
+}
+
+.best-description {
+    margin-top: 6px;
+}
+
+.best-price {
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+.best-buttons {
+    margin-top: 12px;
+    display: flex;
+    gap: 12px;
+}
+
+.best-buttons button {
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-script {
+    background: #00eaff;
+    color: #000;
+}
+
+.btn-shop {
+    background: #005eff;
+    color: #fff;
+}
+
 
 
 
