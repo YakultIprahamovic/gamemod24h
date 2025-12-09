@@ -15,6 +15,9 @@ gamesData.sort((a, b) => new Date(b.updated) - new Date(a.updated));
 /* =====================================
    BEST SELLER – ONE LINE HORIZONTAL ROW
 ===================================== */
+/* =====================================
+   BEST SELLER – ONE LINE HORIZONTAL ROW
+===================================== */
 function renderBestSellers() {
     if (!bestList) return;
 
@@ -271,6 +274,7 @@ function animateCount(target) {
 animateCount(gamesData.length);
 renderBestSellers();
 renderGames();
+
 
 
 
