@@ -183,6 +183,110 @@ function animateCount(target) {
         if (start >= target) clearInterval(timer);
     }, 20);
 }
+/* =====================================
+    RENDER BEST SELLERS (FULL BUTTONS)
+===================================== */
+
+const bestList = document.getElementById("bestList");
+
+function renderBestSellers() {
+    if (!bestList) return;
+
+    bestList.innerHTML = "";
+
+    // Lấy các game có bestSeller = true
+    const bestGames = gamesData.filter(g => g.bestSeller).slice(0, 4);
+
+    bestGames.forEach(game => {
+        const card = document.createElement("div");
+        card.className = "game-card";
+
+        card.innerHTML = `
+            <div class="image-wrapper">
+                <img src="${game.image}" class="game-img">
+
+                <span class="badge vip-badge">VIP</span>
+                <span class="badge update-badge">${game.updateCount || 0}</span>
+            </div>
+
+            <div class="game-name">${game.name}</div>
+            <div class="update-date">⏱ ${game.updated || "Chưa cập nhật"}</div>
+
+            <div class="action-buttons">
+                <button class="btn-script">Script</button>
+                ${game.shop && game.shop.length > 0 
+                    ? `<button class="btn-shop">Shop Tài Nguyên</button>`
+                    : ""
+                }
+            </div>
+
+            <!-- SCRIPT POPUP -->
+            <div class="details-box script-box">
+                <button class="close-box">✕</button>
+
+                <b>Mô tả:</b> ${game.description}<br><br>
+
+                <b>Features:</b>
+                <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
+
+                <div class="price-box">💳 Tháng: <b>${game.monthly}K</b></div>
+                <div class="price-box">💎 Vĩnh viễn: <b>${game.lifetime}K</b></div>
+
+                <a href="https://t.me/YakultIpramovic" class="btn-buy">Mua ngay</a>
+                <a href="https://t.me/YakultIpramovic" class="btn-update">Yêu cầu cập nhật</a>
+            </div>
+
+            <!-- SHOP POPUP -->
+            <div class="details-box shop-box">
+                <button class="close-box">✕</button>
+
+                ${
+                    !game.shop || game.shop.length === 0
+                    ? `<i>❌ Không hỗ trợ Shop tài nguyên.</i>`
+                    : `
+                        <b>Gói tài nguyên:</b><br><br>
+                        <ul>
+                            ${game.shop.map(s => `<li>💠 ${s.name} — <b>${s.price}</b></li>`).join("")}
+                        </ul>
+
+                        <a class="btn-buy" href="https://t.me/YakultIpramovic">Liên hệ nạp</a>
+                    `
+                }
+            </div>
+        `;
+
+        const scriptBtn = card.querySelector(".btn-script");
+        const shopBtn = card.querySelector(".btn-shop");
+        const scriptBox = card.querySelector(".script-box");
+        const shopBox = card.querySelector(".shop-box");
+
+        // ----- SCRIPT BUTTON -----
+        scriptBtn.onclick = () => {
+            const open = scriptBox.classList.contains("show");
+            closeAllPopups();
+            if (!open) scriptBox.classList.add("show");
+        };
+
+        // ----- SHOP BUTTON -----
+        if (shopBtn) {
+            shopBtn.onclick = () => {
+                const open = shopBox.classList.contains("show");
+                closeAllPopups();
+                if (!open) shopBox.classList.add("show");
+            };
+        }
+
+        // ----- CLOSE BUTTON -----
+        card.querySelectorAll(".close-box").forEach(btn => {
+            btn.onclick = () => {
+                scriptBox.classList.remove("show");
+                shopBox.classList.remove("show");
+            };
+        });
+
+        bestList.appendChild(card);
+    });
+}
 
 /* =====================================
                 INIT
@@ -190,3 +294,4 @@ function animateCount(target) {
 animateCount(gamesData.length);
 renderBestSellers();
 renderGames();
+
