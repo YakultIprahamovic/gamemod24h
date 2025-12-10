@@ -81,8 +81,8 @@ function renderBestSellers() {
                     <b>Features:</b>
                     <ul>${game.features.map(f => `<li>✔ ${f}</li>`).join("")}</ul>
 
-                    <div class="price-box">💳 ${game.monthly}K</div>
-                    <div class="price-box">💎 ${game.lifetime}K</div>
+                    <div class="price-box">1 Tháng💳: ${game.monthly}K</div>
+                    <div class="price-box">Trọn đời💎: ${game.lifetime}K</div>
 
                     <a class="btn-buy" href="https://t.me/YakultIpramovic">Mua ngay</a>
                 </div>
@@ -293,5 +293,6 @@ setInterval(() => {
     });
 
 }, 3500);  // 3.5 giây đổi 1 card
+
 
 
