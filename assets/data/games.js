@@ -233,8 +233,8 @@ const gamesData = [
   },
   {
     id: 113,
-    name: "LEGENDARY GIRL WARRIOR IDLE",
-    description: "Free Shop",
+    name: "PIXEL FANTASIA: IDLE RPG GAME",
+    description: "Free Shop - RESOURCES",
     image: "assets/img/game_113.png",
     script: "https://t.me/YakultIpramovic",
     download: "https://t.me/YakultIpramovic",
@@ -245,7 +245,7 @@ const gamesData = [
     updateCount: "Update",
     badge: "VIP",
     soldCount: 25,
-    updated: "2025-12-8",
+    updated: "2025-12-11",
     shop: [
 
         { name: "Full Package", price: "$15/300K" },
@@ -1724,6 +1724,7 @@ const gamesData = [
     ]
   }
 ];
+
 
 
 
