@@ -1722,8 +1722,33 @@ const gamesData = [
     shop: [
         { name: "Full Package", price: "$10/200K" },
     ]
+  },
+  
+  },
+  {
+    "id": 188,
+    "name": "GUARDIAN WAR IDLE PIXEL GAMES",
+    "description": "Special Yakult VIP Exclusive",
+    "image": "assets/img/game_188.png",
+    "script": "https://t.me/YakultIpramovic",
+    "download": "https://t.me/YakultIpramovic",
+    "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
+    "features": [
+      "Freeshop",
+      "Speed Game"
+    ],
+    updateCount: "Update",
+    badge: "VIP",
+    soldCount: 25,
+    updated: "2025-12-11",
+    shop: [
+        { name: "Full Package", price: "$10/200K" },
+    ]
   }
 ];
+
 
 
 
