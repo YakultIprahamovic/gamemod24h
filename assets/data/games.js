@@ -1737,7 +1737,7 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    updateCount: "Update",
+    updateCount: "New",
     badge: "VIP",
     soldCount: 25,
     updated: "2025-12-11",
@@ -1759,7 +1759,7 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    updateCount: "Update",
+    updateCount: "New",
     badge: "VIP",
     soldCount: 25,
     updated: "2025-12-11",
@@ -1781,7 +1781,7 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    updateCount: "Update",
+    updateCount: "New",
     badge: "VIP",
     soldCount: 25,
     updated: "2025-12-11",
@@ -1804,7 +1804,7 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    updateCount: "Update",
+    updateCount: "New",
     badge: "VIP",
     soldCount: 25,
     updated: "2025-12-12",
@@ -1827,7 +1827,7 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    updateCount: "Update",
+    updateCount: "New",
     badge: "VIP",
     soldCount: 25,
     updated: "2025-12-12",
@@ -1850,7 +1850,7 @@ const gamesData = [
       "Freeshop",
       "Speed Game"
     ],
-    updateCount: "Update",
+    updateCount: "New",
     badge: "VIP",
     soldCount: 25,
     updated: "2025-12-12",
@@ -1872,7 +1872,7 @@ const gamesData = [
       "Resources",
       "Speed Game"
     ],
-    updateCount: "Update",
+    updateCount: "New",
     badge: "VIP",
     soldCount: 25,
     updated: "2025-12-12",
@@ -1881,6 +1881,7 @@ const gamesData = [
     ]
   }
 ];
+
 
 
 
