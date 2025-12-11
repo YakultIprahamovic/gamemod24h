@@ -1857,8 +1857,31 @@ const gamesData = [
     shop: [
         { name: "Full Package, Resources", price: "$10/200K" },
     ]
+  },
+      {
+    "id": 194,
+    "name": "CARD WARS KINGDOM",
+    "description": "Script Auto-Update",
+    "image": "assets/img/game_194.png",
+    "script": "https://t.me/YakultIpramovic",
+    "download": "https://t.me/YakultIpramovic",
+    "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
+    "features": [
+      "Resources",
+      "Speed Game"
+    ],
+    updateCount: "Update",
+    badge: "VIP",
+    soldCount: 25,
+    updated: "2025-12-12",
+    shop: [
+        { name: "Resources", price: "$10/200K" },
+    ]
   }
 ];
+
 
 
 
