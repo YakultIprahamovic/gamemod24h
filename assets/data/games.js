@@ -21,7 +21,7 @@ const gamesData = [
   },
   {
     id: 102,
-    name: "CASTLE DEFENSE OATH KEEPERS TD",
+    name: "RAISE YOUR KNIGHTS: NEW SERVER!",
     description: "Damage – Free Shop – Multi Reward",
     image: "assets/img/game_102.png",
     script: "https://t.me/YakultIpramovic",
@@ -29,14 +29,14 @@ const gamesData = [
     video: "https://t.me/YakultIpramovic",
     monthly: "250",
     lifetime: "500",
-    features: ["Freeshop", "Damage", "Multi Reward", "Speed Game"],
+    features: ["Freeshop", "Speed Game"],
     updateCount: "Update",
     badge: "VIP",
     soldCount: 25,
     updated: "2025-12-8",
     shop: [
-        { name: "Gói Nạp, Diamond, Gold", price: "200K" },
-        { name: "Full Package, Diamond, Gold", price: "$8" },
+        { name: "Gói Nạp", price: "200K" },
+        { name: "Package", price: "$8" },
     ]
   },
   {
@@ -1790,6 +1790,7 @@ const gamesData = [
     ]
   }
 ];
+
 
 
 
