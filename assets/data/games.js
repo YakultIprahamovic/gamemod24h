@@ -1723,8 +1723,6 @@ const gamesData = [
         { name: "Full Package", price: "$10/200K" },
     ]
   },
-  
-  },
   {
     "id": 188,
     "name": "GUARDIAN WAR IDLE PIXEL GAMES",
@@ -1748,6 +1746,7 @@ const gamesData = [
     ]
   }
 ];
+
 
 
 
