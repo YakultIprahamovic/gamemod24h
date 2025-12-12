@@ -1869,6 +1869,7 @@ const gamesData = [
     "monthly": "250",
     "lifetime": "500",
     "features": [
+      "Antiban",
       "Resources",
       "Speed Game"
     ],
@@ -1903,6 +1904,7 @@ const gamesData = [
     ]
   }
 ];
+
 
 
 
