@@ -1879,8 +1879,31 @@ const gamesData = [
     shop: [
         { name: "Resources", price: "$10/200K" },
     ]
+  },
+        {
+    "id": 195,
+    "name": "LIGHTNING PRINCESS",
+    "description": "Script Auto-Update",
+    "image": "assets/img/game_195.png",
+    "script": "https://t.me/YakultIpramovic",
+    "download": "https://t.me/YakultIpramovic",
+    "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
+    "features": [
+      "Freeshop",
+      "Speed Game"
+    ],
+    updateCount: "New",
+    badge: "VIP",
+    soldCount: 25,
+    updated: "2025-12-12",
+    shop: [
+        { name: "Package", price: "$10/200K" },
+    ]
   }
 ];
+
 
 
 
