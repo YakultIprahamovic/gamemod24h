@@ -1897,12 +1897,13 @@ const gamesData = [
     updateCount: "New",
     badge: "VIP",
     soldCount: 25,
-    updated: "2025-12-12",
+    updated: "2025-12-13",
     shop: [
         { name: "Package", price: "$10/200K" },
     ]
   }
 ];
+
 
 
 
