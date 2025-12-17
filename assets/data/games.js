@@ -1924,8 +1924,34 @@ const gamesData = [
     shop: [
         { name: "Package", price: "$10/200K" },
     ]
+  },
+          {
+    "id": 197,
+    "name": "ASH N VEIL",
+    "description": "Script Auto-Update",
+    "image": "assets/img/game_197.png",
+    "script": "https://t.me/YakultIpramovic",
+    "download": "https://t.me/YakultIpramovic",
+    "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
+    "features": [
+      "Freeshop",
+      "Multi Exp",
+      "Unlimited MP",
+      "Complete All Mission",
+      "Speed Game"
+    ],
+    updateCount: "New",
+    badge: "VIP",
+    soldCount: 25,
+    updated: "2025-12-18",
+    shop: [
+        { name: "Package", price: "$10/200K" },
+    ]
   }
 ];
+
 
 
 
