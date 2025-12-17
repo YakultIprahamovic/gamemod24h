@@ -1947,10 +1947,11 @@ const gamesData = [
     soldCount: 25,
     updated: "2025-12-18",
     shop: [
-        { name: "Package", price: "$10/200K" },
+        { name: "Package", price: "$15/300K" },
     ]
   }
 ];
+
 
 
 
