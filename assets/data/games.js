@@ -1968,12 +1968,13 @@ const gamesData = [
     updateCount: "New",
     badge: "VIP",
     soldCount: 25,
-    updated: "2025-12-18",
+    updated: "2025-12-23",
     shop: [
         { name: "Ruby + Diamond", price: "$15/300K" },
     ]
   }
 ];
+
 
 
 
