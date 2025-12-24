@@ -1958,8 +1958,8 @@ const gamesData = [
     "script": "https://t.me/YakultIpramovic",
     "download": "https://t.me/YakultIpramovic",
     "video": "https://t.me/YakultIpramovic",
-    "monthly": "250",
-    "lifetime": "500",
+    monthly: "500",
+    lifetime: "1000",
     "features": [
       "Antiban",
       "Freeshop Ruby",
@@ -2016,6 +2016,7 @@ const gamesData = [
     ]
   }
 ];
+
 
 
 
