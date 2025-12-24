@@ -1973,8 +1973,50 @@ const gamesData = [
     shop: [
         { name: "Ruby + Diamond", price: "$15/300K" },
     ]
+  },
+   {
+    "id": 199,
+    "name": "ZOMBIE HUNTER OFFLINE GAME",
+    "description": "Script Auto-Update",
+    "image": "assets/img/game_199.png",
+    "script": "https://t.me/YakultIpramovic",
+    "download": "https://t.me/YakultIpramovic",
+    "video": "https://t.me/YakultIpramovic",
+    "monthly": "100",
+    "lifetime": "100",
+    "features": [
+      "Unlock Cheat Panel"
+    ],
+    updateCount: "New",
+    badge: "VIP",
+    soldCount: 25,
+    updated: "2025-12-25",
+    shop: []
+  },
+   {
+    "id": 200,
+    "name": "BAD 2 BAD APOCALISE",
+    "description": "Script Auto-Update",
+    "image": "assets/img/game_200.png",
+    "script": "https://t.me/YakultIpramovic",
+    "download": "https://t.me/YakultIpramovic",
+    "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
+    "features": [
+      "Freeshop",
+      "Speed Game"
+    ],
+    updateCount: "New",
+    badge: "VIP",
+    soldCount: 25,
+    updated: "2025-12-25",
+    shop: [
+        { name: "Package", price: "$15/300K" },
+    ]
   }
 ];
+
 
 
 
