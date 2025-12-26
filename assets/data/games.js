@@ -2014,8 +2014,31 @@ const gamesData = [
     shop: [
         { name: "Package", price: "$15/300K" },
     ]
+  },
+   {
+    "id": 201,
+    "name": "GRAND WAR: WW2",
+    "description": "Script Auto-Update",
+    "image": "assets/img/game_201.png",
+    "script": "https://t.me/YakultIpramovic",
+    "download": "https://t.me/YakultIpramovic",
+    "video": "https://t.me/YakultIpramovic",
+    "monthly": "250",
+    "lifetime": "500",
+    "features": [
+      "Freeshop",
+      "Speed Game"
+    ],
+    updateCount: "New",
+    badge: "VIP",
+    soldCount: 25,
+    updated: "2025-12-25",
+    shop: [
+        { name: "Package", price: "$15/300K" },
+    ]
   }
 ];
+
 
 
 
